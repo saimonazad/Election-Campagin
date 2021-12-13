@@ -5,7 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="./css/lightslider.css" />
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="./js/lightslider.js"></script>
+
     <title>Test</title>
+    <script>
+      $(document).ready(function () {
+        $("#content-slider").lightSlider({
+          loop: true,
+          keyPress: true,
+        });
+        $("#image-gallery").lightSlider({
+          gallery: true,
+          item: 1,
+          thumbItem: 6,
+          slideMargin: 0,
+          speed: 500,
+          auto: true,
+          loop: true,
+          onSliderLoad: function () {
+            $("#image-gallery").removeClass("cS-hidden");
+          },
+        });
+      });
+    </script>
   </head>
   <body>
     <main>
@@ -28,17 +53,19 @@
         <!-- industry section-->
         <section>
           <div class="our-industry">
-            <div class="our-industry-body">
-              <div class="industry-left">
-                <h2>Our Industry Contribution</h2>
-                <div class="industry-border">
-                  <div class="industry-border-1"></div>
-                  <div class="industry-border-2"></div>
-                  <div class="industry-border-3"></div>
+            <div class="section-container">
+              <div class="our-industry-body">
+                <div class="industry-left">
+                  <h2>Our Industry Contribution</h2>
+                  <div class="industry-border">
+                    <div class="industry-border-1"></div>
+                    <div class="industry-border-2"></div>
+                    <div class="industry-border-3"></div>
+                  </div>
                 </div>
-              </div>
-              <div class="industry-right">
-                <h2>Test 2</h2>
+                <div class="industry-right">
+                  <h2>Test 2</h2>
+                </div>
               </div>
             </div>
           </div>
@@ -65,10 +92,67 @@
         </section>
 
         <!-- gallery section -->
-        <section>
+        <section class="section-container">
           <div class="gallery-section">
             <div class="gallery-top"></div>
-            <div class="gallery-body"></div>
+            <div class="gallery-body">
+              <div class="demo">
+                <div class="item">
+                  <div class="clearfix" style="max-width: 100%">
+                    <ul
+                      id="image-gallery"
+                      class="gallery list-unstyled cS-hidden"
+                    >
+                      <li data-thumb="gallery/thumb/cS-1.jpg">
+                        <img src="gallery/cS-1.jpg" />
+                      </li>
+                      <li data-thumb="gallery/thumb/cS-2.jpg">
+                        <img src="gallery/cS-2.jpg" />
+                      </li>
+                      <li data-thumb="gallery/thumb/cS-3.jpg">
+                        <img src="gallery/cS-3.jpg" />
+                      </li>
+                      <li data-thumb="gallery/thumb/cS-4.jpg">
+                        <img src="gallery/cS-4.jpg" />
+                      </li>
+                      <li data-thumb="gallery/thumb/cS-5.jpg">
+                        <img src="gallery/cS-5.jpg" />
+                      </li>
+                      <li data-thumb="gallery/thumb/cS-6.jpg">
+                        <img src="gallery/cS-6.jpg" />
+                      </li>
+                      <li data-thumb="gallery/thumb/cS-7.jpg">
+                        <img src="gallery/cS-7.jpg" />
+                      </li>
+                      <li data-thumb="gallery/thumb/cS-8.jpg">
+                        <img src="gallery/cS-8.jpg" />
+                      </li>
+                      <li data-thumb="gallery/thumb/cS-9.jpg">
+                        <img src="gallery/cS-9.jpg" />
+                      </li>
+                      <li data-thumb="gallery/thumb/cS-10.jpg">
+                        <img src="gallery/cS-10.jpg" />
+                      </li>
+                      <li data-thumb="gallery/thumb/cS-11.jpg">
+                        <img src="gallery/cS-11.jpg" />
+                      </li>
+                      <li data-thumb="gallery/thumb/cS-12.jpg">
+                        <img src="gallery/cS-12.jpg" />
+                      </li>
+                      <li data-thumb="gallery/thumb/cS-13.jpg">
+                        <img src="gallery/cS-13.jpg" />
+                      </li>
+                      <li data-thumb="gallery/thumb/cS-14.jpg">
+                        <img src="gallery/cS-14.jpg" />
+                      </li>
+                      <li data-thumb="gallery/thumb/cS-15.jpg">
+                        <img src="gallery/cS-15.jpg" />
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
