@@ -6,28 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/main.css" />
     <link rel="stylesheet" href="./css/lightslider.css" />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="./js/lightslider.js"></script>
 
     <title>Test</title>
     <script>
       $(document).ready(function () {
-        $("#content-slider").lightSlider({
-          loop: true,
-          keyPress: true,
-        });
-        $("#image-gallery").lightSlider({
+        $("#lightSlider").lightSlider({
           gallery: true,
+          autoWidth: false,
+          adaptiveHeight: false,
           item: 1,
-          thumbItem: 6,
-          slideMargin: 0,
-          speed: 500,
-          auto: true,
           loop: true,
-          onSliderLoad: function () {
-            $("#image-gallery").removeClass("cS-hidden");
-          },
+          slideMargin: 0,
+          thumbItem: 5,
         });
       });
     </script>
@@ -96,69 +98,64 @@
           <div class="gallery-section">
             <div class="gallery-top"></div>
             <div class="gallery-body">
-              <div class="demo">
-                <div class="item">
-                  <div class="clearfix" style="max-width: 100%">
-                    <ul
-                      id="image-gallery"
-                      class="gallery list-unstyled cS-hidden"
-                    >
-                      <li data-thumb="gallery/thumb/cS-1.jpg">
-                        <img src="gallery/cS-1.jpg" />
-                      </li>
-                      <li data-thumb="gallery/thumb/cS-2.jpg">
-                        <img src="gallery/cS-2.jpg" />
-                      </li>
-                      <li data-thumb="gallery/thumb/cS-3.jpg">
-                        <img src="gallery/cS-3.jpg" />
-                      </li>
-                      <li data-thumb="gallery/thumb/cS-4.jpg">
-                        <img src="gallery/cS-4.jpg" />
-                      </li>
-                      <li data-thumb="gallery/thumb/cS-5.jpg">
-                        <img src="gallery/cS-5.jpg" />
-                      </li>
-                      <li data-thumb="gallery/thumb/cS-6.jpg">
-                        <img src="gallery/cS-6.jpg" />
-                      </li>
-                      <li data-thumb="gallery/thumb/cS-7.jpg">
-                        <img src="gallery/cS-7.jpg" />
-                      </li>
-                      <li data-thumb="gallery/thumb/cS-8.jpg">
-                        <img src="gallery/cS-8.jpg" />
-                      </li>
-                      <li data-thumb="gallery/thumb/cS-9.jpg">
-                        <img src="gallery/cS-9.jpg" />
-                      </li>
-                      <li data-thumb="gallery/thumb/cS-10.jpg">
-                        <img src="gallery/cS-10.jpg" />
-                      </li>
-                      <li data-thumb="gallery/thumb/cS-11.jpg">
-                        <img src="gallery/cS-11.jpg" />
-                      </li>
-                      <li data-thumb="gallery/thumb/cS-12.jpg">
-                        <img src="gallery/cS-12.jpg" />
-                      </li>
-                      <li data-thumb="gallery/thumb/cS-13.jpg">
-                        <img src="gallery/cS-13.jpg" />
-                      </li>
-                      <li data-thumb="gallery/thumb/cS-14.jpg">
-                        <img src="gallery/cS-14.jpg" />
-                      </li>
-                      <li data-thumb="gallery/thumb/cS-15.jpg">
-                        <img src="gallery/cS-15.jpg" />
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
+              <ul id="lightSlider">
+                <li
+                  data-thumb="http://images.asos.com/homepage/2010_02_12_H_HP_M/01.jpg"
+                >
+                  <img
+                    src="http://images.asos.com/homepage/2010_02_12_H_HP_M/01.jpg"
+                  />
+                </li>
+                <li
+                  data-thumb="https://fashfever.files.wordpress.com/2015/02/dolce-gabbana-ss10-adv-004.jpg"
+                >
+                  <img
+                    src="https://fashfever.files.wordpress.com/2015/02/dolce-gabbana-ss10-adv-004.jpg"
+                  />
+                </li>
+                <li
+                  data-thumb="https://yinnyang.co.uk/wp-content/uploads/2011/03/410.jpg"
+                >
+                  <img
+                    src="https://yinnyang.co.uk/wp-content/uploads/2011/03/410.jpg"
+                  />
+                </li>
+                <li
+                  data-thumb="http://www.brandingmagazine.com/wp-content/uploads/2012/02/dolce_gabbana7.jpg"
+                >
+                  <img
+                    src="http://www.brandingmagazine.com/wp-content/uploads/2012/02/dolce_gabbana7.jpg"
+                  />
+                </li>
+                <li
+                  data-thumb="http://fuckingyoung.es/wp-content/uploads/2014/01/Dolce-Gabbana-Spring-Summer-2014-Campaign4.jpg"
+                >
+                  <img
+                    src="http://fuckingyoung.es/wp-content/uploads/2014/01/Dolce-Gabbana-Spring-Summer-2014-Campaign4.jpg"
+                  />
+                </li>
+                <li
+                  data-thumb="https://i.telegraph.co.uk/multimedia/archive/02776/burberry_2776867k.jpg"
+                >
+                  <img
+                    src="https://i.telegraph.co.uk/multimedia/archive/02776/burberry_2776867k.jpg"
+                  />
+                </li>
+                <li
+                  data-thumb="https://rachelmacgregor.files.wordpress.com/2010/10/burberry.jpg"
+                >
+                  <img
+                    src="https://rachelmacgregor.files.wordpress.com/2010/10/burberry.jpg"
+                  />
+                </li>
+              </ul>
             </div>
           </div>
         </section>
 
         <!-- panel members section -->
         <section>
-          <div class="members-section">
+          <div class="members-section section-container">
             <div class="members-top"></div>
             <div class="members-body">
               <h2>General Category</h2>

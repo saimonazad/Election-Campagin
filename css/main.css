@@ -2,7 +2,7 @@ body {
   padding: 0px;
   margin: 0px;
 }
-.section-container{
+.section-container {
   max-width: 1300px;
   margin: 0 auto;
   padding: 0 20px;
@@ -139,8 +139,9 @@ body {
   background-position: left;
   background-size: contain;
   height: 200px;
+  margin-bottom: 100px;
 }
-.gallery-body{
+.gallery-body {
   max-width: 1300px;
   margin: 0 auto;
   padding: 0 10%;
@@ -163,6 +164,7 @@ body {
   line-height: 42.4px;
   font-size: 32px;
   text-align: center;
+  font-family: "PT Serif", serif;
 }
 .members {
   display: flex;
@@ -192,6 +194,13 @@ body {
 }
 .member-details h3 {
   color: rgba(31, 77, 240, 1);
+  font-family: "PT Serif", serif;
+}
+.member-details h2 {
+  font-family: "Ubuntu", sans-serif;
+}
+.member-details h4 {
+  font-family: "PT Serif", serif;
 }
 .ballot {
   background-color: rgba(31, 77, 240, 1);
