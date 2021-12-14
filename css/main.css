@@ -7,6 +7,9 @@ body {
   margin: 0 auto;
   padding: 0 20px;
 }
+.section-inner-container {
+  padding: 0 20px;
+}
 .header {
   background-image: url("../img/heroBg.png");
   background-repeat: no-repeat;
@@ -425,3 +428,9 @@ textarea {
 .sliderBtn {
   text-align: center;
 }
+<<<<<<< HEAD
+=======
+#memberSlider{
+  
+}
+>>>>>>> 4ff144b5c0e0aad87a7609df0d97b0efd03ba8a4
