@@ -30,7 +30,7 @@ body {
   max-width: 800px;
 }
 .brand {
-  height: 50vh;
+  height: 21vh;
   background-color: white;
   border-radius: 160px 160px 0px 0px;
   margin-top: -230px;
@@ -46,6 +46,7 @@ body {
 .our-brand-img > img {
   margin-top: 80px;
   width: 200px;
+  height: auto;
   margin-right: 80px !important;
 }
 
@@ -70,6 +71,10 @@ body {
   display: flex;
   flex-direction: row;
 }
+.industry-left h2 {
+  font-family: "PT Sans", sans-serif;
+  font-size: 45px;
+}
 .industry-border {
   display: flex;
   flex-direction: row;
@@ -92,6 +97,29 @@ body {
 }
 .industry-right {
   width: 60%;
+}
+#industrySlider {
+}
+.industry-item {
+  background-color: white;
+  box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.1);
+  padding: 30px 40px;
+  border-radius: 3%;
+}
+.industry-item h2 {
+  font-family: "PT Sans", sans-serif;
+  font-size: 25px;
+  margin: 0px;
+  color: #2f80ed;
+  text-align: center;
+}
+.industry-item p {
+  margin: 20px 0px 0px 0px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: justify;
+  color: #373737;
 }
 /* .agenda-section {
   margin: 25px;
@@ -163,10 +191,17 @@ body {
 }
 .members-body {
   margin-top: 100px;
-  /* box-shadow: 20px 20px 10px rgb(209, 18, 18); */
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.18);
 }
 .members-body h2 {
-  color: rgba(31, 77, 240, 1);
+  background: linear-gradient(
+    98.69deg,
+    #0f4b91 8.62%,
+    #1772eb 59.17%,
+    #4e97f8 99.1%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   line-height: 42.4px;
   font-size: 32px;
   text-align: center;
@@ -202,14 +237,19 @@ body {
   color: rgba(31, 77, 240, 1);
   font-family: "PT Serif", serif;
 }
-.member-details h2 {
-  font-family: "Ubuntu", sans-serif;
-}
+
 .member-details h4 {
   font-family: "PT Serif", serif;
+  color: rgba(55, 51, 52, 0.7233);
+  font-size: 16px;
 }
 .ballot {
-  background-color: rgba(31, 77, 240, 1);
+  background: linear-gradient(
+    98.69deg,
+    #0f4b91 8.62%,
+    #1772eb 59.17%,
+    #4e97f8 99.1%
+  );
   padding: 5px 10px;
   border-radius: 20px;
   width: 100px;
@@ -217,12 +257,18 @@ body {
   color: #fff;
 }
 .member-details button {
-  background-color: rgba(31, 77, 240, 1);
-  padding: 10px 40px;
-  /* border-radius: 20px; */
-  /* width: 100px; */
+  background: linear-gradient(
+    98.69deg,
+    #0f4b91 8.62%,
+    #1772eb 59.17%,
+    #4e97f8 99.1%
+  );
+  border-radius: 4px;
+  padding: 20px 60px;
   margin-top: 40px;
   color: #fff;
   border: none;
   cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
 }
