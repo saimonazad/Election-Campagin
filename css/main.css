@@ -12,16 +12,22 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 150vh;
+  height: 110vh;
 }
 
 .header-body {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 .header-body > img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 25vh;
+  width: 80%;
+  max-width: 800px;
 }
 .brand {
   height: 50vh;
