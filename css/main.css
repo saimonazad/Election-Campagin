@@ -299,9 +299,10 @@ body {
   /* width: 50%; */
 }
 .contact-left > img {
-  padding: 200px;
+  padding: 243px;
   margin-top: 50px;
   width: 40%;
+  padding-bottom: 0px;
 }
 
 .contact-form {
@@ -310,7 +311,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  margin-right: 150px;
+  margin-right: 100px;
 }
 .contact-form-top > .contact-border {
   height: 6px;
@@ -323,6 +324,7 @@ body {
 }
 .contact-right {
   /* margin-right: 100px; */
+  padding-top: 200px;
 }
 .form-content {
   display: flex;
@@ -428,9 +430,5 @@ textarea {
 .sliderBtn {
   text-align: center;
 }
-<<<<<<< HEAD
-=======
-#memberSlider{
-  
+#memberSlider {
 }
->>>>>>> 4ff144b5c0e0aad87a7609df0d97b0efd03ba8a4
