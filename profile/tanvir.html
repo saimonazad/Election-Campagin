@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/lightslider.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="/js/lightslider.js"></script>
+
+    <title>Test</title>
+    <script>
+      $(document).ready(function () {
+        var slider = $("#memberSlider").lightSlider({
+          adaptiveHeight: false,
+          item: 4,
+          slideMove: 1,
+          slideMargin: 20,
+          loop: true,
+          autoWidth: false,
+          pager: false,
+          rtl: false,
+          mode: "slide",
+          control: false,
+          responsive: [
+            {
+              breakpoint: 950,
+              settings: {
+                item: 3,
+                slideMove: 1,
+                slideMargin: 20,
+              },
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                item: 2,
+                slideMove: 1,
+              },
+            },
+          ],
+        });
+        $("#goToPrevSlide").on("click", function () {
+          slider.goToPrevSlide();
+        });
+        $("#goToNextSlide").on("click", function () {
+          slider.goToNextSlide();
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <header class="header-profile">
+          <button class="backBtn">Back</button>
+          <div class="profile-section">
+            <div>asd</div>
+            <div class="profile-card">
+              <img style="display: block" src="/img/tanvir.png" alt="" />
+            </div>
+            <div>asd</div>
+          </div>
+        </header>
+        <section class="section-container">
+          <div>
+            <ul id="memberSlider">
+              <li class="li_member">
+                <div class="member-img">
+                  <img src="/img/member1.png" alt="" srcset="" />
+                </div>
+                <div class="member-details">
+                  <div>
+                    <h2>Tanvir Hassain Khan</h2>
+                    <h4>CEO, Dreamerz Lab Limited</h4>
+                    <h3>ONE TEAM</h3>
+                    <div class="ballot">Ballot No:</div>
+                    <button type="button">Learn More</button>
+                  </div>
+                </div>
+              </li>
+              <li class="li_member">
+                <div class="member-img">
+                  <img src="/img/member1.png" alt="" srcset="" />
+                </div>
+                <div class="member-details">
+                  <div>
+                    <h2>Tanvir Hassain Khan</h2>
+                    <h4>CEO, Dreamerz Lab Limited</h4>
+                    <h3>ONE TEAM</h3>
+                    <div class="ballot">Ballot No:</div>
+                    <button type="button">Learn More</button>
+                  </div>
+                </div>
+              </li>
+              <li class="li_member">
+                <div class="member-img">
+                  <img src="/img/member1.png" alt="" srcset="" />
+                </div>
+                <div class="member-details">
+                  <div>
+                    <h2>Tanvir Hassain Khan</h2>
+                    <h4>CEO, Dreamerz Lab Limited</h4>
+                    <h3>ONE TEAM</h3>
+                    <div class="ballot">Ballot No:</div>
+                    <button type="button">Learn More</button>
+                  </div>
+                </div>
+              </li>
+              <li class="li_member">
+                <div class="member-img">
+                  <img src="/img/member1.png" alt="" srcset="" />
+                </div>
+                <div class="member-details">
+                  <div>
+                    <h2>Tanvir Hassain Khan</h2>
+                    <h4>CEO, Dreamerz Lab Limited</h4>
+                    <h3>ONE TEAM</h3>
+                    <div class="ballot">Ballot No:</div>
+                    <button type="button">Learn More</button>
+                  </div>
+                </div>
+              </li>
+              <li class="li_member">
+                <div class="member-img">
+                  <img src="/img/member1.png" alt="" srcset="" />
+                </div>
+                <div class="member-details">
+                  <div>
+                    <h2>Tanvir Hassain Khan</h2>
+                    <h4>CEO, Dreamerz Lab Limited</h4>
+                    <h3>ONE TEAM</h3>
+                    <div class="ballot">Ballot No:</div>
+                    <button type="button">Learn More</button>
+                  </div>
+                </div>
+              </li>
+              <li class="li_member">
+                <div class="member-img">
+                  <img src="/img/member1.png" alt="" srcset="" />
+                </div>
+                <div class="member-details">
+                  <div>
+                    <h2>Tanvir Hassain Khan</h2>
+                    <h4>CEO, Dreamerz Lab Limited</h4>
+                    <h3>ONE TEAM</h3>
+                    <div class="ballot">Ballot No:</div>
+                    <button type="button">Learn More</button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="sliderBtn">
+              <button type="button" id="goToPrevSlide">Prev</button>
+              <button type="button" id="goToNextSlide">Next</button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
