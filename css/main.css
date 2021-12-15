@@ -89,7 +89,6 @@ body {
 }
 .industry-left {
   width: 40%;
-  font-size: 45px;
   color: #fff;
   display: flex;
   align-items: center;
@@ -121,8 +120,8 @@ body {
 }
 .industry-right {
   width: 60%;
-  display: flex;
-  align-items: center;
+  /* display: flex;
+  align-items: center; */
   margin-top: 60px;
 }
 #industrySlider {
@@ -233,9 +232,9 @@ body {
   margin: 0 auto;
   padding: 0 10%;
 }
-#lightSlider {
+/* #lightSlider {
   height: 80vh !important;
-}
+} */
 .members-top {
   margin-top: 10px;
   background-image: url("../img/our-panel-member-text.png");

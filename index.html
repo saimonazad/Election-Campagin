@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="/css/main.css" />
-  <!-- <link rel="stylesheet" href="/css/responsive.css" /> -->
+  <link rel="stylesheet" href="/css/responsive.css" />
   <link rel="stylesheet" href="/css/lightslider.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -29,7 +29,7 @@
       });
     });
     $(document).ready(function () {
-      var industrySlider = $("#industrySlider").lightSlider({
+      $("#industrySlider").lightSlider({
         adaptiveHeight: false,
         item: 1,
         slideMove: 1,
@@ -39,14 +39,8 @@
         pager: false,
         rtl: false,
         mode: 'slide',
-        control: false,
+        control: false
       });
-       $("#goToPrevSlideIndustry").on("click", function () {
-          industrySlider.goToPrevSlide();
-        });
-        $("#goToNextSlideIndustry").on("click", function () {
-          industrySlider.goToNextSlide();
-        });
     });
     $(function() {
   $('a[href*=#]').on('click', function(e) {
@@ -89,9 +83,8 @@
                   <div class="industry-border-3"></div>
                 </div>
               </div>
-              <div class="industry-right" style="display: block;">
-                <div style="display: flex; align-items: center;"><button id="goToPrevSlideIndustry">prev</button>
-                <ul id="industrySlider" style="display: flex;justify-content: center;">
+              <div class="industry-right">
+                <ul id="industrySlider">
                   <li class="industry-item">
                     <h2>Revolution in Gaming Industry</h1>
                       <p>
@@ -106,7 +99,7 @@
                         another.
                       </p>
                   </li>
-                  <li class="industry-item">
+                  <!-- <li class="industry-item">
                     <h2>Revolution in Gaming Industry</h1>
                       <p>
                         Started my contribution with the gaming Industry where
@@ -119,9 +112,8 @@
                         play, learn & share their gaming experience to one
                         another.
                       </p>
-                  </li>
+                  </li> -->
                 </ul>
-                <button id="goToNextSlideIndustry">next</button></div>
                 
               </div>
             </div>
@@ -350,7 +342,7 @@
           
       </section>
 
-      <!-- Agenda section -->
+
       <section>
         <div class="">
           <div class="contact-top section-container"></div>
