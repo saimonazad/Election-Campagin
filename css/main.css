@@ -127,7 +127,7 @@ body {
 #industrySlider {
 }
 .lSAction > .lSPrev {
-  background-image: url("../img/left-button.png") !important;
+  background-image: url("../img/left-.button.png") !important;
   background-repeat: no-repeat;
 }
 .lSAction > a {
@@ -144,7 +144,7 @@ body {
   transition: opacity 0.35s linear 0s;
 }
 .lSAction > .lSNext {
-  background-image: url("../img/right-button.png") !important;
+  background-image: url("../img/right-.button.png") !important;
   background-repeat: no-repeat;
   background-position: -32px 0;
   background-size: 100%;
@@ -317,8 +317,9 @@ body {
   margin: 0 auto;
   color: #fff;
   margin-top: 40px;
+  margin-bottom: 30px;
 }
-.member-details button {
+.button {
   background: linear-gradient(
     98.69deg,
     #0f4b91 8.62%,
@@ -326,9 +327,10 @@ body {
     #4e97f8 99.1%
   );
   border-radius: 4px;
-  padding: 20px 60px;
-  margin-top: 40px;
+  padding: 10px 30px;
+  margin-top: 20px;
   color: #fff;
+  text-decoration: none;
   border: none;
   cursor: pointer;
   font-size: 16px;
@@ -439,7 +441,7 @@ input[type="submit"] {
   font-size: 15px;
   line-height: 27px;
 }
-.up-button {
+.up-.button {
   /* position: absolute; */
   display: flex;
   justify-content: flex-end;
@@ -448,7 +450,7 @@ input[type="submit"] {
   margin-right: 50px;
   z-index: 2;
 }
-.up-button > img {
+.up-.button > img {
   width: 71.62px;
   height: 71.98px;
 }
@@ -461,8 +463,8 @@ textarea {
   border-radius: 4px;
   background-color: #f8f8f8;
   color: rgba(83, 83, 83, 0.8);
-  line-height: 23.29px;
-  font-size: 18px;
+  line-height: 20.29px;
+  font-size: 15px;
   resize: none;
 }
 /********************   profile    *****************/
