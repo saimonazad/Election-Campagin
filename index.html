@@ -29,7 +29,7 @@
       });
     });
     $(document).ready(function () {
-      $("#industrySlider").lightSlider({
+      var industrySlider = $("#industrySlider").lightSlider({
         adaptiveHeight: false,
         item: 1,
         slideMove: 1,
@@ -39,8 +39,14 @@
         pager: false,
         rtl: false,
         mode: 'slide',
-        control: false
+        control: false,
       });
+       $("#goToPrevSlideIndustry").on("click", function () {
+          industrySlider.goToPrevSlide();
+        });
+        $("#goToNextSlideIndustry").on("click", function () {
+          industrySlider.goToNextSlide();
+        });
     });
     $(function() {
   $('a[href*=#]').on('click', function(e) {
@@ -83,8 +89,9 @@
                   <div class="industry-border-3"></div>
                 </div>
               </div>
-              <div class="industry-right">
-                <ul id="industrySlider">
+              <div class="industry-right" style="display: block;">
+                <div style="display: flex; align-items: center;"><button id="goToPrevSlideIndustry">prev</button>
+                <ul id="industrySlider" style="display: flex;justify-content: center;">
                   <li class="industry-item">
                     <h2>Revolution in Gaming Industry</h1>
                       <p>
@@ -99,7 +106,7 @@
                         another.
                       </p>
                   </li>
-                  <!-- <li class="industry-item">
+                  <li class="industry-item">
                     <h2>Revolution in Gaming Industry</h1>
                       <p>
                         Started my contribution with the gaming Industry where
@@ -112,8 +119,9 @@
                         play, learn & share their gaming experience to one
                         another.
                       </p>
-                  </li> -->
+                  </li>
                 </ul>
+                <button id="goToNextSlideIndustry">next</button></div>
                 
               </div>
             </div>
