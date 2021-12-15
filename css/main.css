@@ -476,9 +476,10 @@ textarea {
   height: 150vh;
 }
 .backBtn {
+  text-decoration: none;
   background: transparent;
   border-radius: 4px;
-  padding: 20px 60px;
+  padding: 10px 30px;
   margin-top: 30px;
   color: #fff;
   border: none;
@@ -487,6 +488,7 @@ textarea {
   font-weight: 500;
   border: 2px solid white;
   float: right;
+  margin-right: 20px;
 }
 .profile-section {
   clear: both;
