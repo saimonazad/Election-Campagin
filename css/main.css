@@ -119,11 +119,36 @@ body {
 }
 #industrySlider {
 }
+.lSAction > .lSPrev {
+  background-image: url("../img/left-button.png") !important;
+  background-repeat: no-repeat;
+}
+.lSAction > a {
+  width: 73px !important;
+  display: block;
+  top: 50%;
+  height: 70px !important;
+  cursor: pointer;
+  position: absolute;
+  z-index: 99;
+  margin-top: -16px;
+  opacity: 0.5;
+  -webkit-transition: opacity 0.35s linear 0s;
+  transition: opacity 0.35s linear 0s;
+}
+.lSAction > .lSNext {
+  background-image: url("../img/right-button.png") !important;
+  background-repeat: no-repeat;
+  background-position: -32px 0;
+  background-size: 100%;
+  right: 10px;
+}
 .industry-item {
   background-color: white;
   box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.1);
   padding: 30px 40px;
-  border-radius: 15%;
+  border-radius: 8px;
+  margin-left: 20px;
 }
 .industry-item h2 {
   font-family: "PT Sans", sans-serif;
