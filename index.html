@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="/css/main.css" />
-  <link rel="stylesheet" href="/css/responsive.css" />
+  <!-- <link rel="stylesheet" href="/css/responsive.css" /> -->
   <link rel="stylesheet" href="/css/lightslider.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -42,20 +42,46 @@
         control: false
       });
     });
+    $('.center').slick({
+  centerMode: true,
+  centerPadding: '60px',
+  slidesToShow: 3,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ]
+});
   </script>
 </head>
 
 <body>
   <main>
-    <div class="">
-      <header class="header">
+    <div class="" id="top">
+      <header class="header section-container">
         <div class="header-body">
           <img src="/img/heroBanner.png" alt="" />
         </div>
+        <a class="header-scroll" href="#brand"><img src="/img/scroll-btn.png" class="scroll-btn" alt=""  /></a>
       </header>
 
-      <section class="">
-        <div class="brand ">
+      <section >
+        <div class="brand" id="brand">
           <div class="our-brand-img">
             <img src="/img/Basis Logo 1.png" alt="" />
             <img src="/img/One Team Logo 1.png" alt="" />
@@ -64,7 +90,7 @@
       </section>
 
       <!-- industry section-->
-      <section >
+      <section>
         <div class="our-industry">
           <div class="section-container">
             <div class="our-industry-body">
@@ -92,7 +118,7 @@
                         another.
                       </p>
                   </li>
-                  <li class="industry-item">
+                  <!-- <li class="industry-item">
                     <h2>Revolution in Gaming Industry</h1>
                       <p>
                         Started my contribution with the gaming Industry where
@@ -105,7 +131,7 @@
                         play, learn & share their gaming experience to one
                         another.
                       </p>
-                  </li>
+                  </li> -->
                 </ul>
               </div>
             </div>
@@ -114,7 +140,7 @@
       </section>
 
       <!-- Agenda section -->
-      <section>
+      <section class="section-container">
         <div class="agenda-section">
           <div class="agenda-top"></div>
           <div class="agenda-body">
@@ -122,7 +148,9 @@
               <img src="/img/bd-map-illustration.png" alt="" />
             </div>
             <div class="agenda-right">
-              <h1>test</h1>
+              <div></div>
+              <div></div>
+              <div></div>
             </div>
           </div>
           <div class="agenda-border">
@@ -287,73 +315,85 @@
                 </div>
               </div>
             </div>
-            <div class="members">
-              <div style="margin-top:2rem">
-                <h2>Associate</h2>
-                <div class="member-img">
-                  <img src="/img/member1.png" alt="" srcset="" />
-                </div>
-                <div class="member-details">
-                  <div>
-                    <h2>Tanvir Hassain Khan</h2>
-                    <h4>CEO, Dreamerz Lab Limited</h4>
-                    <h3>ONE TEAM</h3>
-                    <div class="ballot">Ballot No:</div>
-                    <button type="button">Learn More</button>
-                  </div>
-                </div>
-              </div>
-              <div style="margin-top:2rem">
-                <h2>Affiliate</h2>
-                <div class="member-img">
-                  <img src="/img/member1.png" alt="" srcset="" />
-                </div>
-                <div class="member-details">
-                  <div>
-                    <h2>Tanvir Hassain Khan</h2>
-                    <h4>CEO, Dreamerz Lab Limited</h4>
-                    <h3>ONE TEAM</h3>
-                    <div class="ballot">Ballot No:</div>
-                    <button type="button">Learn More</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
           </div>
-        </div>
+          <div class="members2">
+            <div class="members-body">
+              <h2 style="text-align: center;">Associate</h2>
+              <div class="members">
+                <div>
+                  <div class="member-img">
+                    <img src="/img/member1.png" alt="" srcset="" />
+                  </div>
+                  <div class="member-details">
+                    <div>
+                      <h2>Tanvir Hassain Khan</h2>
+                      <h4>CEO, Dreamerz Lab Limited</h4>
+                      <h3>ONE TEAM</h3>
+                      <div class="ballot">Ballot No:</div>
+                      <button type="button">Learn More</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+            <div class="members-body">
+              <h2 style="text-align: center;">Affiliate</h2>
+              <div class="members">
+                <div>
+                  <div class="member-img">
+                    <img src="/img/member1.png" alt="" srcset="" />
+                  </div>
+                  <div class="member-details">
+                    <div>
+                      <h2>Tanvir Hassain Khan</h2>
+                      <h4>CEO, Dreamerz Lab Limited</h4>
+                      <h3>ONE TEAM</h3>
+                      <div class="ballot">Ballot No:</div>
+                      <button type="button">Learn More</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+          </div>
+          
       </section>
 
       <!-- Agenda section -->
       <section>
-        <div class="">
-          <div class="contact-top section-container"></div>
+        <div class="section-container">
+          <div class="contact-top "></div>
           <div class="contact-body">
             <div class="contact-column">
+              <div>
                 <div class="contact-left">
                   <img src="/img/footer-left.png" alt="" srcset="">
                 </div>
-                <div class="contact-right">
-                  <div class="contact-form-top">
-                    <div class="contact-border"></div>
-                    <p>DROP MESSAGE</p>
-                    <p class="contact-title">We Are Very Exited To Talk With You</p>
+              </div>
+              <div class="contact-content">
+                <div class="contact-form-top">
+                  <div class="contact-border"></div>
+                  <p>DROP MESSAGE</p>
+                  <p class="contact-title">We Are Very Exited To Talk With You</p>
+                </div>
+                <form action="" class="form-content">
+                  <div class="form-left">
+                    <input type="text" name="" id="" placeholder="Name">
+                    <input type="text" name="" id="" placeholder="Email">
+                    <input type="text" name="" id="" placeholder="Phone Number">
                   </div>
-                  <form action="" class="form-content">
-                    <div class="form-left">
-                      <input type="text" name="" id="" placeholder="Name">
-                      <input type="text" name="" id="" placeholder="Email">
-                      <input type="text" name="" id="" placeholder="Phone Number">
-                    </div>
-                    <div class="form-right">
-                      <textarea name="" id="" cols="40" rows="10">Tell us what we can do for you</textarea>
-                      <input type="submit" value="Submit">
-                    </div>
-                  </form>
-               
+                  <div class="form-right">
+                    <textarea name="" id="" cols="40" rows="10">Tell us what we can do for you</textarea>
+                    <input type="submit" value="Submit">
+                  </div>
+                </form> 
               </div>
             </div>
+            <a href="#top" class="up-button">
+              <img src="/img/up-button.png" alt="" srcset="">
+            </a>
             </div>
+            
           </div>
         </div>
       </section>
