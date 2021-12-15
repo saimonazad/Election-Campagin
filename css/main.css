@@ -18,6 +18,7 @@ body {
   padding: 0 20px;
   margin-top: 20px;
   margin-bottom: 100px;
+  height: auto;
 }
 .header {
   background-image: url("../img/heroBg.png");
@@ -42,7 +43,7 @@ body {
   max-width: 800px;
 }
 .header-scroll {
-  display: flex;
+  display: inline-block;
   position: relative;
   padding-top: 380px;
   padding-left: 80px;
@@ -232,7 +233,9 @@ body {
   margin: 0 auto;
   padding: 0 10%;
 }
-
+#lightSlider {
+  height: 80vh !important;
+}
 .members-top {
   margin-top: 10px;
   background-image: url("../img/our-panel-member-text.png");
@@ -316,7 +319,7 @@ body {
   width: 100px;
   margin: 0 auto;
   color: #fff;
-  margin-top: 40px;
+  margin-top: 30px;
   margin-bottom: 30px;
 }
 .button {
@@ -441,7 +444,7 @@ input[type="submit"] {
   font-size: 15px;
   line-height: 27px;
 }
-.up-.button {
+.up-button {
   /* position: absolute; */
   display: flex;
   justify-content: flex-end;
@@ -450,7 +453,7 @@ input[type="submit"] {
   margin-right: 50px;
   z-index: 2;
 }
-.up-.button > img {
+.up-button > img {
   width: 71.62px;
   height: 71.98px;
 }
@@ -508,7 +511,25 @@ textarea {
 .sliderBtn {
   text-align: center;
 }
+.sliderBtn > button {
+  margin: 0 auto;
+  border: none !important;
+  background: linear-gradient(
+    98.69deg,
+    #0f4b91 8.62%,
+    #1772eb 59.17%,
+    #4e97f8 99.1%
+  );
+  padding: 10px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.sliderBtn > button > img {
+  width: 100%;
+}
 #memberSlider {
+  margin-bottom: 10px;
+  height: 541px !important;
 }
 .profile-content {
   text-align: center;
