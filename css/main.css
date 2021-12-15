@@ -552,3 +552,36 @@ textarea {
 .agenda-card img {
   width: 100%;
 }
+.card {
+  width: 436px;
+  height: 378px;
+  background-color: white;
+  filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.18));
+  padding: 15px;
+  border-radius: 20px;
+  margin: 15px;
+  text-align: center;
+}
+.card > button {
+  border: none;
+  position: absolute;
+  width: 129px;
+  height: 31px;
+  left: 118px;
+  top: 0px;
+  text-align: center;
+  background: linear-gradient(180deg, #079cff 0%, #3366ff 100%);
+  box-shadow: -4px -4px 16px rgba(255, 255, 255, 0.6),
+    4px 4px 16px rgba(51, 102, 255, 0.42);
+  border-radius: 15px 15px 0px 0px;
+  font-family: PT Serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 20px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #e7eeff;
+}
