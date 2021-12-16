@@ -20,7 +20,7 @@
   .our-industry {
     z-index: 2;
     height: 100vh;
-    margin-top: -200px;
+    margin-top: -80px;
   }
   .our-industry-body {
     display: flex;
@@ -263,7 +263,7 @@
   }
   .our-industry {
     height: 100vh;
-    margin-top: -200px;
+    margin-top: -20px;
   }
   .section-container {
     margin: 0px;
