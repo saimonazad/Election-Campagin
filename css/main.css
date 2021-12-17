@@ -19,13 +19,23 @@ body {
   margin-top: 20px;
   margin-bottom: 100px;
   height: auto;
+  text-align: center;
 }
+.others-member-title {
+  margin-top: 100px;
+  margin-bottom: 60px;
+  text-align: center;
+  font-family: "PT Sans", sans-serif;
+  font-size: 25px;
+  color: #2f80ed;
+}
+
 .header {
   background-image: url("../img/heroBg.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 110vh;
+  height: 140vh;
 }
 
 .header-body {
@@ -319,7 +329,7 @@ body {
   width: 100px;
   margin: 0 auto;
   color: #fff;
-  margin-top: 30px;
+  margin-top: 20px;
   margin-bottom: 30px;
 }
 .button {
@@ -476,7 +486,7 @@ textarea {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
-  height: 150vh;
+  height: 155vh;
 }
 .backBtn {
   text-decoration: none;
@@ -497,11 +507,14 @@ textarea {
   clear: both;
   display: flex;
   justify-content: space-between;
+  align-items: stretch;
   padding-top: 50px;
 }
 
 .profile-section img {
-  width: 600px;
+  width: 100%;
+  /* height: 100%; */
+  margin-top: -15px !important;
 }
 
 .li_member {
@@ -533,42 +546,48 @@ textarea {
 }
 .profile-content {
   text-align: center;
-  position: absolute;
   z-index: 22;
-  padding: 20px;
+  padding: 5px;
   line-height: 5px;
-  margin-left: 120px;
-  margin-top: -80px;
+  background-image: url("/img/mid-card-section.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  height: 600px;
+  margin-top: -70px;
+  width: 400px;
 }
 .bio-card img {
   width: 100%;
 }
-.profile-card img {
-  width: 100%;
-  position: relative;
-  z-index: 0;
-  margin-top: -80px;
-}
+
 .agenda-card img {
   width: 100%;
 }
 .card {
-  width: 436px;
-  height: 378px;
+  width: 40%;
+  height: 82vh;
   background-color: white;
   filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.18));
   padding: 15px;
   border-radius: 20px;
   margin: 15px;
   text-align: center;
+  overflow: auto;
+  /* display: flex;
+  justify-content: center;
+  flex-direction: column; */
 }
-.card > button {
+.card > div {
   border: none;
-  position: absolute;
+  /* position: fixed; */
   width: 129px;
-  height: 31px;
-  left: 118px;
-  top: 0px;
+  margin: 0 auto;
+  padding: 5px;
+  /* height: 31px; */
+  /* left: auto;
+   */
+  margin-top: -18px;
   text-align: center;
   background: linear-gradient(180deg, #079cff 0%, #3366ff 100%);
   box-shadow: -4px -4px 16px rgba(255, 255, 255, 0.6),
@@ -579,7 +598,6 @@ textarea {
   font-weight: bold;
   font-size: 15px;
   line-height: 20px;
-  /* identical to box height */
 
   text-align: center;
 
@@ -654,4 +672,27 @@ textarea {
     margin-top: 50px;
     margin-bottom: 50px;
   }
+.card > p {
+  color: rgba(73, 70, 71, 0.81);
+  font-family: PT Serif;
+  font-size: 17px;
+  line-height: 24.5px;
+  font-weight: 700;
+}
+
+.headerFooter {
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* font-weight: 700; */
+  /* font-size: 20px; */
+  line-height: 0px;
+  margin-top: 20px;
+}
+.headerFooter > p {
+  margin-left: 20%;
+  color: rgba(26, 23, 23, 0.83);
+  font-weight: 700;
 }
