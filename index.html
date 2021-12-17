@@ -27,8 +27,25 @@
         slideMargin: 0,
         thumbItem: 5,
       });
-    });
-    $(document).ready(function () {
+
+
+      var agendaSlider = $("#agendaSlider").lightSlider({
+        adaptiveHeight: false,
+        item: 2,
+        slideMove: 1,
+        slideMargin: 12,
+        loop: false,
+        autoWidth: false,
+        pager: false,
+        control: false
+      });
+      $("#agendaPrevSlider").on("click", function () {
+        agendaSlider.goToPrevSlide();
+      });
+      $("#agendaNextSlider").on("click", function () {
+        agendaSlider.goToNextSlide();
+      });
+
       var industrySLider = $("#industrySlider").lightSlider({
         adaptiveHeight: false,
         item: 1,
@@ -48,6 +65,7 @@
         industrySLider.goToNextSlide();
       });
     });
+
     $(function () {
       $('a[href*=#]').on('click', function (e) {
         e.preventDefault();
@@ -305,16 +323,43 @@
               <img src="/img/bd-map-illustration.png" alt="" />
             </div>
             <div class="agenda-right">
-              <div></div>
-              <div></div>
-              <div></div>
+              <ul id="agendaSlider" style="display: flex;">
+                <li class="agendaItem">
+                  <h2>Pioneer in XR Industry</h1>
+                    <p>
+                      Started my contribution with the gaming Industry where I started a revolution with back k a
+                      stereotype in our industry
+                      is that gaming is just a form of entertainment, Its can not be a career. In this event I tried er.
+                    </p>
+                </li>
+                <li class="agendaItem">
+                  <h2>Pioneer in XR Industry 1</h1>
+                    <p>
+                      Started my contribution with the gaming Industry where I started a revolution with back k a
+                      stereotype in our industry
+                      is that gaming is just a form of entertainment, Its can not be a career. In this event I tried er.
+                    </p>
+                </li>
+                <li class="agendaItem">
+                  <h2>Pioneer in XR Industry 1</h1>
+                    <p>
+                      Started my contribution with the gaming Industry where I started a revolution with back k a
+                      stereotype in our industry
+                      is that gaming is just a form of entertainment, Its can not be a career. In this event I tried er.
+                    </p>
+                </li>
+              </ul>
+              <div style="text-align: center;">
+                <button id="agendaPrevSlider" class="agendaBtn">&#8592;</button>
+                <button id="agendaNextSlider" class="agendaBtn">&#8594;</button>
+              </div>
             </div>
           </div>
-          <div class="agenda-border">
+          <!-- <div class="agenda-border">
             <div class="agenda-border-1"></div>
             <div class="agenda-border-2"></div>
             <div class="agenda-border-3"></div>
-          </div>
+          </div> -->
         </div>
       </section>
 
