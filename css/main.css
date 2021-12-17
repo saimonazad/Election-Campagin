@@ -577,13 +577,13 @@ textarea {
 }
 .profile-brand {
   display: flex;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
   margin-top: 50px;
 }
 .profile-brand img {
-  width: 30%;
-  margin-left: 10px;
+  width: 26%;
+  margin-left: 15px;
 }
 
 .card {
