@@ -4,7 +4,6 @@
   }
   .header-body > img {
     width: 80%;
-    margin-top: -80px;
   }
   .brand {
     height: 30vh;
@@ -231,11 +230,13 @@
     margin-top: -60px;
   }
   .header {
-    height: 100vh;
+    height: 55vh;
+  }
+  .header-body {
+    top: 25%;
   }
   .header-body > img {
     width: 80%;
-    margin-top: -80px;
   }
   .brand {
     border-radius: 100px 100px 0px 0px;
@@ -291,8 +292,7 @@
     margin-top: 20px;
   }
   .header-scroll {
-    padding-top: 190px;
-    padding-left: 40px;
+    top: 35%;
   }
   .scroll-btn {
     width: auto;
