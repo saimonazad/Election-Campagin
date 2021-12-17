@@ -2,6 +2,8 @@ body {
   padding: 0px;
   margin: 0px;
 }
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&family=Poppins:ital,wght@1,500&display=swap");
 /* html {
   scroll-behavior: smooth;
 } */
@@ -29,11 +31,14 @@ body {
   margin-top: 100px;
   margin-bottom: 60px;
   text-align: center;
-  font-family: "PT Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
   font-size: 25px;
   color: #2f80ed;
 }
-
+h2 {
+  font-family: "PT Serif", serif;
+}
 .header {
   background-image: url("../img/heroBg.png");
   background-repeat: no-repeat;
@@ -166,7 +171,9 @@ body {
   -webkit-transition: opacity 0.35s linear 0s;
   transition: opacity 0.35s linear 0s;
 }
-
+.section-inner-container .lSAction > a {
+  display: none !important;
+}
 .industry-item {
   background-color: white;
   box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.1);
@@ -576,7 +583,22 @@ textarea {
   /* height: 100%; */
   margin-top: -15px !important;
 }
-
+.trapezoid-bio {
+  position: relative;
+  text-align: center;
+  color: white;
+  width: 190px;
+  margin: 0 auto;
+  margin-top: -15px;
+}
+.card-title {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 700;
+  font-size: 15px;
+}
 .li_member {
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.18);
   border-radius: 10px;
@@ -586,45 +608,62 @@ textarea {
   font-size: 18px !important;
   line-height: 25px;
 }
-.sliderBtn {
+
+.sliderBtn > p {
   text-align: center;
+  display: inline-block;
+  padding: 10px;
+  position: relative;
 }
-.sliderBtn > button {
+.sliderBtn {
+  margin-top: -100px;
+}
+.sliderBtn > #goToPrevSlide {
   margin: 0 auto;
   border: none !important;
-  background: linear-gradient(
+  width: 76px;
+  position: relative;
+  top: 50%;
+  /* background: linear-gradient(
     98.69deg,
     #0f4b91 8.62%,
     #1772eb 59.17%,
     #4e97f8 99.1%
   );
   padding: 10px;
-  border-radius: 15px;
+  border-radius: 15px; */
   cursor: pointer;
 }
+
+.sliderBtn > #goToNextSlide {
+  margin: 0 auto;
+  border: none !important;
+  margin-bottom: 50px;
+  position: relative;
+  top: -32px;
+  cursor: pointer;
+}
+
 .sliderBtn > button > img {
   width: 100%;
 }
 #memberSlider {
-  margin-bottom: 20px;
+  margin-bottom: 1px;
   height: 580px !important;
 }
 .profile-content {
   text-align: center;
-
-  /* z-index: 22;
-  padding: 5px;
-  line-height: 5px;
-  background-image: url("/img/mid-card-section.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100% 100%;
-  height: 600px;
-  margin-top: -50px;
-  width: 400px; */
 }
 .profile-content img {
   width: 100%;
+}
+.profile-content h2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 22px;
+  text-align: center;
+  color: rgba(78, 78, 78, 0.9022);
 }
 .profile-brand {
   display: flex;
@@ -640,50 +679,36 @@ textarea {
 
 .card {
   width: 40%;
-  height: 480px;
+  height: 510px;
   background-color: white;
-  filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.18));
   padding: 15px;
   border-radius: 20px;
   margin: 15px;
   text-align: center;
-  overflow: auto;
-  /* display: flex;
-  justify-content: center;
-  flex-direction: column; */
+  position: relative;
+  overflow: hidden;
 }
+.card-content {
+  position: relative;
+  overflow: auto;
+  height: 480px;
+  padding: 10px;
+  font-family: PT Serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
 
+  color: rgba(73, 70, 71, 0.8103);
+}
 .profile-card {
   /* height: 600px; */
   height: auto;
   text-align: center;
 }
-.card > .card-title {
-  border: none;
-  /* position: fixed; */
-  width: 129px;
-  margin: 0 auto;
-  padding: 5px;
-  /* height: 31px; */
-  /* left: auto;
-   */
-  margin-top: -18px;
-  text-align: center;
-  background: linear-gradient(180deg, #079cff 0%, #3366ff 100%);
-  box-shadow: -4px -4px 16px rgba(255, 255, 255, 0.6),
-    4px 4px 16px rgba(51, 102, 255, 0.42);
-  border-radius: 15px 15px 0px 0px;
-  font-family: PT Serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 15px;
-  line-height: 20px;
-
-  text-align: center;
-
-  color: #e7eeff;
+.card > {
 }
-
 .agendaItem {
   background: linear-gradient(180deg, #3c454a 0%, #003c8c 100%);
   color: white;
@@ -725,21 +750,23 @@ textarea {
   cursor: pointer;
   margin-right: 5px;
 }
-.card > p {
-  color: rgba(73, 70, 71, 0.81);
-  font-family: PT Serif;
-  font-size: 17px;
-  line-height: 24.5px;
-  font-weight: 700;
-}
+
 .card > ul {
-  list-style: square;
   text-align: left;
-  color: rgba(73, 70, 71, 0.81);
   font-family: PT Serif;
-  font-size: 17px;
-  line-height: 40.5px;
-  font-weight: 700;
+  list-style-type: none !important;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgba(73, 70, 71, 0.81);
+  margin-bottom: 1rem;
+  background: url("/img/list.png") no-repeat left center;
+  padding: 0px 0 3px 24px;
+}
+
+.card > ul > li {
+  padding-left: 10px;
 }
 
 .headerFooter {

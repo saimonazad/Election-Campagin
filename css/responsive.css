@@ -208,8 +208,17 @@
     background-size: cover;
     height: auto;
   }
-  .li_member h2 {
-    font-size: 15px;
+  .li_member {
+    height: 300px;
+  }
+  .li_member .member-img {
+    height: auto;
+  }
+  .li_member .member-details {
+    /* margin-top: auto; */
+  }
+  .li_member .member-details h2 {
+    font-size: 5px;
   }
   .li_member h2 {
     height: auto;
@@ -219,6 +228,11 @@
   }
   .li_member h4 {
     font-size: 10px;
+  }
+  .card > ul {
+    font-size: 10px;
+    background: url("/img/list.png") no-repeat left center;
+    line-height: 25px;
   }
 }
 
@@ -432,28 +446,32 @@
   .profile-card {
     height: auto;
   }
+
   .card-img {
     width: 100%;
   }
   .profile-content {
     text-align: center;
     line-height: 5px;
+  }
+  .profile-content h2 {
+    font-size: 15px;
+  }
+  .profile-content h4 {
     font-size: 12px;
-    /* z-index: 22;
-    padding: 5px;
-    line-height: 5px;
-    background-image: url("/img/mid-card-section.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% 100%;
-    height: 600px;
-    margin-top: -50px;
-    width: 400px; */
   }
   .profile-content img {
     width: 100%;
   }
   .li_member {
     height: 80%;
+  }
+
+  .card > ul {
+    font-size: 12px;
+    background: url("/img/list.png") no-repeat left top;
+  }
+  .card > ul > li {
+    padding-left: 10px;
   }
 }
