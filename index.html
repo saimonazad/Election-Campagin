@@ -29,7 +29,7 @@
       });
     });
     $(document).ready(function () {
-      $("#industrySlider").lightSlider({
+      var industrySLider = $("#industrySlider").lightSlider({
         adaptiveHeight: false,
         item: 1,
         slideMove: 1,
@@ -41,13 +41,19 @@
         mode: 'slide',
         control: false
       });
+      $("#industryPrevSlide").on("click", function () {
+        industrySLider.goToPrevSlide();
+      });
+      $("#industryNextSlide").on("click", function () {
+        industrySLider.goToNextSlide();
+      });
     });
-    $(function() {
-  $('a[href*=#]').on('click', function(e) {
-    e.preventDefault();
-    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 1500, 'linear');
-  });
-});
+    $(function () {
+      $('a[href*=#]').on('click', function (e) {
+        e.preventDefault();
+        $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top }, 1500, 'linear');
+      });
+    });
   </script>
 </head>
 
@@ -58,10 +64,10 @@
         <div class="header-body">
           <img src="/img/heroBanner.png" alt="" />
         </div>
-        <a class="header-scroll" href="#brand"><img src="/img/scroll-btn.png" class="scroll-btn" alt=""  /></a>
+        <a class="header-scroll" href="#brand"><img src="/img/scroll-btn.png" class="scroll-btn" alt="" /></a>
       </header>
 
-      <section >
+      <section>
         <div class="brand" id="brand">
           <div class="our-brand-img">
             <img src="/img/Basis Logo 1.png" alt="" />
@@ -72,7 +78,7 @@
 
       <!-- panel members section -->
       <section>
-        <div class="members-section section-container" >
+        <div class="members-section section-container">
           <div class="members-top"></div>
           <div class="members-body" id="panel">
             <h2>General Category</h2>
@@ -87,7 +93,7 @@
                     <h4>CEO, Dreamerz Lab Limited</h4>
                     <h3>ONE TEAM</h3>
                     <div class="ballot">Ballot No:</div>
-                     <a class="button" href="/profile/tanvir.html">Learn More</a>
+                    <a class="button" href="/profile/tanvir.html">Learn More</a>
                   </div>
                 </div>
               </div>
@@ -101,7 +107,7 @@
                     <h4>CEO, Dreamerz Lab Limited</h4>
                     <h3>ONE TEAM</h3>
                     <div class="ballot">Ballot No:</div>
-                     <a class="button" href="/profile/tanvir.html">Learn More</a>
+                    <a class="button" href="/profile/tanvir.html">Learn More</a>
                   </div>
                 </div>
               </div>
@@ -115,7 +121,7 @@
                     <h4>CEO, Dreamerz Lab Limited</h4>
                     <h3>ONE TEAM</h3>
                     <div class="ballot">Ballot No:</div>
-                     <a class="button" href="/profile/tanvir.html">Learn More</a>
+                    <a class="button" href="/profile/tanvir.html">Learn More</a>
                   </div>
                 </div>
               </div>
@@ -129,7 +135,7 @@
                     <h4>CEO, Dreamerz Lab Limited</h4>
                     <h3>ONE TEAM</h3>
                     <div class="ballot">Ballot No:</div>
-                     <a class="button" href="/profile/tanvir.html">Learn More</a>
+                    <a class="button" href="/profile/tanvir.html">Learn More</a>
                   </div>
                 </div>
               </div>
@@ -143,7 +149,7 @@
                     <h4>CEO, Dreamerz Lab Limited</h4>
                     <h3>ONE TEAM</h3>
                     <div class="ballot">Ballot No:</div>
-                     <a class="button" href="/profile/tanvir.html">Learn More</a>
+                    <a class="button" href="/profile/tanvir.html">Learn More</a>
                   </div>
                 </div>
               </div>
@@ -157,7 +163,7 @@
                     <h4>CEO, Dreamerz Lab Limited</h4>
                     <h3>ONE TEAM</h3>
                     <div class="ballot">Ballot No:</div>
-                     <a class="button" href="/profile/tanvir.html">Learn More</a>
+                    <a class="button" href="/profile/tanvir.html">Learn More</a>
                   </div>
                 </div>
               </div>
@@ -171,7 +177,7 @@
                     <h4>CEO, Dreamerz Lab Limited</h4>
                     <h3>ONE TEAM</h3>
                     <div class="ballot">Ballot No:</div>
-                     <a class="button" href="/profile/tanvir.html">Learn More</a>
+                    <a class="button" href="/profile/tanvir.html">Learn More</a>
                   </div>
                 </div>
               </div>
@@ -205,12 +211,12 @@
                       <h4>CEO, Dreamerz Lab Limited</h4>
                       <h3>ONE TEAM</h3>
                       <div class="ballot">Ballot No:</div>
-                       <a class="button" href="/profile/tanvir.html">Learn More</a>
+                      <a class="button" href="/profile/tanvir.html">Learn More</a>
                     </div>
                   </div>
                 </div>
+              </div>
             </div>
-          </div>
             <div class="members-body">
               <h2 style="text-align: center;">Affiliate</h2>
               <div class="members">
@@ -224,13 +230,13 @@
                       <h4>CEO, Dreamerz Lab Limited</h4>
                       <h3>ONE TEAM</h3>
                       <div class="ballot">Ballot No:</div>
-                       <a class="button" href="/profile/tanvir.html">Learn More</a>
+                      <a class="button" href="/profile/tanvir.html">Learn More</a>
                     </div>
                   </div>
                 </div>
+              </div>
             </div>
           </div>
-          </div>  
       </section>
 
 
@@ -249,8 +255,10 @@
                   <div class="industry-border-3"></div>
                 </div>
               </div>
-              <div class="industry-right">
-                <ul id="industrySlider">
+              <div class="industry-right" style="display: flex; align-items: center;">
+                <button id="industryPrevSlide" type="button"
+                  style="border-radius: 50%;padding: 10px;font-size: 20px;cursor: pointer;border-color: white;">&#8592;</button>
+                <ul id="industrySlider" style="display: flex;">
                   <li class="industry-item">
                     <h2>Revolution in Gaming Industry</h1>
                       <p>
@@ -265,7 +273,7 @@
                         another.
                       </p>
                   </li>
-                  <!-- <li class="industry-item">
+                  <li class="industry-item">
                     <h2>Revolution in Gaming Industry</h1>
                       <p>
                         Started my contribution with the gaming Industry where
@@ -278,9 +286,10 @@
                         play, learn & share their gaming experience to one
                         another.
                       </p>
-                  </li> -->
+                  </li>
                 </ul>
-                
+                <button id="industryNextSlide" type="button"
+                  style="margin-left: 20px;border-radius: 50%;padding: 10px;font-size: 20px;cursor: pointer;border-color: white;">&#8594;</button>
               </div>
             </div>
           </div>
@@ -328,10 +337,8 @@
               <li data-thumb="/gallery/4.jpg">
                 <img src="/gallery/4.jpg" />
               </li>
-              <li
-                data-thumb="/gallery/5.jpg">
-                <img
-                  src="/gallery/5.jpg" />
+              <li data-thumb="/gallery/5.jpg">
+                <img src="/gallery/5.jpg" />
               </li>
               <li data-thumb="/gallery/6.jpg">
                 <img src="/gallery/6.jpg" />
@@ -344,7 +351,7 @@
         </div>
       </section>
 
-      
+
 
 
       <section>
@@ -373,17 +380,17 @@
                     <textarea name="" id="" cols="40" rows="10">Tell us what we can do for you</textarea>
                     <input type="submit" value="Submit">
                   </div>
-                </form> 
+                </form>
               </div>
             </div>
             <a href="#top" class="up-button">
               <img src="/img/up-button.png" alt="" srcset="">
             </a>
-            </div>
-            
           </div>
+
         </div>
-      </section>
+    </div>
+    </section>
     </div>
   </main>
 </body>

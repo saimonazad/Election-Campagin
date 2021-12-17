@@ -54,8 +54,8 @@ body {
 .brand {
   height: 230px;
   background-color: white;
-  border-radius: 160px 160px 0px 0px;
-  margin-top: -142px;
+  border-radius: 10rem 10rem 0 0;
+  margin-top: -13.75rem;
   z-index: 1;
 }
 .our-brand-img {
@@ -85,18 +85,20 @@ body {
   flex-direction: row;
   align-items: center;
   flex-shrink: 3;
-  padding: 20vh;
+  padding: 10rem;
 }
 .industry-left {
-  width: 40%;
+  width: 30%;
   color: #fff;
   display: flex;
   align-items: center;
   flex-direction: row;
+  margin-right: 40px;
 }
 .industry-left h2 {
   font-family: "PT Sans", sans-serif;
-  font-size: 45px;
+  font-size: 40px;
+  margin-right: 20px;
 }
 .industry-border {
   display: flex;
@@ -119,10 +121,9 @@ body {
   margin-right: 5px;
 }
 .industry-right {
-  width: 60%;
+  width: 70%;
   /* display: flex;
   align-items: center; */
-  margin-top: 60px;
 }
 #industrySlider {
 }
