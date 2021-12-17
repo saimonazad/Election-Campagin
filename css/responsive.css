@@ -1,12 +1,15 @@
 @media only screen and (max-width: 450px) {
   .header {
-    height: 80vh;
+    height: 60vh;
+  }
+  .header-body {
+    top: 20%;
   }
   .header-body > img {
     width: 80%;
   }
   .brand {
-    height: 30vh;
+    height: 15vh;
     border-radius: 80px 80px 0px 0px;
     margin-top: -162px;
   }
@@ -146,8 +149,8 @@
   }
 
   .header-scroll {
-    padding-top: 115px;
-    padding-left: 30px;
+    top: 30%;
+    left: 43%;
   }
   .scroll-btn {
     width: auto;
