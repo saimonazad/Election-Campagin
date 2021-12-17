@@ -307,7 +307,7 @@ body {
   /* z-index: 5; */
 }
 .member-details > div {
-  padding: 50px 30px;
+  padding: 25px 30px;
   text-align: center;
   line-height: 15px;
 }
@@ -334,7 +334,7 @@ body {
   margin: 0 auto;
   color: #fff;
   margin-top: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .button {
   background: linear-gradient(
@@ -345,13 +345,14 @@ body {
   );
   border-radius: 4px;
   padding: 10px 30px;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   color: #fff;
   text-decoration: none;
   border: none;
   cursor: pointer;
   font-size: 16px;
   font-weight: 500;
+  /* margin: 0 auto !important; */
 }
 .contact-section {
   margin-top: 100px;
@@ -575,6 +576,7 @@ textarea {
 }
 .profile-brand img {
   width: 30%;
+  margin-left: 10px;
 }
 
 .card {
