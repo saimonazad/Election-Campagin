@@ -477,4 +477,11 @@
   .card > ul > li {
     padding-left: 10px;
   }
+  .trapezoid-bio > img {
+    width: 120px;
+    font-size: 10px;
+  }
+  .trapezoid-bio {
+    font-size: 10px;
+  }
 }
