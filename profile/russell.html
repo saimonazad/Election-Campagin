@@ -1,88 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/main.css" />
-    <link rel="stylesheet" href="/css/responsive.css" />
 
-    <link rel="stylesheet" href="/css/lightslider.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Ubuntu&display=swap"
-      rel="stylesheet"
-    />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="/js/lightslider.js"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/main.css" />
+  <link rel="stylesheet" href="/css/responsive.css" />
 
-    <title>Test</title>
-    <script>
-      $(document).ready(function () {
-        var slider = $("#memberSlider").lightSlider({
-          adaptiveHeight: false,
-          item: 4,
-          slideMove: 1,
-          slideMargin: 20,
-          loop: true,
-          autoWidth: false,
-          pager: false,
-          rtl: false,
-          mode: "slide",
-          control: false,
-          responsive: [
-            {
-              breakpoint: 950,
-              settings: {
-                item: 3,
-                slideMove: 1,
-                slideMargin: 20,
-              },
+  <link rel="stylesheet" href="/css/lightslider.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Ubuntu&display=swap" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="/js/lightslider.js"></script>
+
+  <title>Test</title>
+  <script>
+    $(document).ready(function () {
+      var slider = $("#memberSlider").lightSlider({
+        adaptiveHeight: false,
+        item: 4,
+        slideMove: 1,
+        slideMargin: 20,
+        loop: true,
+        autoWidth: false,
+        pager: false,
+        rtl: false,
+        mode: "slide",
+        control: false,
+        responsive: [
+          {
+            breakpoint: 950,
+            settings: {
+              item: 3,
+              slideMove: 1,
+              slideMargin: 20,
             },
-            {
-              breakpoint: 480,
-              settings: {
-                item: 2,
-                slideMove: 1,
-              },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              item: 2,
+              slideMove: 1,
             },
-          ],
-        });
-        $("#goToPrevSlide").on("click", function () {
-          slider.goToPrevSlide();
-        });
-        $("#goToNextSlide").on("click", function () {
-          slider.goToNextSlide();
-        });
+          },
+        ],
       });
-    </script>
-  </head>
-  <body>
-    <main>
-      <div class="">
-        <header class="header-profile">
-          <a href="/index.html#panel" class="backBtn">Back</a>
-          <div class="profile-section">
-            <div class="card">
-              <!-- <img src="/img/bio-card.png" alt="" srcset="" /> -->
-              <div class="card-title">BIO</div>
-              <!-- <p style="margin-top:40px">Tanvir Hossain Khan began His professional journey in 2012 and has since worked on several companies and founded his own company Dreamerz Lab in 2015 which is the first company to commercially work with XR technologies in the global market from Bangladesh.</p>
+      $("#goToPrevSlide").on("click", function () {
+        slider.goToPrevSlide();
+      });
+      $("#goToNextSlide").on("click", function () {
+        slider.goToNextSlide();
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <main>
+    <div class="">
+      <header class="header-profile">
+        <a href="/index.html#panel" class="backBtn">Back</a>
+        <div class="profile-section">
+          <div class="card">
+            <!-- <img src="/img/bio-card.png" alt="" srcset="" /> -->
+            <div class="card-title">BIO</div>
+            <!-- <p style="margin-top:40px">Tanvir Hossain Khan began His professional journey in 2012 and has since worked on several companies and founded his own company Dreamerz Lab in 2015 which is the first company to commercially work with XR technologies in the global market from Bangladesh.</p>
               <p style="margin-top:20px">His vision is always to put industry first by empowering our industry with 4IR technologies especially with Augmented Reality, Virtual Reality, Mixed Reality</p>
               <p style="margin-top:20px">To achieve that vision, his belief is to collaborate and work together as a single unit so that we can prepare and represent ourselves in the global platform</p> -->
-            <p style="margin-top:20px">Russell T. Ahmed is the Founder & CEO of Team Creative, an EdTech Company. He has been involved with the ICT industry for the last 20 years and has a Master’s degree in Business Administration from IBA, University of Dhaka. With a primary vision to digitize the education sector of Bangladesh and offer sustainable business solutions, Mr. Ahmed has been a pioneer in empowering schools with technical solutions and easy access to education for all. He started his own venture, by launching a Comprehensive learning management system CLASSTUNE in 2015 and Champs21.com in 2010.
- 
-              Mr. Ahmed has served as Senior Vice President at Bangladesh Association of Software & Information Services (BASIS). During the term '2012-2018’, he owned the best of his abilities and served as the Secretary-General, Vice President and Senior Vice President to take the Association too few steps ahead. Among many successful initiatives of BASIS, "Digital World 2014" and "IT Marketing Summit" are two notable brand new events he managed and executed as Chief Project Officer and Convener respectively.
-               
-              Mr. Ahmed lead his team in launching the two most popular Education TV Reality Shows Spelling Bee, and Bangladesh 1st,  going to Channel I and MaasRanga TV respectively. Furthermore, he has worked with UNICEF and Telenor in a campaign called “Be Smart, Use Heart” in 2018 and 2019 which primarily focused on spreading internet safety among school-going children.
-               
-              Recently Mr. Ahmed has implemented a Government project, The ‘School of Future’ which is an extension of ‘Sheikh Russel Digital Lab Project (2nd Phase)-2021’ by establishing ClassTune as a LMS in more than 300 schools across Bangladesh.
-               
-              He served many large organizations with C-Level capacities such as Chief Marketing Officer at QUBEE, Chief Strategic Officer at Fiber@Home and Chief Operating Officer at Aamra Networks. Mr. Ahmed was elected Secretary-General of the Executive Committee of ISP Association of Bangladesh (ISPAB) for the term 2008-2009.
+            <p style="margin-top:20px">Russell T. Ahmed is the Founder & CEO of Team Creative, an EdTech Company. He has
+              been involved with the ICT industry for the last 20 years and has a Master’s degree in Business
+              Administration from IBA, University of Dhaka. With a primary vision to digitize the education sector of
+              Bangladesh and offer sustainable business solutions, Mr. Ahmed has been a pioneer in empowering schools
+              with technical solutions and easy access to education for all. He started his own venture, by launching a
+              Comprehensive learning management system CLASSTUNE in 2015 and Champs21.com in 2010.
+
+              Mr. Ahmed has served as Senior Vice President at Bangladesh Association of Software & Information Services
+              (BASIS). During the term '2012-2018’, he owned the best of his abilities and served as the
+              Secretary-General, Vice President and Senior Vice President to take the Association too few steps ahead.
+              Among many successful initiatives of BASIS, "Digital World 2014" and "IT Marketing Summit" are two notable
+              brand new events he managed and executed as Chief Project Officer and Convener respectively.
+
+              Mr. Ahmed lead his team in launching the two most popular Education TV Reality Shows Spelling Bee, and
+              Bangladesh 1st, going to Channel I and MaasRanga TV respectively. Furthermore, he has worked with UNICEF
+              and Telenor in a campaign called “Be Smart, Use Heart” in 2018 and 2019 which primarily focused on
+              spreading internet safety among school-going children.
+
+              Recently Mr. Ahmed has implemented a Government project, The ‘School of Future’ which is an extension of
+              ‘Sheikh Russel Digital Lab Project (2nd Phase)-2021’ by establishing ClassTune as a LMS in more than 300
+              schools across Bangladesh.
+
+              He served many large organizations with C-Level capacities such as Chief Marketing Officer at QUBEE, Chief
+              Strategic Officer at Fiber@Home and Chief Operating Officer at Aamra Networks. Mr. Ahmed was elected
+              Secretary-General of the Executive Committee of ISP Association of Bangladesh (ISPAB) for the term
+              2008-2009.
             </p>
             <!-- <ul style="margin-top:20px">
               <li>20+ years experience in the ICT industry.</li>
@@ -109,250 +122,271 @@
                 <img src="/img/Russell T. Ahmed.png" alt="">
               </div>
 
+          </div>
+          <div class="card profile-card">
+            <div class="profile-content">
+              <div style="color:rgba(78, 78, 78, 0.9022)">
+                <h2>Russell T. Ahmed</h2>
+                <h4>Founder & CEO of Team Creative</h4>
+                <h3 style="color:rgba(31, 77, 240, 1)">ONE TEAM</h3>
+                <div class="ballot">Ballot No:</div>
+              </div>
             </div>
-            <div class="card">
-              <!-- <img src="/img/agenda-card.png" alt="" srcset="" /> -->
-              <div class="card-title">Key highlights</div>
-                <ul style="margin-top:40px">
-                  <li>
-                    Versatile and Result Driven Leadership Professional & Outstanding Negotiation Skill with Policy Makers.
-                  </li>
-                  <li>
-                    Communication Specialist with Successful Track Record.
-                  </li>
-                  <li>
-                    20+ Years of Experience in the ICT Industry with Creative and Visionary Thinking and Organizing Ability.
-                  </li>
-                  <!-- <li>
+            <div class="card-img">
+              <img src="/img/mid-card-section.png" alt="">
+            </div>
+            <div class="profile-brand">
+              <img src="/img/Basis-Logo.png" alt="">
+              <img src="/img/One-Team-Logo.png" alt="">
+              <img src="/img/Russell T. Ahmed.png" alt="">
+            </div>
+
+          </div>
+          <div class="card">
+            <!-- <img src="/img/agenda-card.png" alt="" srcset="" /> -->
+            <div class="card-title">Key highlights</div>
+            <ul style="margin-top:40px">
+              <li>
+                Versatile and Result Driven Leadership Professional & Outstanding Negotiation Skill with Policy Makers.
+              </li>
+              <li>
+                Communication Specialist with Successful Track Record.
+              </li>
+              <li>
+                20+ Years of Experience in the ICT Industry with Creative and Visionary Thinking and Organizing Ability.
+              </li>
+              <!-- <li>
                     It is a long established fact that a reader
                   </li>
                   <li>
                     It is a long established fact that a reader
                   </li> -->
-                </ul>
-            </div>
-            
+            </ul>
           </div>
-          <!-- <div class="headerFooter">
+
+        </div>
+        <!-- <div class="headerFooter">
             <h3>“ Collaboration Is ALWAYS</h3><h3>
             Better Than Competition ”</h3>
             <p>..........Tanvir Hossain Khan</p>
             </div> -->
-        </header>
-        <section class="section-container">
-          <div class="section-inner-container">
-            <h2 class="others-member-title">Others Members</h2>
-            <ul id="memberSlider">
-              <li class="li_member">
-                <div class="member-img">
-                  <img src="/members/1.jpg" alt="" srcset="" />
-                </div>
-                <div class="member-details">
-                  <div>
-                    <h2>Russell T. Ahmed</h2>
-                    <h4>Founder & CEO of Team Creative</h4>
-                    <h3>ONE TEAM</h3>
-                    <div class="ballot">Ballot No:</div>
-                  </div>
-                  <div>
-                    <a class="button" href="/profile/russell.html">Learn More</a>
-                  </div>
-                </div>
-              </li>
-              <li class="li_member">
-                <div class="member-img">
-                  <img src="/members/2.jpg" alt="" srcset="" />
-                </div>
-                <div class="member-details">
-                  <div>
-                    <h2>Tanvir Hassain Khan</h2>
-                    <h4>CEO, Dreamerz Lab Limited</h4>
-                    <h3>ONE TEAM</h3>
-                    <div class="ballot">Ballot No:</div>
-                  </div>
-                  <div>
-                    <a class="button" href="/profile/tanvir.html">Learn More</a>
-
-                  </div>
-              </li>
-              <li class="li_member">
-                <div class="member-img">
-                  <img src="/members/4.jpg" alt="" srcset="" />
-                </div>
-                <div class="member-details">
-                  <div>
-                    <h2>Zia Ashraf</h2>
-                    <h4>Founder & CEO, Chaldal.com</h4>
-                    <h3>ONE TEAM</h3>
-                    <div class="ballot">Ballot No:</div>
-                  </div>
-                  <div>
-                    <a class="button" href="/profile/ashraf.html">Learn More</a>
-                  </div>
-                </div>
-              </li>
-              <li class="li_member">
-                <div class="member-img">
-                  <img src="/members/5.jpg" alt="" srcset="" />
-                </div>
-                <div class="member-details">
-                  <div>
-                    <h2>Abu Daud Khan</h2>
-                    <h4>Enroute International</h4>
-                    <h3>ONE TEAM</h3>
-                    <div class="ballot">Ballot No:</div>
-                  </div>
-                  <div>
-                    <a class="button" href="/profile/daud.html">Learn More</a>
-
-                  </div>
-                </div>
-              </li>
-              <li class="li_member">
-                <div class="member-img">
-                  <img src="/members/6.jpg" alt="" srcset="" />
-                </div>
-                <div class="member-details">
-                  <div>
-                    <h2>Fahim Ahmed</h2>
-                    <h4>Managing Director & CEO, Pathao</h4>
-                    <h3>ONE TEAM</h3>
-                    <div class="ballot">Ballot No:</div>
-                  </div>
-                  <div>
-                    <a class="button" href="/profile/fahim.html">Learn More</a>
-
-                  </div>
-                </div>
-              </li>
-              <li class="li_member">
-                <div class="member-img">
-                  <img src="/members/7.jpg" alt="" srcset="" />
-                </div>
-                <div class="member-details">
-                  <div>
-                    <h2>Ms Samira Zuberi Himika</h2>
-                    <h4></h4>
-                    <h3>ONE TEAM</h3>
-                    <div class="ballot">Ballot No:</div>
-                  </div>
-                  <div>
-                    <a class="button" href="/profile/himika.html">Learn More</a>
-                  </div>
-                </div>
-              </li>
-              <li class="li_member">
-                <div class="member-img">
-                  <img src="/members/8.jpg" alt="" srcset="" />
-                </div>
-                <div class="member-details">
-                  <div>
-                    <h2>Rezwana Khan</h2>
-                    <h4>CEO, Star Computer Systems Limited</h4>
-                    <h3>ONE TEAM</h3>
-                    <div class="ballot">Ballot No:</div>
-                  </div>
-                  <div>
-                    <a class="button" href="/profile/rezwana.html">Learn More</a>
-                  </div>
-                </div>
-              </li>
-              <li class="li_member">
-                <div class="member-img">
-                  <img src="/members/3.jpg" alt="" srcset="" />
-                </div>
-                <div class="member-details">
-                  <div>
-                    <h2>AKM Ahmedul Islam BABU</h2>
-                    <h4>Founder of TechKnowGram Limited</h4>
-                    <h3>ONE TEAM</h3>
-                    <div class="ballot">Ballot No:</div>
-                  </div>
-                  <div style="margin-top: -10px"> <a class="button" href="/profile/ahmedul.html">Learn More</a>
-                  </div>
-                </div>
-              </li>
-              <li class="li_member">
-                <div class="member-img">
-                  <img src="/members/4.jpg" alt="" srcset="" />
-                </div>
-                <div class="member-details">
-                  <div>
-                    <h2>Mr. Suzadur Rahman</h2>
-                  <h4>Founder of Mindlabz Ltd.</h4>
-                    <h3>ONE TEAM</h3>
-                    <div class="ballot">Ballot No:</div>
-                  </div>
-                  <div>
-                    <a class="button" href="/profile/suzadur.html">Learn More</a>
-                  </div>
-                </div>
-              </li>
-              <li class="li_member">
-                <div class="member-img">
-                  <img src="/members/1.jpg" alt="" srcset="" />
-                </div>
-                <div class="member-details">
-                  <div>
-                    <h2>Zaman Khan</h2>
-                  <h4>Founder & CEO of ZAMAN IT</h4>
-                    <h3>ONE TEAM</h3>
-                    <div class="ballot">Ballot No:</div>
-                  </div>
-                  <div>
-                    <a class="button" href="/profile/zaman.html">Learn More</a>
-                  </div>
-                </div>
-              </li>
-            </ul>
-            <div class="sliderBtn">
-              <button type="button" id="goToPrevSlide">
-                <img src="/img/left.png" alt="" srcset="">
-              </button>
-              <button type="button" id="goToNextSlide">
-                <img src="/img/rightbutton .png" alt="" srcset="">
-              </button>
-            </div>
-          </div>
-        </section>
-
-        <section>
-          <div class="contact-full">
-            <div class="contact-top section-container"></div>
-            <div class="contact-body">
-              <div class="contact-column">
+      </header>
+      <section class="section-container">
+        <div class="section-inner-container">
+          <h2 class="others-member-title">Others Members</h2>
+          <ul id="memberSlider">
+            <li class="li_member">
+              <div class="member-img">
+                <img src="/members/1.jpg" alt="" srcset="" />
+              </div>
+              <div class="member-details">
                 <div>
-                  <div class="contact-left">
-                    <img src="/img/footer-left.png" alt="" srcset="">
-                  </div>
+                  <h2>Russell T. Ahmed</h2>
+                  <h4>Founder & CEO of Team Creative</h4>
+                  <h3>ONE TEAM</h3>
+                  <div class="ballot">Ballot No:</div>
                 </div>
-                <div class="contact-content">
-                  <div class="contact-form-top">
-                    <div class="contact-border"></div>
-                    <p>DROP MESSAGE</p>
-                    <p class="contact-title">We Are Very Exited To Talk With You</p>
-                  </div>
-                  <form action="" class="form-content">
-                    <div class="form-left">
-                      <input type="text" name="" id="" placeholder="Name">
-                      <input type="text" name="" id="" placeholder="Email">
-                      <input type="text" name="" id="" placeholder="Phone Number">
-                    </div>
-                    <div class="form-right">
-                      <textarea name="" id="" cols="40" rows="10">Tell us what we can do for you</textarea>
-                      <input type="submit" value="Submit">
-                    </div>
-                  </form> 
+                <div>
+                  <a class="button" href="/profile/russell.html">Learn More</a>
                 </div>
               </div>
-              <a href="#top" class="up-button">
-                <img src="/img/up-button.png" alt="" srcset="">
-              </a>
+            </li>
+            <li class="li_member">
+              <div class="member-img">
+                <img src="/members/2.jpg" alt="" srcset="" />
+              </div>
+              <div class="member-details">
+                <div>
+                  <h2>Tanvir Hassain Khan</h2>
+                  <h4>CEO, Dreamerz Lab Limited</h4>
+                  <h3>ONE TEAM</h3>
+                  <div class="ballot">Ballot No:</div>
+                </div>
+                <div>
+                  <a class="button" href="/profile/tanvir.html">Learn More</a>
+
+                </div>
+            </li>
+            <li class="li_member">
+              <div class="member-img">
+                <img src="/members/4.jpg" alt="" srcset="" />
+              </div>
+              <div class="member-details">
+                <div>
+                  <h2>Zia Ashraf</h2>
+                  <h4>Founder & CEO, Chaldal.com</h4>
+                  <h3>ONE TEAM</h3>
+                  <div class="ballot">Ballot No:</div>
+                </div>
+                <div>
+                  <a class="button" href="/profile/ashraf.html">Learn More</a>
+                </div>
+              </div>
+            </li>
+            <li class="li_member">
+              <div class="member-img">
+                <img src="/members/5.jpg" alt="" srcset="" />
+              </div>
+              <div class="member-details">
+                <div>
+                  <h2>Abu Daud Khan</h2>
+                  <h4>Enroute International</h4>
+                  <h3>ONE TEAM</h3>
+                  <div class="ballot">Ballot No:</div>
+                </div>
+                <div>
+                  <a class="button" href="/profile/daud.html">Learn More</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="li_member">
+              <div class="member-img">
+                <img src="/members/6.jpg" alt="" srcset="" />
+              </div>
+              <div class="member-details">
+                <div>
+                  <h2>Fahim Ahmed</h2>
+                  <h4>Managing Director & CEO, Pathao</h4>
+                  <h3>ONE TEAM</h3>
+                  <div class="ballot">Ballot No:</div>
+                </div>
+                <div>
+                  <a class="button" href="/profile/fahim.html">Learn More</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="li_member">
+              <div class="member-img">
+                <img src="/members/7.jpg" alt="" srcset="" />
+              </div>
+              <div class="member-details">
+                <div>
+                  <h2>Ms Samira Zuberi Himika</h2>
+                  <h4></h4>
+                  <h3>ONE TEAM</h3>
+                  <div class="ballot">Ballot No:</div>
+                </div>
+                <div>
+                  <a class="button" href="/profile/himika.html">Learn More</a>
+                </div>
+              </div>
+            </li>
+            <li class="li_member">
+              <div class="member-img">
+                <img src="/members/8.jpg" alt="" srcset="" />
+              </div>
+              <div class="member-details">
+                <div>
+                  <h2>Rezwana Khan</h2>
+                  <h4>CEO, Star Computer Systems Limited</h4>
+                  <h3>ONE TEAM</h3>
+                  <div class="ballot">Ballot No:</div>
+                </div>
+                <div>
+                  <a class="button" href="/profile/rezwana.html">Learn More</a>
+                </div>
+              </div>
+            </li>
+            <li class="li_member">
+              <div class="member-img">
+                <img src="/members/3.jpg" alt="" srcset="" />
+              </div>
+              <div class="member-details">
+                <div>
+                  <h2>AKM Ahmedul Islam BABU</h2>
+                  <h4>Founder of TechKnowGram Limited</h4>
+                  <h3>ONE TEAM</h3>
+                  <div class="ballot">Ballot No:</div>
+                </div>
+                <div style="margin-top: -10px"> <a class="button" href="/profile/ahmedul.html">Learn More</a>
+                </div>
+              </div>
+            </li>
+            <li class="li_member">
+              <div class="member-img">
+                <img src="/members/4.jpg" alt="" srcset="" />
+              </div>
+              <div class="member-details">
+                <div>
+                  <h2>Mr. Suzadur Rahman</h2>
+                  <h4>Founder of Mindlabz Ltd.</h4>
+                  <h3>ONE TEAM</h3>
+                  <div class="ballot">Ballot No:</div>
+                </div>
+                <div>
+                  <a class="button" href="/profile/suzadur.html">Learn More</a>
+                </div>
+              </div>
+            </li>
+            <li class="li_member">
+              <div class="member-img">
+                <img src="/members/1.jpg" alt="" srcset="" />
+              </div>
+              <div class="member-details">
+                <div>
+                  <h2>Zaman Khan</h2>
+                  <h4>Founder & CEO of ZAMAN IT</h4>
+                  <h3>ONE TEAM</h3>
+                  <div class="ballot">Ballot No:</div>
+                </div>
+                <div>
+                  <a class="button" href="/profile/zaman.html">Learn More</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="sliderBtn">
+            <button type="button" id="goToPrevSlide">
+              <img src="/img/left.png" alt="" srcset="">
+            </button>
+            <button type="button" id="goToNextSlide">
+              <img src="/img/rightbutton .png" alt="" srcset="">
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="contact-full">
+          <div class="contact-top section-container"></div>
+          <div class="contact-body">
+            <div class="contact-column">
+              <div>
+                <div class="contact-left">
+                  <img src="/img/footer-left.png" alt="" srcset="">
+                </div>
+              </div>
+              <div class="contact-content">
+                <div class="contact-form-top">
+                  <div class="contact-border"></div>
+                  <p>DROP MESSAGE</p>
+                  <p class="contact-title">Please let us know your expectations from BASIS and <br> your valued
+                    suggestions for the newly Elected Executive Committee.</p>
+                </div>
+                <form action="" class="form-content">
+                  <div class="form-left">
+                    <input type="text" name="" id="" placeholder="Name">
+                    <input type="text" name="" id="" placeholder="Email">
+                    <input type="text" name="" id="" placeholder="Phone Number">
+                  </div>
+                  <div class="form-right">
+                    <textarea name="" id="" cols="40" rows="10">Tell us what we can do for you</textarea>
+                    <input type="submit" value="Submit">
+                  </div>
+                </form>
               </div>
             </div>
+            <a href="#top" class="up-button">
+              <img src="/img/up-button.png" alt="" srcset="">
+            </a>
           </div>
-        </section>
-      </div>
-    </main>
-  </body>
+        </div>
+    </div>
+    </section>
+    </div>
+  </main>
+</body>
+
 </html>
