@@ -180,7 +180,7 @@
 
   .card {
     width: 350px;
-    height: 300px;
+    height: auto;
     padding: 15px;
     margin: 15px;
     text-align: center;
@@ -200,19 +200,10 @@
     justify-content: center;
     padding-top: 50px;
   }
-
-  .profile-section img {
-    width: 100%;
-    margin-top: 10px;
-  }
   .profile-content {
-    padding: 50px;
-    font-size: 10px;
-    line-height: 5px;
-    margin-left: 90px;
-    margin-top: -30px;
+    margin: 10px auto;
+    width: 380px;
   }
-
   .ballot {
     padding: 10px 2px;
     border-radius: 20px;
@@ -232,19 +223,21 @@
   }
   #memberSlider {
     margin-bottom: -90px;
+    font-size: auto;
   }
   .contact-full {
     margin-top: -60px;
   }
   .header-profile {
     background-size: cover;
-    height: 310vh;
+    height: auto;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   #memberSlider {
     margin-bottom: -60px;
+    font-size: 12px;
   }
   .contact-full {
     margin-top: -60px;
@@ -445,20 +438,12 @@
     left: 20px;
     margin-top: -30px;
   }
-  .profile-card img {
-    margin-top: -10px;
-  }
   .profile-content {
-    text-align: center;
-    position: absolute;
-    z-index: 22;
-    padding: 10px;
-    font-size: 10px;
-    line-height: 5px;
-    margin-left: 60px;
+    height: 400px;
     margin-top: -30px;
+    width: 300px;
+    font-size: 12px;
   }
-
   .ballot {
     padding: 10px 2px;
     border-radius: 20px;
@@ -467,5 +452,12 @@
     color: #fff;
     margin-top: 10px;
     margin-bottom: 30px;
+  }
+  .section-inner-container {
+    margin-top: -50px;
+  }
+  .header-profile {
+    background-size: cover;
+    height: auto;
   }
 }
