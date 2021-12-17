@@ -54,13 +54,20 @@
       $("#goToNextSlide").on("click", function () {
         slider.goToNextSlide();
       });
+      
+    });
+    $(function () {
+      $('a[href*=#]').on('click', function (e) {
+        e.preventDefault();
+        $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top }, 1500, 'linear');
+      });
     });
   </script>
 </head>
 
 <body>
   <main>
-    <div class="">
+    <div class="" id="top">
       <header class="header-profile">
         <a href="/index.html#panel" class="backBtn">Back</a>
         <div class="profile-section">
