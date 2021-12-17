@@ -430,13 +430,21 @@
     text-align: center;
     overflow: scroll;
   }
-  .card > button {
+  /* .card > button {
     border: none;
     position: sticky;
     width: 129px;
     height: 31px;
     left: 20px;
     margin-top: -30px;
+  } */
+  .card > ul {
+    line-height: 30px;
+    font-size: 15px;
+  }
+  .card > p {
+    line-height: 30px;
+    font-size: 15px;
   }
   .profile-content {
     height: 400px;
