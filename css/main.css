@@ -35,7 +35,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 140vh;
+  height: 120vh;
 }
 
 .header-body {
@@ -308,7 +308,7 @@ body {
   /* z-index: 5; */
 }
 .member-details > div {
-  padding: 50px 30px;
+  padding: 25px 30px;
   text-align: center;
   line-height: 15px;
 }
@@ -335,7 +335,7 @@ body {
   margin: 0 auto;
   color: #fff;
   margin-top: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .button {
   background: linear-gradient(
@@ -346,13 +346,14 @@ body {
   );
   border-radius: 4px;
   padding: 10px 30px;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   color: #fff;
   text-decoration: none;
   border: none;
   cursor: pointer;
   font-size: 16px;
   font-weight: 500;
+  /* margin: 0 auto !important; */
 }
 .contact-section {
   margin-top: 100px;
@@ -493,7 +494,7 @@ textarea {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
-  height: 155vh;
+  height: 140vh;
 }
 .backBtn {
   text-decoration: none;
@@ -514,7 +515,7 @@ textarea {
   clear: both;
   display: flex;
   justify-content: space-between;
-  align-items: stretch;
+  align-items: center;
   padding-top: 50px;
 }
 
@@ -553,7 +554,8 @@ textarea {
 }
 .profile-content {
   text-align: center;
-  z-index: 22;
+
+  /* z-index: 22;
   padding: 5px;
   line-height: 5px;
   background-image: url("/img/mid-card-section.png");
@@ -561,19 +563,26 @@ textarea {
   background-position: center;
   background-size: 100% 100%;
   height: 600px;
-  margin-top: -70px;
-  width: 400px;
+  margin-top: -50px;
+  width: 400px; */
 }
-.bio-card img {
+.profile-content img {
   width: 100%;
+}
+.profile-brand {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-top: 50px;
+}
+.profile-brand img {
+  width: 30%;
+  margin-left: 10px;
 }
 
-.agenda-card img {
-  width: 100%;
-}
 .card {
   width: 40%;
-  height: 83vh;
+  height: 480px;
   background-color: white;
   filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.18));
   padding: 15px;
@@ -585,7 +594,11 @@ textarea {
   justify-content: center;
   flex-direction: column; */
 }
-.card > div {
+.profile-card {
+  height: 600px;
+  text-align: center;
+}
+.card > .card-title {
   border: none;
   /* position: fixed; */
   width: 129px;
