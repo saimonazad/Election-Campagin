@@ -35,7 +35,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 120vh;
+  height: 115vh;
 }
 
 .header-body {
@@ -55,7 +55,7 @@ body {
 .header-scroll {
   display: inline-block;
   position: relative;
-  padding-top: 380px;
+  padding-top: 300px;
   padding-left: 80px;
 }
 .scroll-btn:hover {
@@ -138,11 +138,18 @@ body {
 #industrySlider {
 }
 .lSAction > .lSPrev {
-  background-image: url("../img/left-.button.png") !important;
+  background-image: url("/img/LeftSLiderBtn.png") !important;
   background-repeat: no-repeat;
+  background-size: contain;
+  left: 0px;
+}
+.lSAction > .lSNext {
+  background-image: url("/img/RightSliderBtn.png") !important;
+  background-repeat: no-repeat;
+  background-size: contain;
+  right: 0px;
 }
 .lSAction > a {
-  width: 73px !important;
   display: block;
   top: 50%;
   height: 70px !important;
@@ -154,13 +161,7 @@ body {
   -webkit-transition: opacity 0.35s linear 0s;
   transition: opacity 0.35s linear 0s;
 }
-.lSAction > .lSNext {
-  background-image: url("../img/right-.button.png") !important;
-  background-repeat: no-repeat;
-  background-position: -32px 0;
-  background-size: 100%;
-  right: 10px;
-}
+
 .industry-item {
   background-color: white;
   box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.1);
@@ -415,6 +416,8 @@ body {
 }
 .contact-form-top > .contact-title {
   font-size: 20px;
+  text-align: right;
+  font-family: Poppins;
 }
 
 .form-content {
@@ -836,4 +839,44 @@ textarea {
   to {
     opacity: 1;
   }
+}
+
+.agenda-right .lSAction {
+  display: none !important;
+}
+.industry-right .lSAction {
+  display: none !important;
+}
+.pdfSection {
+  margin-top: 100px;
+  background-image: url("/img/manifesto.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; /* Center the image */
+}
+.pdfBody {
+  text-align: center;
+  padding: 50px 0;
+  color: white;
+  font-family: "PT Sans", sans-serif;
+}
+.pdfBody h2 {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 32px;
+  margin: 0;
+}
+.pdfBody h4 {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 20px;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+.pdfBody a {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 4px;
+  background-color: white;
+  text-decoration: none;
+  color: rgba(15, 75, 145, 1);
+  padding: 16px 40px;
 }
