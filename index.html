@@ -14,7 +14,12 @@
   <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Ubuntu&display=swap" rel="stylesheet" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="/js/lightslider.js"></script>
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"
+    integrity="sha512-vKMx8UnXk60zUwyUnUPM3HbQo8QfmNx7+ltw8Pm5zLusl1XIfwcxo8DbWCqMGKaWeNxWA8yrx5v3SaVpMvR3CA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"
+    integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <title>One Team</title>
   <script>
     $(document).ready(function () {
@@ -127,7 +132,7 @@
                   </div>
                 </div>
               </div>
-              
+
               <div>
                 <div class="member-img">
                   <img src="/members/4.jpg" alt="" srcset="" />
@@ -161,7 +166,7 @@
                   </div>
                 </div>
               </div>
-              
+
               <div>
                 <div class="member-img">
                   <img src="/members/7.jpg" alt="" srcset="" />
@@ -169,7 +174,7 @@
                 <div class="member-details">
                   <div>
                     <h2>Ms Samira Zuberi Himika</h2>
-                    <h4 >CEO, Giga Tech Ltd.</h4>
+                    <h4>CEO, Giga Tech Ltd.</h4>
                     <h3>ONE TEAM</h3>
                     <div class="ballot">Ballot No:</div>
                   </div>
@@ -185,7 +190,7 @@
                 <div class="member-details">
                   <div>
                     <h2>Rezwana Khan</h2>
-                    <h4 >CEO, Star Computer Systems Limited</h4>
+                    <h4>CEO, Star Computer Systems Limited</h4>
                     <h3>ONE TEAM</h3>
                     <div class="ballot">Ballot No:</div>
                   </div>
@@ -202,11 +207,11 @@
                 <div class="member-details">
                   <div>
                     <h2>AKM Ahmedul Islam BABU</h2>
-                    <h4 >Founder of TechKnowGram Limited</h4>
+                    <h4>Founder of TechKnowGram Limited</h4>
                     <h3>ONE TEAM</h3>
                     <div class="ballot">Ballot No:</div>
                   </div>
-                  <div> 
+                  <div>
                     <a class="button" href="/profile/ahmedul.html">Learn More</a>
                   </div>
                 </div>
@@ -263,7 +268,7 @@
                       <h3>ONE TEAM</h3>
                       <div class="ballot">Ballot No:</div>
                     </div>
-                    <div >
+                    <div>
                       <a class="button" href="/profile/tanvir.html">Learn More</a>
                     </div>
                   </div>
@@ -286,6 +291,10 @@
                     </div>
                     <div>
                       <a class="button" href="/profile/fahim.html">Learn More</a>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2c62440e31e18d883787d0606f25cb1cde763b50
                     </div>
                   </div>
                 </div>
@@ -470,14 +479,15 @@ opacity: 0.8;color: rgba(55, 55, 55, 0.9);font-weight: 600;filter: drop-shadow(0
                   <p class="contact-title">Please let us know your expectations from BASIS and <br> your valued
                     suggestions for the newly Elected Executive Committee.</p>
                 </div>
-                <form action="" class="form-content">
+                <form method="post" autocomplete="off" name="google-sheet" class="form-content">
                   <div class="form-left">
-                    <input type="text" name="" id="" placeholder="Name">
-                    <input type="text" name="" id="" placeholder="Email">
-                    <input type="text" name="" id="" placeholder="Phone Number">
+                    <input type="text" name="Name" id="" placeholder="Name" required>
+                    <input type="text" name="Email" id="" placeholder="Email" required>
+                    <input type="text" name="Phone" id="" placeholder="Phone Number">
                   </div>
                   <div class="form-right">
-                    <textarea name="" id="" cols="40" rows="10">Tell us what we can do for you</textarea>
+                    <textarea name="Message" id="" cols="40" rows="10"
+                      required>Tell us what we can do for you</textarea>
                     <input type="submit" value="Submit">
                   </div>
                 </form>
@@ -493,6 +503,19 @@ opacity: 0.8;color: rgba(55, 55, 55, 0.9);font-weight: 600;filter: drop-shadow(0
     </section>
     </div>
   </main>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxeluKvjZEIWphfu91EfyzvusWN0M8elJYSr4AaZyv6QWmkvPBHGvOWg1WAFYUXiZe3UQ/exec'
+    const form = document.forms['google-sheet']
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, {
+        mode: 'no-cors', method: 'POST', body: new FormData(form)
+      })
+        .then(response => toastr.success("Thanks for Contacting us..! We Will Contact You Soon..."))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 </body>
 
 </html>
