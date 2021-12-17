@@ -88,6 +88,7 @@ body {
   background-position: center;
   background-size: contain;
   z-index: 2;
+  margin: 100px 0;
 }
 .our-industry-body {
   display: flex;
@@ -229,6 +230,9 @@ body {
   width: 150px;
   margin-bottom: 5px;
 }
+.gallery-section{
+  margin-top: 100px;
+}
 .gallery-top {
   margin-top: 10px;
   background-image: url("../img/our-gallery-text.png");
@@ -349,7 +353,9 @@ body {
   font-size: 16px;
   font-weight: 500;
 }
-
+.contact-section{
+  margin-top: 100px;
+}
 .contact-top {
   background-image: url("../img/contact.png");
   background-repeat: no-repeat;
