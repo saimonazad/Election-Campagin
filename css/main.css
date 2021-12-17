@@ -644,10 +644,13 @@ textarea {
   border-radius: 20px;
   margin: 15px;
   text-align: center;
-  overflow: auto;
+
   /* display: flex;
   justify-content: center;
   flex-direction: column; */
+}
+.card > div {
+  overflow: auto;
 }
 .profile-card {
   /* height: 600px; */
