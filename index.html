@@ -127,7 +127,7 @@
                   </div>
                 </div>
               </div>
-              
+
               <div>
                 <div class="member-img">
                   <img src="/members/4.jpg" alt="" srcset="" />
@@ -161,7 +161,7 @@
                   </div>
                 </div>
               </div>
-              
+
               <div>
                 <div class="member-img">
                   <img src="/members/7.jpg" alt="" srcset="" />
@@ -169,7 +169,7 @@
                 <div class="member-details">
                   <div>
                     <h2>Ms Samira Zuberi Himika</h2>
-                    <h4 >CEO, Giga Tech Ltd.</h4>
+                    <h4>CEO, Giga Tech Ltd.</h4>
                     <h3>ONE TEAM</h3>
                     <div class="ballot">Ballot No:</div>
                   </div>
@@ -185,7 +185,7 @@
                 <div class="member-details">
                   <div>
                     <h2>Rezwana Khan</h2>
-                    <h4 >CEO, Star Computer Systems Limited</h4>
+                    <h4>CEO, Star Computer Systems Limited</h4>
                     <h3>ONE TEAM</h3>
                     <div class="ballot">Ballot No:</div>
                   </div>
@@ -202,11 +202,11 @@
                 <div class="member-details">
                   <div>
                     <h2>AKM Ahmedul Islam BABU</h2>
-                    <h4 >Founder of TechKnowGram Limited</h4>
+                    <h4>Founder of TechKnowGram Limited</h4>
                     <h3>ONE TEAM</h3>
                     <div class="ballot">Ballot No:</div>
                   </div>
-                  <div> 
+                  <div>
                     <a class="button" href="/profile/ahmedul.html">Learn More</a>
                   </div>
                 </div>
@@ -260,7 +260,7 @@
                       <h3>ONE TEAM</h3>
                       <div class="ballot">Ballot No:</div>
                     </div>
-                    <div >
+                    <div>
                       <a class="button" href="/profile/tanvir.html">Learn More</a>
                     </div>
                   </div>
@@ -283,7 +283,7 @@
                     </div>
                     <div>
                       <a class="button" href="/profile/fahim.html">Learn More</a>
-  
+
                     </div>
                   </div>
                 </div>
@@ -461,14 +461,15 @@ opacity: 0.8;color: rgba(55, 55, 55, 0.9);font-weight: 600;filter: drop-shadow(0
                   <p class="contact-title">Please let us know your expectations from BASIS and <br> your valued
                     suggestions for the newly Elected Executive Committee.</p>
                 </div>
-                <form action="" class="form-content">
+                <form method="post" autocomplete="off" name="google-sheet" class="form-content">
                   <div class="form-left">
-                    <input type="text" name="" id="" placeholder="Name">
-                    <input type="text" name="" id="" placeholder="Email">
-                    <input type="text" name="" id="" placeholder="Phone Number">
+                    <input type="text" name="Name" id="" placeholder="Name" required>
+                    <input type="text" name="Email" id="" placeholder="Email" required>
+                    <input type="text" name="Phone" id="" placeholder="Phone Number">
                   </div>
                   <div class="form-right">
-                    <textarea name="" id="" cols="40" rows="10">Tell us what we can do for you</textarea>
+                    <textarea name="Message" id="" cols="40" rows="10"
+                      required>Tell us what we can do for you</textarea>
                     <input type="submit" value="Submit">
                   </div>
                 </form>
@@ -484,6 +485,17 @@ opacity: 0.8;color: rgba(55, 55, 55, 0.9);font-weight: 600;filter: drop-shadow(0
     </section>
     </div>
   </main>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzKDwYzBo1aEbbz96Oikp0rI5Udye7SyTcL13mm6K_9gdeHVv8/exec'
+    const form = document.forms['google-sheet']
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 </body>
 
 </html>
