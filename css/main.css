@@ -62,7 +62,7 @@ body {
   cursor: pointer;
 }
 .brand {
-  height: 230px;
+  height: 301px;
   background-color: white;
   border-radius: 10rem 10rem 0 0;
   margin-top: -18.75rem;
@@ -307,7 +307,7 @@ body {
   /* z-index: 5; */
 }
 .member-details > div {
-  padding: 25px 30px;
+  padding: 20px 30px;
   text-align: center;
   line-height: 15px;
 }
@@ -320,6 +320,10 @@ body {
   font-family: "PT Serif", serif;
   color: rgba(55, 51, 52, 0.7233);
   font-size: 16px;
+}
+.member-details h2 {
+  font-family: "PT Serif", serif;
+  font-size: 20px;
 }
 .ballot {
   background: linear-gradient(
@@ -677,7 +681,7 @@ textarea {
   color: rgba(73, 70, 71, 0.81);
   font-family: PT Serif;
   font-size: 17px;
-  line-height: 60.5px;
+  line-height: 40.5px;
   font-weight: 700;
 }
 
