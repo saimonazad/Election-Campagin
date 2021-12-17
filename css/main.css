@@ -59,8 +59,8 @@ body {
 .header-scroll {
   display: inline-block;
   position: absolute;
-  left:48%;
-  top:60%
+  left: 48%;
+  top: 60%;
 }
 .scroll-btn:hover {
   cursor: pointer;
@@ -91,7 +91,7 @@ body {
   background-image: url("../img/industryBg.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: 100% 100%;
   z-index: 2;
   margin: 100px 0;
 }
@@ -99,8 +99,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  flex-shrink: 3;
-  padding: 10rem;
+  padding: 7rem;
 }
 .industry-left {
   width: 30%;
@@ -781,7 +780,6 @@ textarea {
     display: none;
   }
   .our-industry {
-    background-size: 100% 100%;
     margin-top: 50px;
     margin-bottom: 50px;
   }
@@ -933,4 +931,7 @@ textarea {
   text-decoration: none;
   color: rgba(15, 75, 145, 1);
   padding: 16px 40px;
+}
+.disabledIndustryBtn {
+  visibility: hidden;
 }

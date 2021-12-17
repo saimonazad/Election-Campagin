@@ -69,6 +69,7 @@
       $("#agendaNextSlider").on("click", function () {
         agendaSlider.goToNextSlide();
       });
+      var totalIndustrySlide = $("#industrySlider li").length
 
       var industrySLider = $("#industrySlider").lightSlider({
         adaptiveHeight: false,
@@ -83,6 +84,12 @@
         control: false,
         onBeforeSlide: function (el) {
           $('#counterIndustry').text(el.getCurrentSlideCount());
+          // if (el.getCurrentSlideCount() == totalIndustrySlide) {
+          //   $("#industryNextSlide").addClass("disabledIndustryBtn")
+          // } else if (el.getCurrentSlideCount == 1) {
+          //   $("#industryPrevSlide").addClass("disabledIndustryBtn")
+
+          // }
         }
       });
       $("#industryPrevSlide").on("click", function () {
