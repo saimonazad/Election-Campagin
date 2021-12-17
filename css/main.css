@@ -362,6 +362,9 @@ body {
 .contact-section {
   margin-top: 100px;
 }
+.contact-full {
+  margin-top: -10px;
+}
 .contact-top {
   background-image: url("../img/contact.png");
   background-repeat: no-repeat;
@@ -531,6 +534,11 @@ textarea {
 .li_member {
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.18);
   border-radius: 10px;
+  height: 95%;
+}
+.li_member h2 {
+  font-size: 18px !important;
+  line-height: 25px;
 }
 .sliderBtn {
   text-align: center;
@@ -580,7 +588,8 @@ textarea {
 }
 .profile-brand img {
   width: 26%;
-  margin-left: 15px;
+  margin-left: 10px;
+  height: auto;
 }
 
 .card {
