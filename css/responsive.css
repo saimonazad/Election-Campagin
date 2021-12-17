@@ -477,10 +477,13 @@
     padding-left: 10px;
   }
   .trapezoid-bio > img {
-    width: 120px;
+    width: 140px;
     font-size: 10px;
   }
   .trapezoid-bio {
-    font-size: 10px;
+    font-size: 15px;
+  }
+  .sliderBtn {
+    margin-top: -10px;
   }
 }
