@@ -412,6 +412,8 @@ body {
 }
 .contact-form-top > .contact-title {
   font-size: 20px;
+  text-align: right;
+  font-family: Poppins;
 }
 
 .form-content {
@@ -833,4 +835,11 @@ textarea {
   to {
     opacity: 1;
   }
+}
+
+.agenda-right .lSAction {
+  display: none !important;
+}
+.industry-right .lSAction {
+  display: none !important;
 }
