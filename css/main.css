@@ -63,9 +63,9 @@ h2 {
 }
 .header-scroll {
   display: inline-block;
-  position: relative;
-  padding-top: 300px;
-  padding-left: 80px;
+  position: absolute;
+  left:48%;
+  top:60%
 }
 .scroll-btn:hover {
   cursor: pointer;

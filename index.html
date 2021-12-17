@@ -43,7 +43,24 @@
         autoWidth: false,
         pager: false,
         control: false,
-        addClass: 'test'
+        addClass: 'test',
+        responsive: [
+          {
+            breakpoint: 950,
+            settings: {
+              item: 2,
+              slideMove: 1,
+              slideMargin: 20,
+            },
+          },
+          {
+            breakpoint: 700,
+            settings: {
+              item: 1,
+              slideMove: 1,
+            },
+          },
+        ],
 
       });
       $("#agendaPrevSlider").on("click", function () {
@@ -63,7 +80,10 @@
         pager: false,
         rtl: false,
         mode: 'slide',
-        control: false
+        control: false,
+        onBeforeSlide: function (el) {
+          $('#counterIndustry').text(el.getCurrentSlideCount());
+        }
       });
       $("#industryPrevSlide").on("click", function () {
         industrySLider.goToPrevSlide();
@@ -113,7 +133,7 @@
       <section id="panel">
         <div class="members-section section-container">
           <div class="members-top"></div>
-          <div class="members-body" >
+          <div class="members-body">
             <h2>General Category</h2>
             <div class="members">
               <div>
@@ -296,7 +316,7 @@
                 </div>
               </div>
             </div>
-            
+
           </div>
       </section>
 
@@ -316,59 +336,70 @@
                   <div class="industry-border-3"></div>
                 </div>
               </div>
-              <div class="industry-right" style="display: flex; align-items: center;">
-                <button id="industryPrevSlide" type="button"
-                  style="border-radius: 50%;padding: 10px;font-size: 20px;cursor: pointer;border:none;background: linear-gradient(0deg, #FFFFFF, #FFFFFF);
-opacity: 0.8;color: rgba(55, 55, 55, 0.9);font-weight: 600;filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));">&#8592;</button>
-                <ul id="industrySlider" style="display: flex;">
-                  <li class="industry-item">
-                    <h2>Revolution in Gaming Industry</h1>
-                      <p>
-                        Started my contribution with the gaming Industry where
-                        I started a revolution with back to back events call
-                        Bangladesh Gaming Expo 2016 & 2017 where I wanted to
-                        break a stereotype in our industry is that gaming is
-                        just a form of entertainment, Its can not be a career.
-                        In this event I tried to bring all the gaming
-                        community under one platform so that everyone can
-                        play, learn & share their gaming experience to one
-                        another.
-                      </p>
-                  </li>
-                  <li class="industry-item">
-                    <h2>Revolution in Gaming Industry</h1>
-                      <p>
-                        Started my contribution with the gaming Industry where
-                        I started a revolution with back to back events call
-                        Bangladesh Gaming Expo 2016 & 2017 where I wanted to
-                        break a stereotype in our industry is that gaming is
-                        just a form of entertainment, Its can not be a career.
-                        In this event I tried to bring all the gaming
-                        community under one platform so that everyone can
-                        play, learn & share their gaming experience to one
-                        another.
-                      </p>
-                  </li>
-                </ul>
-                <button id="industryNextSlide" type="button"
-                  style="margin-left: 20px;border-radius: 50%;padding: 10px;font-size: 20px;cursor: pointer;border:none;background: linear-gradient(0deg, #FFFFFF, #FFFFFF);
-opacity: 0.8;color: rgba(55, 55, 55, 0.9);font-weight: 600;filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));">&#8594;</button>
+              <div class="industry-right" style="display: flex; flex-direction: column;">
+                <div style="display: flex; align-items: center;"><button id="industryPrevSlide" type="button"
+                    style="border-radius: 50%;padding: 10px;font-size: 20px;cursor: pointer;border:none;background: linear-gradient(0deg, #FFFFFF, #FFFFFF);
+                opacity: 0.8;color: rgba(55, 55, 55, 0.9);font-weight: 600;filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));">&#8592;</button>
+                  <ul id="industrySlider" style="display: flex;">
+                    <li class="industry-item">
+                      <h2>Revolution in Gaming Industry</h1>
+                        <p>
+                          Started my contribution with the gaming Industry where
+                          I started a revolution with back to back events call
+                          Bangladesh Gaming Expo 2016 & 2017 where I wanted to
+                          break a stereotype in our industry is that gaming is
+                          just a form of entertainment, Its can not be a career.
+                          In this event I tried to bring all the gaming
+                          community under one platform so that everyone can
+                          play, learn & share their gaming experience to one
+                          another.
+                        </p>
+                    </li>
+                    <li class="industry-item">
+                      <h2>Revolution in Gaming Industry</h1>
+                        <p>
+                          Started my contribution with the gaming Industry where
+                          I started a revolution with back to back events call
+                          Bangladesh Gaming Expo 2016 & 2017 where I wanted to
+                          break a stereotype in our industry is that gaming is
+                          just a form of entertainment, Its can not be a career.
+                          In this event I tried to bring all the gaming
+                          community under one platform so that everyone can
+                          play, learn & share their gaming experience to one
+                          another.
+                        </p>
+                    </li>
+                  </ul>
+                  <button id="industryNextSlide" type="button"
+                    style="margin-left: 20px;border-radius: 50%;padding: 10px;font-size: 20px;cursor: pointer;border:none;background: linear-gradient(0deg, #FFFFFF, #FFFFFF);
+                opacity: 0.8;color: rgba(55, 55, 55, 0.9);font-weight: 600;filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));">&#8594;</button>
+                </div>
+                <div style="margin-left: 60px;color: white;margin-top: 20px;margin-bottom: 10px;  font-family: " PT
+                  Sans", sans-serif; ">
+                  <h2 style=" display: inline;font-weight: bold;font-size: 65px;">0</h2>
+                  </h2>
+                  <h2 id="counterIndustry" style="display: inline;font-weight: bold;font-size: 65px;">1 </h2><span
+                    style="font-size: 24px;"> /02</span>
+                </div>
               </div>
+
             </div>
+
           </div>
         </div>
+
       </section>
 
       <!-- Agenda section -->
       <section class="section-container">
         <div class="agenda-section">
           <div class="agenda-top-section">
-             <div class="agenda-top"></div>
-             <div class="agenda-logo">
-               <img src="/img/Basis-Logo.png" alt="">
-             </div>
+            <div class="agenda-top"></div>
+            <div class="agenda-logo">
+              <img src="/img/Basis-Logo.png" alt="">
+            </div>
           </div>
-         
+
           <div class="agenda-body">
             <div class="agenda-left">
               <img src="/img/bd-map-illustration.png" alt="" />
@@ -451,8 +482,8 @@ opacity: 0.8;color: rgba(55, 55, 55, 0.9);font-weight: 600;filter: drop-shadow(0
         <div class="section-container">
           <div class="pdfBody">
             <h2>OUR MANIFESTO</h2>
-            <h4>"Our Vision is to Change Basis for the Better"</h4>
-            <a href="/pdf/sample.pdf" download="">Learn more</a>
+            <h4>"Every Member Matters"</h4>
+            <a href="/pdf/sample.pdf" download="">Download</a>
           </div>
         </div>
       </section>
