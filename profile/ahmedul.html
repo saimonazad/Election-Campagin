@@ -1,355 +1,368 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/main.css" />
-    <link rel="stylesheet" href="/css/responsive.css" />
 
-    <link rel="stylesheet" href="/css/lightslider.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Ubuntu&display=swap"
-      rel="stylesheet"
-    />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="/js/lightslider.js"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/main.css" />
+  <link rel="stylesheet" href="/css/responsive.css" />
 
-    <title>Test</title>
-    <script>
-      $(document).ready(function () {
-        var slider = $("#memberSlider").lightSlider({
-          adaptiveHeight: false,
-          item: 4,
-          slideMove: 1,
-          slideMargin: 20,
-          loop: true,
-          autoWidth: false,
-          pager: false,
-          rtl: false,
-          mode: "slide",
-          control: false,
-          responsive: [
-            {
-              breakpoint: 950,
-              settings: {
-                item: 3,
-                slideMove: 1,
-                slideMargin: 20,
-              },
+  <link rel="stylesheet" href="/css/lightslider.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Ubuntu&display=swap" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="/js/lightslider.js"></script>
+
+  <title>Test</title>
+  <script>
+    $(document).ready(function () {
+      var slider = $("#memberSlider").lightSlider({
+        adaptiveHeight: false,
+        item: 4,
+        slideMove: 1,
+        slideMargin: 20,
+        loop: true,
+        autoWidth: false,
+        pager: false,
+        rtl: false,
+        mode: "slide",
+        control: false,
+        responsive: [
+          {
+            breakpoint: 950,
+            settings: {
+              item: 3,
+              slideMove: 1,
+              slideMargin: 20,
             },
-            {
-              breakpoint: 480,
-              settings: {
-                item: 2,
-                slideMove: 1,
-              },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              item: 2,
+              slideMove: 1,
             },
-          ],
-        });
-        $("#goToPrevSlide").on("click", function () {
-          slider.goToPrevSlide();
-        });
-        $("#goToNextSlide").on("click", function () {
-          slider.goToNextSlide();
-        });
+          },
+        ],
       });
-    </script>
-  </head>
-  <body>
-    <main>
-      <div class="">
-        <header class="header-profile">
-          <a href="/index.html#panel" class="backBtn">Back</a>
-          <div class="profile-section">
-            <div class="card">
-              <!-- <img src="/img/bio-card.png" alt="" srcset="" /> -->
-              <div class="card-title">BIO</div>
-              <p style="margin-top:40px">AKM Ahmedul Islam BABU is the founder of TechKnowGram Limited and is currently serving the company as the Managing Director & CEO. His 25+ years of professional experience of working in the BPO market in Japan, the outsourcing, and the software industry has enabled him to be one of the pioneers in the ICT Industry in Bangladesh. From the inception of his professional career, Mr. Ahmedul BABU served several multinational companies including NIIT, BJIT, ServicEngineBPO, Divine IT and AtomAP where he successfully held key positions. He has been serving as a Chair, Co-Chair, and member of a number of standing committees at BASIS since 2001, as well as at Bangladesh Computer Samity BCS, Bangladesh Association of Call Center & Outsourcing BACCO, E-Commerce Association of Bangladesh, eCAB, CTO Forum Bangladesh and Japan Bangladesh Chambers of Commerce & Industries JBCCI.
+      $("#goToPrevSlide").on("click", function () {
+        slider.goToPrevSlide();
+      });
+      $("#goToNextSlide").on("click", function () {
+        slider.goToNextSlide();
+      });
+    });
+  </script>
+</head>
 
-                Mr. Ahmedul BABU led the participation of a 78 member ICT business team in Japan IT Week (spring) 2016 at Big Sight in Tokyo as the Convener of Japan Focus Group at BASIS. He also represents Bangladesh in many national and international ICT events and forums. 
-                
-                Recently, Ahmedul BABU is serving as Chairman of BACCO Japan Desk and was appointed as Consultant of JICA Bangladesh.
-                Ahmedul BABU was a prominent ICT journalist and technology writer. He served as an executive editor of the Monthly Computer Barta and senior correspondent of the Bangladesh Observer. He is one of the founders and founder president of the Bangladesh ICT Journalist Forum (BIJF). He has both a Bachelor and Master Degree in Applied Physics Electronics and Communication Engineering from the University of Dhaka and an MBA from the Presidency University of Bangladesh and also ACMP 4.0 from IBA, University of Dhaka.
-              </p>
-              <ul style="margin-top:40px">
-                <li>Excellent Multitasking, Operation and Leadership Capabilities</li>
-                <li>Served in BASIS  and JBCCI, BACCO, BCS, eCAB with several capacities. </li>
-                <li>A Well-known ICT entrepreneur, Journalist, International market specialist and Technology writer.
-                  25+ years of professional experience in Software, Outsourcing & BPO</li>
-              </ul>
+<body>
+  <main>
+    <div class="">
+      <header class="header-profile">
+        <a href="/index.html#panel" class="backBtn">Back</a>
+        <div class="profile-section">
+          <div class="card">
+            <!-- <img src="/img/bio-card.png" alt="" srcset="" /> -->
+            <div class="card-title">BIO</div>
+            <p style="margin-top:40px">AKM Ahmedul Islam BABU is the founder of TechKnowGram Limited and is currently
+              serving the company as the Managing Director & CEO. His 25+ years of professional experience of working in
+              the BPO market in Japan, the outsourcing, and the software industry has enabled him to be one of the
+              pioneers in the ICT Industry in Bangladesh. From the inception of his professional career, Mr. Ahmedul
+              BABU served several multinational companies including NIIT, BJIT, ServicEngineBPO, Divine IT and AtomAP
+              where he successfully held key positions. He has been serving as a Chair, Co-Chair, and member of a number
+              of standing committees at BASIS since 2001, as well as at Bangladesh Computer Samity BCS, Bangladesh
+              Association of Call Center & Outsourcing BACCO, E-Commerce Association of Bangladesh, eCAB, CTO Forum
+              Bangladesh and Japan Bangladesh Chambers of Commerce & Industries JBCCI.
 
-            </div>
-            <div class="card profile-card">
-              <div class="profile-content">
-                <div style="color:rgba(78, 78, 78, 0.9022)">
-                    <h2>AKM Ahmedul Islam BABU</h2>
-                    <h4>Founder of TechKnowGram Limited</h4>
-                    <h3 style="color:rgba(31, 77, 240, 1)">ONE TEAM</h3>
-                  <div class="ballot">Ballot No:</div>
-                </div>
-              </div>
-              <div class="card-img">
-                <img src="/img/mid-card-section.png" alt="">
-              </div>
-              <div class="profile-brand">
-                <img src="/img/Basis-Logo.png" alt="">
-                <img src="/img/One-Team-Logo.png" alt="">
-                <img src="/img/AKM Ahmedul Islam BABU.png" alt="">
-              </div>
+              Mr. Ahmedul BABU led the participation of a 78 member ICT business team in Japan IT Week (spring) 2016 at
+              Big Sight in Tokyo as the Convener of Japan Focus Group at BASIS. He also represents Bangladesh in many
+              national and international ICT events and forums.
 
-            </div>
-            <div class="card">
-              <!-- <img src="/img/agenda-card.png" alt="" srcset="" /> -->
-              <div class="card-title">Key highlights</div>
-             
-                <ul style="margin-top:40px">
-                  <li>
-                    It is a long established fact that a reader
-                  </li>
-                  <li>
-                    It is a long established fact that a reader
-                  </li>
-                  <li>
-                    It is a long established fact that a reader
-                  </li>
-                  <li>
-                    It is a long established fact that a reader
-                  </li>
-                  <li>
-                    It is a long established fact that a reader
-                  </li>
-                </ul>
-            </div>
-            
+              Recently, Ahmedul BABU is serving as Chairman of BACCO Japan Desk and was appointed as Consultant of JICA
+              Bangladesh.
+              Ahmedul BABU was a prominent ICT journalist and technology writer. He served as an executive editor of the
+              Monthly Computer Barta and senior correspondent of the Bangladesh Observer. He is one of the founders and
+              founder president of the Bangladesh ICT Journalist Forum (BIJF). He has both a Bachelor and Master Degree
+              in Applied Physics Electronics and Communication Engineering from the University of Dhaka and an MBA from
+              the Presidency University of Bangladesh and also ACMP 4.0 from IBA, University of Dhaka.
+            </p>
+            <ul style="margin-top:40px">
+              <li>Excellent Multitasking, Operation and Leadership Capabilities</li>
+              <li>Served in BASIS and JBCCI, BACCO, BCS, eCAB with several capacities. </li>
+              <li>A Well-known ICT entrepreneur, Journalist, International market specialist and Technology writer.
+                25+ years of professional experience in Software, Outsourcing & BPO</li>
+            </ul>
+
           </div>
-          <!-- <div class="headerFooter">
+          <div class="card profile-card">
+            <div class="profile-content">
+              <div style="color:rgba(78, 78, 78, 0.9022)">
+                <h2>AKM Ahmedul Islam BABU</h2>
+                <h4>Founder of TechKnowGram Limited</h4>
+                <h3 style="color:rgba(31, 77, 240, 1)">ONE TEAM</h3>
+                <div class="ballot">Ballot No:</div>
+              </div>
+            </div>
+            <div class="card-img">
+              <img src="/img/mid-card-section.png" alt="">
+            </div>
+            <div class="profile-brand">
+              <img src="/img/Basis-Logo.png" alt="">
+              <img src="/img/One-Team-Logo.png" alt="">
+              <img src="/img/AKM Ahmedul Islam BABU.png" alt="">
+            </div>
+
+          </div>
+          <div class="card">
+            <!-- <img src="/img/agenda-card.png" alt="" srcset="" /> -->
+            <div class="card-title">Key highlights</div>
+
+            <ul style="margin-top:40px">
+              <li>
+                It is a long established fact that a reader
+              </li>
+              <li>
+                It is a long established fact that a reader
+              </li>
+              <li>
+                It is a long established fact that a reader
+              </li>
+              <li>
+                It is a long established fact that a reader
+              </li>
+              <li>
+                It is a long established fact that a reader
+              </li>
+            </ul>
+          </div>
+
+        </div>
+        <!-- <div class="headerFooter">
             <h3>“ Collaboration Is ALWAYS</h3><h3>
             Better Than Competition ”</h3>
             <p>..........Tanvir Hossain Khan</p>
             </div> -->
-        </header>
-        <section class="section-container">
-          <div class="section-inner-container">
-            <h2 class="others-member-title">Others Members</h2>
-            <ul id="memberSlider">
-              <li class="li_member">
-                <div class="member-img">
-                  <img src="/members/1.jpg" alt="" srcset="" />
-                </div>
-                <div class="member-details">
-                  <div>
-                    <h2>Russell T. Ahmed</h2>
-                    <h4>Founder & CEO of Team Creative</h4>
-                    <h3>ONE TEAM</h3>
-                    <div class="ballot">Ballot No:</div>
-                  </div>
-                  <div>
-                    <a class="button" href="/profile/russell.html">Learn More</a>
-                  </div>
-                </div>
-              </li>
-              <li class="li_member">
-                <div class="member-img">
-                  <img src="/members/2.jpg" alt="" srcset="" />
-                </div>
-                <div class="member-details">
-                  <div>
-                    <h2>Tanvir Hassain Khan</h2>
-                    <h4>CEO, Dreamerz Lab Limited</h4>
-                    <h3>ONE TEAM</h3>
-                    <div class="ballot">Ballot No:</div>
-                  </div>
-                  <div>
-                    <a class="button" href="/profile/tanvir.html">Learn More</a>
-
-                  </div>
-              </li>
-              <li class="li_member">
-                <div class="member-img">
-                  <img src="/members/4.jpg" alt="" srcset="" />
-                </div>
-                <div class="member-details">
-                  <div>
-                    <h2>Zia Ashraf</h2>
-                    <h4>Founder & CEO, Chaldal.com</h4>
-                    <h3>ONE TEAM</h3>
-                    <div class="ballot">Ballot No:</div>
-                  </div>
-                  <div>
-                    <a class="button" href="/profile/ashraf.html">Learn More</a>
-                  </div>
-                </div>
-              </li>
-              <li class="li_member">
-                <div class="member-img">
-                  <img src="/members/5.jpg" alt="" srcset="" />
-                </div>
-                <div class="member-details">
-                  <div>
-                    <h2>Abu Daud Khan</h2>
-                    <h4>Enroute International</h4>
-                    <h3>ONE TEAM</h3>
-                    <div class="ballot">Ballot No:</div>
-                  </div>
-                  <div>
-                    <a class="button" href="/profile/daud.html">Learn More</a>
-
-                  </div>
-                </div>
-              </li>
-              <li class="li_member">
-                <div class="member-img">
-                  <img src="/members/6.jpg" alt="" srcset="" />
-                </div>
-                <div class="member-details">
-                  <div>
-                    <h2>Fahim Ahmed</h2>
-                    <h4>Managing Director & CEO, Pathao</h4>
-                    <h3>ONE TEAM</h3>
-                    <div class="ballot">Ballot No:</div>
-                  </div>
-                  <div>
-                    <a class="button" href="/profile/fahim.html">Learn More</a>
-
-                  </div>
-                </div>
-              </li>
-              <li class="li_member">
-                <div class="member-img">
-                  <img src="/members/7.jpg" alt="" srcset="" />
-                </div>
-                <div class="member-details">
-                  <div>
-                    <h2>Ms Samira Zuberi Himika</h2>
-                    <h4></h4>
-                    <h3>ONE TEAM</h3>
-                    <div class="ballot">Ballot No:</div>
-                  </div>
-                  <div>
-                    <a class="button" href="/profile/himika.html">Learn More</a>
-                  </div>
-                </div>
-              </li>
-              <li class="li_member">
-                <div class="member-img">
-                  <img src="/members/8.jpg" alt="" srcset="" />
-                </div>
-                <div class="member-details">
-                  <div>
-                    <h2>Rezwana Khan</h2>
-                    <h4>CEO, Star Computer Systems Limited</h4>
-                    <h3>ONE TEAM</h3>
-                    <div class="ballot">Ballot No:</div>
-                  </div>
-                  <div>
-                    <a class="button" href="/profile/rezwana.html">Learn More</a>
-                  </div>
-                </div>
-              </li>
-              <li class="li_member">
-                <div class="member-img">
-                  <img src="/members/3.jpg" alt="" srcset="" />
-                </div>
-                <div class="member-details">
-                  <div>
-                    <h2>AKM Ahmedul Islam BABU</h2>
-                    <h4>Founder of TechKnowGram Limited</h4>
-                    <h3>ONE TEAM</h3>
-                    <div class="ballot">Ballot No:</div>
-                  </div>
-                  <div style="margin-top: -10px"> <a class="button" href="/profile/ahmedul.html">Learn More</a>
-                  </div>
-                </div>
-              </li>
-              <li class="li_member">
-                <div class="member-img">
-                  <img src="/members/4.jpg" alt="" srcset="" />
-                </div>
-                <div class="member-details">
-                  <div>
-                    <h2>Mr. Suzadur Rahman</h2>
-                  <h4>Founder of Mindlabz Ltd.</h4>
-                    <h3>ONE TEAM</h3>
-                    <div class="ballot">Ballot No:</div>
-                  </div>
-                  <div>
-                    <a class="button" href="/profile/suzadur.html">Learn More</a>
-                  </div>
-                </div>
-              </li>
-              <li class="li_member">
-                <div class="member-img">
-                  <img src="/members/1.jpg" alt="" srcset="" />
-                </div>
-                <div class="member-details">
-                  <div>
-                    <h2>Zaman Khan</h2>
-                  <h4>Founder & CEO of ZAMAN IT</h4>
-                    <h3>ONE TEAM</h3>
-                    <div class="ballot">Ballot No:</div>
-                  </div>
-                  <div>
-                    <a class="button" href="/profile/zaman.html">Learn More</a>
-                  </div>
-                </div>
-              </li>
-            </ul>
-            <div class="sliderBtn">
-              <button type="button" id="goToPrevSlide">
-                <img src="/img/left.png" alt="" srcset="">
-              </button>
-              <button type="button" id="goToNextSlide">
-                <img src="/img/rightbutton .png" alt="" srcset="">
-              </button>
-            </div>
-          </div>
-        </section>
-
-        <section>
-          <div class="contact-full">
-            <div class="contact-top section-container"></div>
-            <div class="contact-body">
-              <div class="contact-column">
+      </header>
+      <section class="section-container">
+        <div class="section-inner-container">
+          <h2 class="others-member-title">Others Members</h2>
+          <ul id="memberSlider">
+            <li class="li_member">
+              <div class="member-img">
+                <img src="/members/1.jpg" alt="" srcset="" />
+              </div>
+              <div class="member-details">
                 <div>
-                  <div class="contact-left">
-                    <img src="/img/footer-left.png" alt="" srcset="">
-                  </div>
+                  <h2>Russell T. Ahmed</h2>
+                  <h4>Founder & CEO of Team Creative</h4>
+                  <h3>ONE TEAM</h3>
+                  <div class="ballot">Ballot No:</div>
                 </div>
-                <div class="contact-content">
-                  <div class="contact-form-top">
-                    <div class="contact-border"></div>
-                    <p>DROP MESSAGE</p>
-                    <p class="contact-title">We Are Very Exited To Talk With You</p>
-                  </div>
-                  <form action="" class="form-content">
-                    <div class="form-left">
-                      <input type="text" name="" id="" placeholder="Name">
-                      <input type="text" name="" id="" placeholder="Email">
-                      <input type="text" name="" id="" placeholder="Phone Number">
-                    </div>
-                    <div class="form-right">
-                      <textarea name="" id="" cols="40" rows="10">Tell us what we can do for you</textarea>
-                      <input type="submit" value="Submit">
-                    </div>
-                  </form> 
+                <div>
+                  <a class="button" href="/profile/russell.html">Learn More</a>
                 </div>
               </div>
-              <a href="#top" class="up-button">
-                <img src="/img/up-button.png" alt="" srcset="">
-              </a>
+            </li>
+            <li class="li_member">
+              <div class="member-img">
+                <img src="/members/2.jpg" alt="" srcset="" />
               </div>
-              
-            </div>
+              <div class="member-details">
+                <div>
+                  <h2>Tanvir Hassain Khan</h2>
+                  <h4>CEO, Dreamerz Lab Limited</h4>
+                  <h3>ONE TEAM</h3>
+                  <div class="ballot">Ballot No:</div>
+                </div>
+                <div>
+                  <a class="button" href="/profile/tanvir.html">Learn More</a>
+
+                </div>
+            </li>
+            <li class="li_member">
+              <div class="member-img">
+                <img src="/members/4.jpg" alt="" srcset="" />
+              </div>
+              <div class="member-details">
+                <div>
+                  <h2>Zia Ashraf</h2>
+                  <h4>Founder & CEO, Chaldal.com</h4>
+                  <h3>ONE TEAM</h3>
+                  <div class="ballot">Ballot No:</div>
+                </div>
+                <div>
+                  <a class="button" href="/profile/ashraf.html">Learn More</a>
+                </div>
+              </div>
+            </li>
+            <li class="li_member">
+              <div class="member-img">
+                <img src="/members/5.jpg" alt="" srcset="" />
+              </div>
+              <div class="member-details">
+                <div>
+                  <h2>Abu Daud Khan</h2>
+                  <h4>Enroute International</h4>
+                  <h3>ONE TEAM</h3>
+                  <div class="ballot">Ballot No:</div>
+                </div>
+                <div>
+                  <a class="button" href="/profile/daud.html">Learn More</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="li_member">
+              <div class="member-img">
+                <img src="/members/6.jpg" alt="" srcset="" />
+              </div>
+              <div class="member-details">
+                <div>
+                  <h2>Fahim Ahmed</h2>
+                  <h4>Managing Director & CEO, Pathao</h4>
+                  <h3>ONE TEAM</h3>
+                  <div class="ballot">Ballot No:</div>
+                </div>
+                <div>
+                  <a class="button" href="/profile/fahim.html">Learn More</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="li_member">
+              <div class="member-img">
+                <img src="/members/7.jpg" alt="" srcset="" />
+              </div>
+              <div class="member-details">
+                <div>
+                  <h2>Ms Samira Zuberi Himika</h2>
+                  <h4></h4>
+                  <h3>ONE TEAM</h3>
+                  <div class="ballot">Ballot No:</div>
+                </div>
+                <div>
+                  <a class="button" href="/profile/himika.html">Learn More</a>
+                </div>
+              </div>
+            </li>
+            <li class="li_member">
+              <div class="member-img">
+                <img src="/members/8.jpg" alt="" srcset="" />
+              </div>
+              <div class="member-details">
+                <div>
+                  <h2>Rezwana Khan</h2>
+                  <h4>CEO, Star Computer Systems Limited</h4>
+                  <h3>ONE TEAM</h3>
+                  <div class="ballot">Ballot No:</div>
+                </div>
+                <div>
+                  <a class="button" href="/profile/rezwana.html">Learn More</a>
+                </div>
+              </div>
+            </li>
+            <li class="li_member">
+              <div class="member-img">
+                <img src="/members/3.jpg" alt="" srcset="" />
+              </div>
+              <div class="member-details">
+                <div>
+                  <h2>AKM Ahmedul Islam BABU</h2>
+                  <h4>Founder of TechKnowGram Limited</h4>
+                  <h3>ONE TEAM</h3>
+                  <div class="ballot">Ballot No:</div>
+                </div>
+                <div style="margin-top: -10px"> <a class="button" href="/profile/ahmedul.html">Learn More</a>
+                </div>
+              </div>
+            </li>
+            <li class="li_member">
+              <div class="member-img">
+                <img src="/members/4.jpg" alt="" srcset="" />
+              </div>
+              <div class="member-details">
+                <div>
+                  <h2>Mr. Suzadur Rahman</h2>
+                  <h4>Founder of Mindlabz Ltd.</h4>
+                  <h3>ONE TEAM</h3>
+                  <div class="ballot">Ballot No:</div>
+                </div>
+                <div>
+                  <a class="button" href="/profile/suzadur.html">Learn More</a>
+                </div>
+              </div>
+            </li>
+            <li class="li_member">
+              <div class="member-img">
+                <img src="/members/1.jpg" alt="" srcset="" />
+              </div>
+              <div class="member-details">
+                <div>
+                  <h2>Zaman Khan</h2>
+                  <h4>Founder & CEO of ZAMAN IT</h4>
+                  <h3>ONE TEAM</h3>
+                  <div class="ballot">Ballot No:</div>
+                </div>
+                <div>
+                  <a class="button" href="/profile/zaman.html">Learn More</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="sliderBtn">
+            <button type="button" id="goToPrevSlide">
+              <img src="/img/left.png" alt="" srcset="">
+            </button>
+            <button type="button" id="goToNextSlide">
+              <img src="/img/rightbutton .png" alt="" srcset="">
+            </button>
           </div>
-        </section>
-      </div>
-    </main>
-  </body>
+        </div>
+      </section>
+
+      <section>
+        <div class="contact-full">
+          <div class="contact-top section-container"></div>
+          <div class="contact-body">
+            <div class="contact-column">
+              <div>
+                <div class="contact-left">
+                  <img src="/img/footer-left.png" alt="" srcset="">
+                </div>
+              </div>
+              <div class="contact-content">
+                <div class="contact-form-top">
+                  <div class="contact-border"></div>
+                  <p>DROP MESSAGE</p>
+                  <p class="contact-title">Please let us know your expectations from BASIS and <br> your valued
+                    suggestions for the newly Elected Executive Committee.</p>
+                </div>
+                <form action="" class="form-content">
+                  <div class="form-left">
+                    <input type="text" name="" id="" placeholder="Name">
+                    <input type="text" name="" id="" placeholder="Email">
+                    <input type="text" name="" id="" placeholder="Phone Number">
+                  </div>
+                  <div class="form-right">
+                    <textarea name="" id="" cols="40" rows="10">Tell us what we can do for you</textarea>
+                    <input type="submit" value="Submit">
+                  </div>
+                </form>
+              </div>
+            </div>
+            <a href="#top" class="up-button">
+              <img src="/img/up-button.png" alt="" srcset="">
+            </a>
+          </div>
+
+        </div>
+    </div>
+    </section>
+    </div>
+  </main>
+</body>
+
 </html>
