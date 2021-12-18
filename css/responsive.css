@@ -861,7 +861,7 @@
     height: 175vh;
   }
   .profile-card {
-    height: 395px;
+    height: 395px !important;
   }
   .card-img {
     margin-left: 5px;
