@@ -230,7 +230,7 @@
   .li_member h4 {
     font-size: 10px;
   }
-  .card > ul {
+  .card > .key-content > ul {
     font-size: 10px;
     background: url("/img/list.png") no-repeat left center;
     line-height: 25px;
@@ -398,9 +398,9 @@
     line-height: 25px;
   }
   .up-button > img {
-    width: 69.62px;
-    height: 71.98px;
-    margin-top: -35px;
+    width: 66.62px;
+    height: 60.98px;
+    margin-top: -40px;
   }
 
   .card {
@@ -414,8 +414,8 @@
   .our-brand-img {
     margin-left: 70px;
   }
-  .card > ul {
-    line-height: 30px;
+  .card > .key-content > ul {
+    line-height: 25px;
     font-size: 15px;
   }
   .card > p {
@@ -466,14 +466,22 @@
     width: 100%;
   }
   .li_member {
-    height: 80%;
+    height: 65%;
   }
-
-  .card > ul {
+  .card > .key-content {
+    position: relative;
+    overflow: auto;
+    height: 480px;
+    padding: 10px;
+  }
+  .card > .key-content > ul {
+    position: relative;
     font-size: 12px;
     background: url("/img/list.png") no-repeat left top;
+    background-size: 25px 27px;
+    margin-left: -12px;
   }
-  .card > ul > li {
+  .card > .key-content > ul > li {
     padding-left: 10px;
   }
   .trapezoid-bio > img {
@@ -484,6 +492,6 @@
     font-size: 15px;
   }
   .sliderBtn {
-    margin-top: -10px;
+    margin-top: -60px;
   }
 }

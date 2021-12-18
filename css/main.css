@@ -365,7 +365,7 @@ h2 {
 .member-details > div {
   /* padding: 20px 30px; */
   text-align: center;
-  line-height: 10px;
+  line-height: 16px;
 }
 .member-details h3 {
   color: rgba(31, 77, 240, 1);
@@ -380,7 +380,7 @@ h2 {
 .member-details h2 {
   font-family: "PT Serif", serif;
   font-size: 20px;
-  margin-top: 25px;
+  margin-top: 32px;
 }
 .ballot {
   background: linear-gradient(
@@ -582,9 +582,9 @@ textarea {
 }
 
 .profile-section img {
-  width: 100%;
+  width: 88%;
   /* height: 100%; */
-  margin-top: -15px !important;
+  /* margin-top: -15px !important; */
 }
 .trapezoid-bio {
   position: relative;
@@ -592,11 +592,11 @@ textarea {
   color: white;
   width: 190px;
   margin: 0 auto;
-  margin-top: -15px;
+  margin-top: -28px;
 }
 .card-title {
   position: absolute;
-  top: 30%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-weight: 700;
@@ -689,7 +689,7 @@ textarea {
   margin: 15px;
   text-align: center;
   position: relative;
-  overflow: hidden;
+  overflow: hidden !important;
 }
 .card-content {
   position: relative;
@@ -704,6 +704,12 @@ textarea {
   text-align: center;
 
   color: rgba(73, 70, 71, 0.8103);
+}
+.key-content {
+  position: relative;
+  overflow: auto;
+  height: 480px;
+  padding-left: 5px;
 }
 .profile-card {
   /* height: 600px; */
@@ -754,7 +760,7 @@ textarea {
   margin-right: 5px;
 }
 
-.card > ul {
+.card > .key-content > ul {
   text-align: left;
   font-family: PT Serif;
   list-style-type: none !important;
@@ -769,7 +775,7 @@ textarea {
 }
 
 .card > ul > li {
-  padding-left: 10px;
+  padding-left: 8px;
 }
 
 .headerFooter {
