@@ -1,9 +1,66 @@
+@media only screen and (max-width: 767px) {
+  .contact-body {
+    padding: 0 60px;
+    background-size: cover;
+  }
+  .contact-left {
+    display: none;
+  }
+  .form-content {
+    margin: 0;
+  }
+  .contact-column {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: auto;
+    position: relative;
+
+    /* width: 50%; */
+  }
+  .contact-column {
+    padding-right: 0px;
+  }
+  .form-right {
+    margin: 0;
+  }
+}
 @media only screen and (max-width: 540px) {
   .brand {
     height: 235px;
   }
+  .our-industry {
+    background-size: cover;
+  }
+  .industry-left h2 {
+    font-size: 25px;
+  }
+  .industry-item h2 {
+    font-size: 20px;
+  }
+  .industry-right .lSAction {
+    display: block !important;
+  }
+  .industry-right .lSAction .lSPrev {
+    left: 18px;
+  }
+  #industryNextSlide,
+  #industryPrevSlide {
+    display: none !important;
+  }
+  .agenda-left {
+    display: none;
+  }
 }
 @media only screen and (max-width: 450px) {
+  .contact-body {
+    padding: 0;
+  }
+  .industry-item h2 {
+    font-size: 15px;
+    margin: 5px;
+  }
   .our-industry-body {
     padding: 1rem;
   }
@@ -45,18 +102,19 @@
   }
   .industry-item {
     box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.1);
-    padding: 10px;
+    padding: 10px 20px;
     border-radius: 8px;
-    width: 200px;
     font-size: 15px;
-    height: 100px;
-    margin-top: -10px;
-    overflow: scroll;
+    overflow: auto;
+    height: 300px;
   }
   .industry-item h2 {
     border-radius: 3%;
     font-size: 15px;
     margin: 5px;
+  }
+  .industry-item p {
+    text-align: justify;
   }
 
   .agenda-top {
@@ -108,8 +166,7 @@
     line-height: 25px;
   }
   .contact-top {
-    height: 100px;
-    margin-top: 50px;
+    margin-bottom: 50px;
   }
   .contact-body {
     height: 300px;
@@ -166,10 +223,10 @@
   }
 
   .card {
-    width: 350px;
+    width: auto;
     height: auto;
     padding: 15px;
-    margin: 15px;
+    margin: 20px;
     text-align: center;
     overflow: scroll;
   }
@@ -236,19 +293,19 @@
   .li_member .member-details .button {
     /* padding: 20px 30px; */
     position: absolute;
-    left: 15%;
-    top: 50%;
+    left: 10%;
+    top: 52%;
     margin-top: 104px !important;
   }
   .li_member .member-details .ballot {
     /* padding: 20px 30px; */
     position: absolute;
-    left: 20%;
-    top: 50%;
+    left: 14%;
+    top: 56%;
     margin-top: 50px !important;
   }
   .li_member .member-details h2 {
-    font-size: 5px;
+    font-size: 14px !important;
   }
   .li_member h2 {
     height: auto;
@@ -257,7 +314,7 @@
     font-size: 14px;
   }
   .li_member h4 {
-    font-size: 10px;
+    font-size: 14px;
   }
   .card > .key-content > ul {
     font-size: 15px;
@@ -272,6 +329,48 @@
   .profile-card {
     height: auto;
     order: -1;
+  }
+
+  .card {
+    width: auto;
+    height: auto;
+    padding: 15px;
+    margin: 15px;
+    text-align: center;
+    overflow: scroll;
+  }
+  .profile-content {
+    text-align: center !important;
+    line-height: 2px;
+  }
+  .profile-content h2 {
+    font-size: 25px;
+  }
+  .card-content,
+  .key-content > ul > li {
+    font-size: 25px;
+    line-height: 35px;
+  }
+  .profile-content h4 {
+    font-size: 17px;
+  }
+  .profile-content img {
+    width: 100%;
+  }
+  .sliderBtn > #goToPrevSlide {
+    width: 50px;
+    top: 50%;
+    margin-right: 10px;
+  }
+  .sliderBtn > p {
+    padding: 8px;
+  }
+  .sliderBtn > button > img {
+    width: 50px !important;
+  }
+  .sliderBtn > #goToNextSlide {
+    margin-bottom: 50px;
+    top: -32px;
   }
 }
 
@@ -310,19 +409,12 @@
 
   .industry-item {
     box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.1);
-    padding: 5px;
-    border-radius: 5%;
     font-size: 15px;
-    height: 350px;
-    width: 300px;
-    margin-top: -200px;
-    margin-left: 20px;
+
     overflow: scroll;
   }
   .industry-item h2 {
-    box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.1);
     border-radius: 3%;
-    font-size: 15px;
     margin: 5px;
   }
 
@@ -568,3 +660,33 @@
     margin-top: 50px !important;
   }
 }
+@media (min-width: 375px) {
+  .header-profile {
+    height: 412vh;
+    margin-bottom: -100vh;
+  }
+}
+@media (max-width: 320px) {
+  .header-profile {
+    height: 505vh;
+    margin-bottom: -90vh;
+  }
+}
+@media (min-width: 414px) {
+  .header-profile {
+    height: 392vh;
+    margin-bottom: -90vh;
+  }
+}
+@media (min-width: 411px) {
+  .header-profile {
+    height: 392vh;
+    margin-bottom: -90vh;
+  }
+}
+/* @media (min-width: 768px) {
+  .header-profile {
+    height: 90vh;
+    margin-bottom: -25vh;
+  }
+} */
