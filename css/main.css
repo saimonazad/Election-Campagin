@@ -686,14 +686,17 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
+  margin-top: -30px;
 }
 .profile-brand img {
   width: 26%;
   margin-left: 10px;
   height: auto;
 }
-
+.card-img {
+  width: 510px;
+  margin: 0 auto;
+}
 .card {
   width: 40%;
   height: 510px;
@@ -722,18 +725,19 @@ textarea {
 .key-content {
   position: relative;
   overflow: auto;
-  height: 580px;
-  padding-left: 8px;
+  height: auto;
+  padding: 71px 0px 71px 12px;
 }
 .profile-card {
   /* height: 600px; */
-  height: auto;
+  height: 780px;
   text-align: center;
 }
 .profile-card h3 {
   /* height: 600px; */
   font-family: "PT Serif", serif !important;
 }
+
 .card > {
 }
 .agendaItem {
@@ -793,14 +797,14 @@ textarea {
   list-style-type: none !important;
   font-style: normal;
   font-weight: bold;
-  font-size: 14px;
-  line-height: 22px;
-  color: rgba(73, 70, 71, 0.81);
+  font-size: 18px;
+  line-height: 24px;
+  color: #494647;
   margin-bottom: 1rem;
   background: url("/img/list.png") no-repeat left top;
   background-size: 25px 27px 11px;
-  padding: 0px 10px 0px 35px;
-  margin: 10px 0px 0px 0px;
+  padding: 0px 10px 0px 40px;
+  margin: 30px 0px 0px 0px;
 }
 
 .card > ul > li {
