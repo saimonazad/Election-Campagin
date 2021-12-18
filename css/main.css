@@ -224,7 +224,7 @@ h2 {
 .agenda-logo > img {
   height: 50px;
   width: 100px;
-  left: 100%;
+  left: auto;
   position: absolute;
   opacity: 0.5;
   transform: rotate(90deg);

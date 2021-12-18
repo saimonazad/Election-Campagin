@@ -259,6 +259,9 @@
     line-height: 20px;
     padding-left: -25px !important;
   }
+  .agenda-logo > img {
+    left: auto;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -328,9 +331,17 @@
     margin-top: 20px;
     height: 100px;
   }
-  .members {
-    justify-self: center !important;
-    align-content: center;
+  /* .members {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, max-content));
+    justify-content: center;
+    grid-gap: 2rem;
+  } */
+
+  /* Dealing with single orphan */
+
+  .members > div {
+    flex: 0 0 calc(25% - autofit);
   }
   .members-body {
     margin-top: 20px;
@@ -340,6 +351,10 @@
   }
   .scroll-btn {
     width: auto;
+  }
+
+  .agenda-logo > img {
+    left: auto;
   }
 
   .contact-top {
