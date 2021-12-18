@@ -4,6 +4,9 @@
   }
 }
 @media only screen and (max-width: 450px) {
+  .our-industry-body {
+    padding: 1rem;
+  }
   .header {
     height: 60vh;
   }
@@ -51,7 +54,6 @@
     overflow: scroll;
   }
   .industry-item h2 {
-    box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.1);
     border-radius: 3%;
     font-size: 15px;
     margin: 5px;
