@@ -599,7 +599,7 @@ textarea {
 }
 .card-title {
   position: absolute;
-  font-family: "PT Serif";
+  font-family: "PT Serif", serif;
   top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -729,6 +729,10 @@ textarea {
   /* height: 600px; */
   height: auto;
   text-align: center;
+}
+.profile-card h3 {
+  /* height: 600px; */
+  font-family: "PT Serif", serif !important;
 }
 .card > {
 }
