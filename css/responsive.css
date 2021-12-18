@@ -39,20 +39,24 @@
 }
 @media only screen and (max-width: 1980px) {
   .profile-card {
-    height: 790px;
+    height: 790px !important;
     width: auto !important;
+  }
+  .profile-brand {
+    margin-top: 39px;
   }
   .header-profile {
     height: auto;
   }
   .card {
-    width: 30%;
+    width: 40%;
+    height: 600px;
     /* margin: 70px; */
   }
   .card-img {
     /* margin-left: 30px;
     margin-top: -15px; */
-    margin-left: 89px;
+    margin-left: 28px;
     margin-top: -15px;
   }
   .card-content {
@@ -63,7 +67,7 @@
     width: 144%;
   }
   .trapezoid-bio {
-    margin: -39px 157px;
+    margin: -39px 193px;
   }
   .card-title {
     top: 37%;
