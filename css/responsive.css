@@ -2,8 +2,34 @@
   .brand {
     height: 235px;
   }
+  .our-industry {
+    background-size: cover;
+  }
+  .industry-left h2 {
+    font-size: 25px;
+  }
+  .industry-item h2 {
+    font-size: 20px;
+  }
+  .industry-right .lSAction {
+    display: block !important;
+  } 
+  .industry-right .lSAction .lSPrev{
+    left: 18px;
+  }
+  #industryNextSlide,
+  #industryPrevSlide {
+    display: none !important;
+  }
+  .agenda-left {
+    display: none;
+  }
 }
 @media only screen and (max-width: 450px) {
+  .industry-item h2 {
+    font-size: 15px;
+    margin: 5px;
+  }
   .our-industry-body {
     padding: 1rem;
   }
@@ -45,18 +71,19 @@
   }
   .industry-item {
     box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.1);
-    padding: 10px;
+    padding: 10px 20px;
     border-radius: 8px;
-    width: 200px;
     font-size: 15px;
-    height: 100px;
-    margin-top: -10px;
-    overflow: scroll;
+    overflow: auto;
+    height: 300px;
   }
   .industry-item h2 {
     border-radius: 3%;
     font-size: 15px;
     margin: 5px;
+  }
+  .industry-item p {
+    text-align: justify;
   }
 
   .agenda-top {
@@ -310,19 +337,12 @@
 
   .industry-item {
     box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.1);
-    padding: 5px;
-    border-radius: 5%;
     font-size: 15px;
-    height: 350px;
-    width: 300px;
-    margin-top: -200px;
-    margin-left: 20px;
+
     overflow: scroll;
   }
   .industry-item h2 {
-    box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.1);
     border-radius: 3%;
-    font-size: 15px;
     margin: 5px;
   }
 
