@@ -369,15 +369,18 @@ h2 {
 .member-details h3 {
   color: rgba(31, 77, 240, 1);
   font-family: "PT Serif", serif;
+  font-weight: 700;
 }
 
 .member-details h4 {
   font-family: "PT Serif", serif;
+  font-weight: 700;
   color: rgba(55, 51, 52, 0.7233);
   font-size: 16px;
 }
 .member-details h2 {
-  font-family: "PT Serif", serif;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
   font-size: 20px;
   margin-top: 32px;
 }
@@ -416,6 +419,7 @@ h2 {
 }
 .contact-section {
   margin-top: 100px;
+  font-family: "Poppins", sans-serif;
 }
 .contact-full {
   margin-top: -10px;
@@ -475,7 +479,6 @@ h2 {
 .contact-form-top > .contact-title {
   font-size: 20px;
   text-align: right;
-  font-family: Poppins;
 }
 
 .form-content {
@@ -548,6 +551,7 @@ textarea {
   line-height: 20.29px;
   font-size: 15px;
   resize: none;
+  font-family: "PT Sans", sans-serif;
 }
 /********************   profile    *****************/
 .header-profile {
@@ -826,7 +830,7 @@ textarea {
   }
 }
 @media only screen and (max-width: 1100px) {
-  .industry-left{
+  .industry-left {
     text-align: center;
     display: inline;
   }
