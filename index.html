@@ -69,7 +69,15 @@
           //   $("#industryPrevSlide").addClass("disabledIndustryBtn")
 
           // }
-        }
+        },
+        onBeforeNextSlide: function (el) {
+          $("#agendaPrevSlider").removeClass("agendaBtnActive")
+          $("#agendaNextSlider").addClass("agendaBtnActive")
+        },
+        onBeforePrevSlide: function (el) {
+          $("#agendaPrevSlider").addClass("agendaBtnActive")
+          $("#agendaNextSlider").removeClass("agendaBtnActive")
+        },
       })
       $("#agendaPrevSlider").on("click", function () {
         agendaSlider.goToPrevSlide();
@@ -455,7 +463,7 @@
                     style="font-size: 24px;"> /03</span>
                 </div>
                 <div>
-                  <button id="agendaPrevSlider" class="agendaBtn">&#8592;</button>
+                  <button id="agendaPrevSlider" class="agendaBtn agendaBtnActive">&#8592;</button>
                   <button id="agendaNextSlider" class="agendaBtn">&#8594;</button>
                 </div>
 
@@ -538,7 +546,8 @@
                     <input type="text" name="Phone" id="" placeholder="Phone Number">
                   </div>
                   <div class="form-right">
-                    <textarea name="Message" id="" cols="40" rows="10" placeholder="Tell us what we can do for you" required></textarea>
+                    <textarea name="Message" id="" cols="40" rows="10" placeholder="Tell us what we can do for you"
+                      required></textarea>
                     <input type="submit" value="Submit">
                   </div>
                 </form>

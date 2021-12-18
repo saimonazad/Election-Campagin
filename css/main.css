@@ -120,7 +120,7 @@ h2 {
 }
 .industry-left h2 {
   font-family: "PT Sans", sans-serif;
-  font-size: 40px;
+  font-size: 32px;
   margin-right: 20px;
 }
 .industry-border {
@@ -744,19 +744,28 @@ textarea {
   width: 60%;
 }
 .agendaBtn {
+  color: linear-gradient(
+    98.69deg,
+    #0f4b91 8.62%,
+    #1772eb 59.17%,
+    #4e97f8 99.1%
+  );
+
+  border-radius: 5px;
+  padding: 18px;
+  margin-top: 32px;
+  border: none;
+  cursor: pointer;
+  margin-right: 5px;
+}
+.agendaBtnActive {
   background: linear-gradient(
     98.69deg,
     #0f4b91 8.62%,
     #1772eb 59.17%,
     #4e97f8 99.1%
   );
-  border-radius: 5px;
   color: white;
-  padding: 18px;
-  margin-top: 32px;
-  border: none;
-  cursor: pointer;
-  margin-right: 5px;
 }
 
 .card > .key-content > ul {
