@@ -585,9 +585,10 @@ textarea {
 }
 
 .profile-section img {
-  width: 88%;
+  width: 100%;
+  padding-bottom: 28px;
   /* height: 100%; */
-  /* margin-top: -15px !important; */
+  margin-top: 0 auto;
 }
 .trapezoid-bio {
   position: relative;
@@ -595,12 +596,12 @@ textarea {
   color: white;
   width: 190px;
   margin: 0 auto;
-  margin-top: -28px;
+  margin-top: -31px;
 }
 .card-title {
   position: absolute;
   font-family: "PT Serif", serif;
-  top: 45%;
+  top: 34%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #e7eeff;
@@ -732,6 +733,7 @@ textarea {
   /* height: 600px; */
   height: 780px;
   text-align: center;
+  padding: 0px;
 }
 .profile-card h3 {
   /* height: 600px; */
