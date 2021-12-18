@@ -712,10 +712,18 @@
     margin-bottom: -90vh;
   }
 }
-
-/* @media (min-width: 768px) {
+@media (min-width: 1025px) {
   .header-profile {
-    height: 90vh;
-    margin-bottom: -25vh;
+    height: auto;
   }
-} */
+  .profile-card {
+    height: auto;
+    width: auto !important;
+  }
+  .profile-card > img {
+    margin: 0 auto;
+  }
+  .card-img {
+    width: auto;
+  }
+}
