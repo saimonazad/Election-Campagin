@@ -1,3 +1,23 @@
+@media only screen and (min-width: 2560px) {
+  .profile-card {
+    height: 790px;
+    width: auto !important;
+  }
+  .header-profile {
+    height: auto;
+  }
+  .card {
+    width: 30%;
+    /* margin: 70px; */
+  }
+  .card-img {
+    margin-left: 45px;
+    margin-top: -15px;
+  }
+  .profile-section > div {
+    margin: 80px !important;
+  }
+}
 @media only screen and (max-width: 767px) {
   .contact-body {
     padding: 0 60px;
@@ -730,7 +750,14 @@
     margin-bottom: -90vh;
   }
 }
-@media only screen and (min-width: 1025px) {
+
+@media only screen and (min-width: 1440px) {
+  .profile-brand {
+    margin-top: 5px;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
   .header-profile {
     height: auto;
   }
@@ -738,7 +765,7 @@
     height: auto;
   }
   .profile-card {
-    height: 780px;
+    height: 690px;
     width: auto !important;
   }
   .profile-section > img {
