@@ -687,7 +687,12 @@
 @media (max-width: 425px) {
   .header-profile {
     margin-bottom: -155vh;
-    height: 571vh;
+    height: 612vh;
+  }
+  .profile-card {
+    height: 600px !important;
+    width: auto !important;
+    order: -1;
   }
 }
 @media (max-width: 414px) {
@@ -704,7 +709,7 @@
 }
 @media (max-width: 375px) {
   .header-profile {
-    height: 583vh;
+    height: 718vh;
     margin-bottom: -155vh;
   }
   .profile-card {
