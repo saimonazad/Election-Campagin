@@ -1,3 +1,31 @@
+@media only screen and (max-width: 767px) {
+  .contact-body {
+    padding: 0 60px;
+    background-size: cover;
+  }
+  .contact-left {
+    display: none;
+  }
+  .form-content {
+    margin: 0;
+  }
+  .contact-column {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: auto;
+    position: relative;
+
+    /* width: 50%; */
+  }
+  .contact-column {
+    padding-right: 0px;
+  }
+  .form-right {
+    margin: 0;
+  }
+}
 @media only screen and (max-width: 540px) {
   .brand {
     height: 235px;
@@ -13,8 +41,8 @@
   }
   .industry-right .lSAction {
     display: block !important;
-  } 
-  .industry-right .lSAction .lSPrev{
+  }
+  .industry-right .lSAction .lSPrev {
     left: 18px;
   }
   #industryNextSlide,
@@ -26,6 +54,9 @@
   }
 }
 @media only screen and (max-width: 450px) {
+  .contact-body {
+    padding: 0;
+  }
   .industry-item h2 {
     font-size: 15px;
     margin: 5px;
@@ -135,8 +166,7 @@
     line-height: 25px;
   }
   .contact-top {
-    height: 100px;
-    margin-top: 50px;
+    margin-bottom: 50px;
   }
   .contact-body {
     height: 300px;
