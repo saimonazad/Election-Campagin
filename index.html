@@ -39,7 +39,7 @@
         item: 2,
         slideMove: 1,
         slideMargin: 12,
-        loop: false,
+        loop: true,
         autoWidth: false,
         pager: false,
         control: false,
@@ -61,8 +61,16 @@
             },
           },
         ],
+        onBeforeSlide: function (el) {
+          $('#counterAgenda').text(el.getCurrentSlideCount());
+          // if (el.getCurrentSlideCount() == totalIndustrySlide) {
+          //   $("#industryNextSlide").addClass("disabledIndustryBtn")
+          // } else if (el.getCurrentSlideCount == 1) {
+          //   $("#industryPrevSlide").addClass("disabledIndustryBtn")
 
-      });
+          // }
+        }
+      })
       $("#agendaPrevSlider").on("click", function () {
         agendaSlider.goToPrevSlide();
       });
@@ -380,7 +388,8 @@
                     style="margin-left: 20px;border-radius: 50%;padding: 10px;font-size: 20px;cursor: pointer;border:none;background: linear-gradient(0deg, #FFFFFF, #FFFFFF);
                 opacity: 0.8;color: rgba(55, 55, 55, 0.9);font-weight: 600;filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));">&#8594;</button>
                 </div>
-                <div style="margin-left: 60px;color: white;margin-top: 20px;margin-bottom: 10px;  font-family: PTSans, sans-serif;">
+                <div
+                  style="margin-left: 60px;color: white;margin-top: 20px;margin-bottom: 10px;  font-family: PTSans, sans-serif;">
                   <h2 style=" display: inline;font-weight: bold;font-size: 65px;">0</h2>
                   </h2>
                   <h2 id="counterIndustry" style="display: inline;font-weight: bold;font-size: 65px;">1 </h2><span
@@ -400,7 +409,7 @@
         <img src="/img/Basis-Logo.png" alt="">
       </div>
       <section class="section-container">
-        
+
         <div class="agenda-section">
           <div class="agenda-top-section">
             <div class="agenda-top"></div>
@@ -437,9 +446,19 @@
                     </p>
                 </li>
               </ul>
-              <div style="text-align: center;">
-                <button id="agendaPrevSlider" class="agendaBtn">&#8592;</button>
-                <button id="agendaNextSlider" class="agendaBtn">&#8594;</button>
+              <div style="display: flex; justify-content: space-between;">
+                <div style="background: linear-gradient(98.69deg,#0f4b91 8.62%,#1772eb 59.17%,#4e97f8 99.1%); -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; font-family: PTSans, sans-serif; margin-top: 10px;">
+                  <h2 style=" display: inline;font-weight: bold;font-size: 65px;">0</h2>
+                  </h2>
+                  <h2 id="counterAgenda" style="display: inline;font-weight: bold;font-size: 65px;">1 </h2><span
+                    style="font-size: 24px;"> /03</span>
+                </div>
+                <div>
+                  <button id="agendaPrevSlider" class="agendaBtn">&#8592;</button>
+                  <button id="agendaNextSlider" class="agendaBtn">&#8594;</button>
+                </div>
+
               </div>
             </div>
           </div>
@@ -519,8 +538,7 @@
                     <input type="text" name="Phone" id="" placeholder="Phone Number">
                   </div>
                   <div class="form-right">
-                    <textarea name="Message" id="" cols="40" rows="10"
-                      required>Tell us what we can do for you</textarea>
+                    <textarea name="Message" id="" cols="40" rows="10" placeholder="Tell us what we can do for you" required></textarea>
                     <input type="submit" value="Submit">
                   </div>
                 </form>
