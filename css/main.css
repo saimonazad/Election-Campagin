@@ -321,12 +321,7 @@ h2 {
   justify-content: center;
   grid-gap: 2rem;
 }
-.members {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, max-content));
-  justify-content: center;
-  grid-gap: 2rem;
-}
+
 .members2 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, max-content));
@@ -369,7 +364,7 @@ h2 {
 .member-details > div {
   /* padding: 20px 30px; */
   text-align: center;
-  line-height: 16px;
+  line-height: 9px;
 }
 .member-details h3 {
   color: rgba(31, 77, 240, 1);
