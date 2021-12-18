@@ -142,9 +142,12 @@
   }
 
   .up-button > img {
-    width: 35.62px;
-    height: 28.98px;
-    margin-top: -45px;
+    position: absolute;
+    top: 234px;
+    width: 25.62px;
+    z-index: 1;
+    height: 20.98px;
+    /* margin-top: -265px !important; */
   }
 
   .header-scroll {
@@ -210,13 +213,32 @@
     height: auto;
   }
   .li_member {
-    height: 300px;
+    height: 340px;
   }
   .li_member .member-img {
     height: auto;
   }
   .li_member .member-details {
-    /* margin-top: auto; */
+    margin-top: -80px;
+  }
+  .li_member > .member-details > div {
+    /* padding: 20px 30px; */
+    height: 100px;
+    line-height: 14px;
+  }
+  .li_member .member-details .button {
+    /* padding: 20px 30px; */
+    position: absolute;
+    left: 15%;
+    top: 50%;
+    margin-top: 104px !important;
+  }
+  .li_member .member-details .ballot {
+    /* padding: 20px 30px; */
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    margin-top: 50px !important;
   }
   .li_member .member-details h2 {
     font-size: 5px;
@@ -232,8 +254,10 @@
   }
   .card > .key-content > ul {
     font-size: 10px;
-    background: url("/img/list.png") no-repeat left center;
-    line-height: 25px;
+    background: url("/img/list.png") no-repeat left top;
+    background-size: 20px;
+    line-height: 20px;
+    padding-left: -25px !important;
   }
 }
 
@@ -303,6 +327,10 @@
   .members-top {
     margin-top: 20px;
     height: 100px;
+  }
+  .members {
+    justify-self: center !important;
+    align-content: center;
   }
   .members-body {
     margin-top: 20px;
@@ -493,5 +521,24 @@
   }
   .sliderBtn {
     margin-top: -60px;
+  }
+  .li_member > .member-details > div {
+    /* padding: 20px 30px; */
+    height: 100px;
+    line-height: 14px;
+  }
+  .li_member > .member-details .button {
+    /* padding: 20px 30px; */
+    position: absolute;
+    left: 20%;
+    top: 60%;
+    margin-top: 104px !important;
+  }
+  .li_member > .member-details .ballot {
+    /* padding: 20px 30px; */
+    position: absolute;
+    left: 25%;
+    top: 60%;
+    margin-top: 50px !important;
   }
 }
