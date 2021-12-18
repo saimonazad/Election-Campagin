@@ -260,14 +260,18 @@
     font-size: 10px;
   }
   .card > .key-content > ul {
-    font-size: 10px;
+    font-size: 15px;
     background: url("/img/list.png") no-repeat left top;
-    background-size: 20px;
+    background-size: 20px 20px 11px;
     line-height: 20px;
     padding-left: -25px !important;
   }
   .agenda-logo > img {
     left: auto;
+  }
+  .profile-card {
+    height: auto;
+    order: -1;
   }
 }
 
@@ -465,8 +469,8 @@
     margin-left: 70px;
   }
   .card > .key-content > ul {
-    line-height: 25px;
-    font-size: 15px;
+    line-height: 22px;
+    font-size: 14px;
   }
   .card > p {
     line-height: 30px;
@@ -507,10 +511,10 @@
     line-height: 5px;
   }
   .profile-content h2 {
-    font-size: 15px;
+    font-size: 18px;
   }
   .profile-content h4 {
-    font-size: 12px;
+    font-size: 14px;
   }
   .profile-content img {
     width: 100%;
@@ -518,20 +522,20 @@
   .li_member {
     height: 65%;
   }
-  .card > .key-content {
+  .key-content {
     position: relative;
     overflow: auto;
-    height: 480px;
+    height: 100%;
     padding: 10px;
   }
-  .card > .key-content > ul {
+  .key-content > ul {
     position: relative;
     font-size: 12px;
     background: url("/img/list.png") no-repeat left top;
     background-size: 25px 27px;
     margin-left: -12px;
   }
-  .card > .key-content > ul > li {
+  .key-content > ul > li {
     padding-left: 10px;
   }
   .trapezoid-bio > img {
