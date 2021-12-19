@@ -176,6 +176,38 @@
   #industryPrevSlide {
     display: none !important;
   }
+
+  .card {
+    width: 636px;
+    height: 250px;
+    /* padding: 15px; */
+    margin: 15px;
+    text-align: center;
+    overflow: scroll;
+  }
+  .profile-card {
+    width: auto !important;
+  }
+  .card > .key-content > ul {
+    line-height: 19px;
+    font-size: 12px;
+  }
+  .card > p {
+    line-height: 30px;
+    font-size: 15px;
+  }
+  .profile-content h2 {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .profile-content h4 {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .profile-content h4 {
+    font-size: 16px !important;
+    line-height: 17px;
+  }
 }
 
 @media only screen and (max-width: 450px) {
@@ -959,6 +991,9 @@
   }
   .profile-card {
     height: 510px !important;
+  }
+  .card-content {
+    height: 387px;
   }
 }
 
