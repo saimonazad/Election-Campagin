@@ -749,7 +749,7 @@ textarea {
   height: 510px;
   background-color: white;
   padding: 15px;
-  border-radius: 60px 60px 6px 6px;
+  border-radius: 12% 12% 6px 6px;
   margin: 15px;
   text-align: center;
   position: relative;
