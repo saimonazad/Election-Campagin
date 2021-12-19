@@ -113,7 +113,7 @@
     /* height: auto; */
   }
   .profile-card {
-    height: 607px !important;
+    height: auto !important;
     width: auto !important;
   }
   .profile-section > img {
