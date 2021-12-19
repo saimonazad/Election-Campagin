@@ -631,7 +631,7 @@ textarea {
 .card-title {
   position: absolute;
   font-family: "PT Serif", serif;
-  top: 34%;
+  top: 38%;
   left: 50% !important;
   transform: translate(-50%, -50%);
   color: #e7eeff;
@@ -763,7 +763,7 @@ textarea {
 .card-content {
   position: relative;
   overflow: auto;
-  height: 480px;
+  height: 387px;
   padding: 10px;
   font-family: PT Serif;
   font-style: normal;
