@@ -763,13 +763,13 @@
   .li_member > .member-details > div {
   }
   .li_member {
-    padding-bottom: 20px;
+    padding-bottom: 9px;
   }
 
   .li_member > .member-details .ballot {
   }
   .li_member > .member-details h4 {
-    font-size: 14px !important;
+    font-size: 13px !important;
     line-height: 14px !important;
   }
   .profile-section > img {
