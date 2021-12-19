@@ -21,7 +21,30 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"
     integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- Primary Meta Tags -->
   <title>One Team</title>
+  <meta name="title" content="One Team">
+  <meta name="description"
+    content="One Team is panel for upcoming Basis Election in 26th December 2021 for the term 2022-2023 where our team slogan is “Every Member Matters”">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://oneteambd.com">
+  <meta property="og:title" content="One Team">
+  <meta property="og:description"
+    content="One Team is panel for upcoming Basis Election in 26th December 2021 for the term 2022-2023 where our team slogan is “Every Member Matters”">
+  <meta property="og:image" content="/public/og-image.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card"
+    content="One Team is panel for upcoming Basis Election in 26th December 2021 for the term 2022-2023 where our team slogan is “Every Member Matters”">
+  >
+  <meta property="twitter:url" content="https://oneteambd.com">
+  <meta property="twitter:title" content="One Team">
+  <meta property="twitter:description"
+    content="One Team is panel for upcoming Basis Election in 26th December 2021 for the term 2022-2023 where our team slogan is “Every Member Matters”">
+  <meta property="twitter:image" content="/public/og-image.png">
   <script>
     $(document).ready(function () {
       $("#lightSlider").lightSlider({
@@ -65,9 +88,9 @@
         onBeforeSlide: function (el) {
           $('#counterAgenda').text(el.getCurrentSlideCount());
           // if (el.getCurrentSlideCount() == totalIndustrySlide) {
-          //   $("#industryNextSlide").addClass("disabledIndustryBtn")
+          // $("#industryNextSlide").addClass("disabledIndustryBtn")
           // } else if (el.getCurrentSlideCount == 1) {
-          //   $("#industryPrevSlide").addClass("disabledIndustryBtn")
+          // $("#industryPrevSlide").addClass("disabledIndustryBtn")
 
           // }
         },
@@ -102,9 +125,9 @@
         onBeforeSlide: function (el) {
           $('#counterIndustry').text(el.getCurrentSlideCount());
           // if (el.getCurrentSlideCount() == totalIndustrySlide) {
-          //   $("#industryNextSlide").addClass("disabledIndustryBtn")
+          // $("#industryNextSlide").addClass("disabledIndustryBtn")
           // } else if (el.getCurrentSlideCount == 1) {
-          //   $("#industryPrevSlide").addClass("disabledIndustryBtn")
+          // $("#industryPrevSlide").addClass("disabledIndustryBtn")
 
           // }
         }
