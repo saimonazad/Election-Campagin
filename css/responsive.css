@@ -887,6 +887,9 @@
     font-size: 12px;
     line-height: 20px;
   }
+  .profile-brand {
+    margin-top: -22px;
+  }
   /* .card {
     border-radius: 43px;
   } */
@@ -976,26 +979,27 @@
     width: 212px;
   }
   .card-img {
-    margin-left: 28px;
+    margin-left: 21px;
     margin-top: -15px;
   }
   .card-content,
   .key-content > ul > li {
     font-size: 16px;
-    line-height: 35px;
+    line-height: 22px;
   }
   .others-member-title {
-    margin-top: 120px;
+    margin-top: 150px;
     margin-bottom: 27px;
     font-size: 25px;
   }
   .profile-card {
-    height: 510px !important;
+    height: 468px !important;
   }
   .card-content {
     height: 387px;
   }
-}
-
-@media all and (min-width: 481px) and (max-width: 767px) {
+  .header-profile {
+    margin-bottom: -41rem;
+    height: 138rem;
+  }
 }
