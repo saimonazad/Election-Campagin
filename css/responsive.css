@@ -43,12 +43,13 @@
     height: auto;
   }
   .card {
-    width: 40%;
+    /* width: 40%; */
     /* height: 600px; */
   }
   .card-img {
-    margin-left: 26px;
-    margin-top: -15px;
+    margin-left: 49px;
+    margin-top: -23px;
+    width: auto;
   }
   .card-content {
     font-size: 19px;
@@ -956,4 +957,7 @@
     margin-bottom: 27px;
     font-size: 25px;
   }
+}
+
+@media all and (min-width: 481px) and (max-width: 767px) {
 }
