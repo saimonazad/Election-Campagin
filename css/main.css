@@ -6,6 +6,16 @@ body {
   padding: 0px;
   margin: 0px;
 }
+body::-webkit-scrollbar {
+  width: 5px;
+}
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
 @import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&family=Poppins:ital,wght@1,500&display=swap");
 /* html {
@@ -184,6 +194,16 @@ h2 {
   border-radius: 8px;
   margin-left: 20px;
   overflow: auto;
+}
+.industry-item::-webkit-scrollbar {
+  width: 1px;
+}
+.industry-item::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+.industry-item::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid #1772eb;
 }
 .industry-item h2 {
   font-family: "PT Sans", sans-serif;
@@ -749,11 +769,31 @@ textarea {
 
   color: rgba(73, 70, 71, 0.8103);
 }
+.card-content::-webkit-scrollbar {
+  width: 1px;
+}
+.card-content::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+.card-content::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid #1772eb;
+}
 .key-content {
   position: relative;
   overflow: auto;
   height: auto;
   padding: 38px 0px 71px 12px;
+}
+.key-content::-webkit-scrollbar {
+  width: 1px;
+}
+.key-content:-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+.key-content::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid #1772eb;
 }
 .profile-card {
   /* height: 600px; */
