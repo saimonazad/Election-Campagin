@@ -366,6 +366,9 @@ h2 {
   text-align: center;
   line-height: 9px;
 }
+.li_member .member-details {
+  padding-bottom: 30px;
+}
 .member-details h3 {
   color: rgba(31, 77, 240, 1);
   font-family: "PT Serif", serif;
@@ -398,6 +401,8 @@ h2 {
   color: #fff;
   margin-top: 20px;
   margin-bottom: 35px;
+  font-weight: 700;
+  font-family: "PT Serif", serif;
 }
 .button {
   background: linear-gradient(
@@ -415,6 +420,9 @@ h2 {
   cursor: pointer;
   font-size: 16px;
   font-weight: 500;
+  font-family: "Inter", sans-serif;
+  width: fit-content;
+  margin: 0 auto;
   /* margin: 0 auto !important; */
 }
 .contact-section {
@@ -612,11 +620,21 @@ textarea {
 .li_member {
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.18);
   border-radius: 10px;
-  height: 75%;
+  height: auto;
 }
-.li_member h2 {
+
+.li_member .member-details h2 {
   font-size: 18px !important;
   line-height: 25px;
+  font-family: "Ubuntu", sans-serif;
+  background: linear-gradient(
+    98.69deg,
+    #0f4b91 8.62%,
+    #1772eb 59.17%,
+    #4e97f8 99.1%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .sliderBtn > p {
@@ -659,7 +677,14 @@ textarea {
 }
 #memberSlider {
   margin-bottom: 1px;
-  height: 580px !important;
+  height: 100% !important;
+  position: relative;
+  padding-bottom: 30px !important;
+}
+.member-btn {
+  /* position: absolute; */
+  left: 45%;
+  /* margin-top: -100px; */
 }
 .profile-content {
   text-align: center;

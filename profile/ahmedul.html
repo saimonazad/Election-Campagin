@@ -14,6 +14,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=PT+Serif:wght@400;700&family=Poppins:wght@400;500&family=Ubuntu:wght@400;500&display=swap"
     rel="stylesheet">
+    
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="/js/lightslider.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"
@@ -48,11 +49,20 @@
           {
             breakpoint: 480,
             settings: {
-              item: 2,
+              item: 1,
               slideMove: 1,
+              width: 100,
             },
           },
         ],
+        onBeforeNextSlide: function (el) {
+          $("#goToPrevSlide").removeClass("agendaBtnActive")
+          $("#goToNextSlide").addClass("agendaBtnActive")
+        },
+        onBeforePrevSlide: function (el) {
+          $("#goToPrevSlide").addClass("agendaBtnActive")
+          $("#goToNextSlide").removeClass("agendaBtnActive")
+        },
       });
       $("#goToPrevSlide").on("click", function () {
         slider.goToPrevSlide();
@@ -212,9 +222,8 @@
                   <h3>ONE TEAM</h3>
                   <div class="ballot">Ballot No:</div>
                 </div>
-                <div>
-                  <a class="button" href="/profile/tanvir.html">Learn More</a>
-
+                <div class="learn">
+                  <a class="button" style="text-decoration: none;" href="/profile/tanvir.html">Learn More</a>
                 </div>
             </li>
             <li class="li_member">
@@ -347,17 +356,12 @@
               </div>
             </li>
           </ul>
-          <div class="sliderBtn">
-            <p type="button" id="goToPrevSlide">
-              <!-- <img src="/img/left.png" alt="" srcset=""> -->
-              <img src="/img/left-button.png" alt="" srcset="">
-            </p>
-            <p type="button" id="goToNextSlide">
-              <!-- <img src="/img/rightbutton .png" alt="" srcset=""> -->
-              <img src="/img/rightbutton.png" alt="" srcset="">
 
-            </p>
+          <div class="member-btn">
+            <button id="goToPrevSlide" class="agendaBtn agendaBtnActive">&#8592;</button>
+            <button id="goToNextSlide" class="agendaBtn">&#8594;</button>
           </div>
+
         </div>
       </section>
 

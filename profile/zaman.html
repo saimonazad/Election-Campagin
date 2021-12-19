@@ -48,11 +48,20 @@
           {
             breakpoint: 480,
             settings: {
-              item: 2,
+              item: 1,
               slideMove: 1,
+              width: 100,
             },
           },
         ],
+        onBeforeNextSlide: function (el) {
+          $("#goToPrevSlide").removeClass("agendaBtnActive")
+          $("#goToNextSlide").addClass("agendaBtnActive")
+        },
+        onBeforePrevSlide: function (el) {
+          $("#goToPrevSlide").addClass("agendaBtnActive")
+          $("#goToNextSlide").removeClass("agendaBtnActive")
+        },
       });
       $("#goToPrevSlide").on("click", function () {
         slider.goToPrevSlide();
@@ -60,6 +69,7 @@
       $("#goToNextSlide").on("click", function () {
         slider.goToNextSlide();
       });
+
     });
     $(function () {
       $('.up-button').on('click', function (e) {
@@ -337,16 +347,9 @@
               </div>
             </li> -->
           </ul>
-          <div class="sliderBtn">
-            <p type="button" id="goToPrevSlide">
-              <!-- <img src="/img/left.png" alt="" srcset=""> -->
-              <img src="/img/left-button.png" alt="" srcset="">
-            </p>
-            <p type="button" id="goToNextSlide">
-              <!-- <img src="/img/rightbutton .png" alt="" srcset=""> -->
-              <img src="/img/rightbutton.png" alt="" srcset="">
-
-            </p>
+          <div>
+            <button id="goToPrevSlide" class="agendaBtn agendaBtnActive">&#8592;</button>
+            <button id="goToNextSlide" class="agendaBtn">&#8594;</button>
           </div>
       </section>
 

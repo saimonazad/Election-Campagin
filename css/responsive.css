@@ -8,7 +8,6 @@
   }
   .card {
     width: 30%;
-    /* margin: 70px; */
   }
   .card-img {
     margin-left: 65px;
@@ -33,9 +32,6 @@
     font-size: 19px;
     line-height: 25px;
   }
-  /* .profile-section > div {
-    margin: 80px !important;
-  } */
 }
 @media only screen and (max-width: 1980px) {
   .profile-card {
@@ -51,11 +47,8 @@
   .card {
     width: 40%;
     height: 600px;
-    /* margin: 70px; */
   }
   .card-img {
-    /* margin-left: 30px;
-    margin-top: -15px; */
     margin-left: 28px;
     margin-top: -15px;
   }
@@ -78,9 +71,6 @@
     font-weight: 700;
     font-size: 25px;
   }
-  /* .profile-section > div {
-    margin: 80px !important;
-  } */
 }
 @media only screen and (max-width: 1440px) {
   .profile-brand {
@@ -404,19 +394,16 @@
     margin-top: 30px;
     margin-bottom: 30px;
   }
-  #memberSlider {
-    margin-bottom: -90px;
-    font-size: auto;
-  }
+
   .contact-full {
-    margin-top: -183px;
+    margin-top: -6rem;
   }
   .header-profile {
     background-size: cover;
     height: auto;
   }
   .li_member {
-    height: 340px;
+    height: auto;
   }
   .li_member .member-img {
     height: auto;
@@ -425,25 +412,24 @@
     margin-top: -80px;
   }
   .li_member > .member-details > div {
-    /* padding: 20px 30px; */
-    height: 100px;
-    line-height: 14px;
   }
   .li_member .member-details .button {
-    /* padding: 20px 30px; */
-    position: absolute;
-    left: 10%;
-    top: 52%;
-    margin-top: 104px !important;
   }
   .li_member .member-details .ballot {
-    /* padding: 20px 30px; */
-    position: absolute;
-    left: 14%;
-    top: 56%;
-    margin-top: 50px !important;
   }
   .li_member .member-details h2 {
+    font-size: 18px !important;
+    font-family: "Ubuntu", sans-serif;
+    background: linear-gradient(
+      98.69deg,
+      #0f4b91 8.62%,
+      #1772eb 59.17%,
+      #4e97f8 99.1%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .li_member .member-details h3 {
     font-size: 14px !important;
   }
   .li_member h2 {
@@ -452,9 +438,7 @@
   .li_member h3 {
     font-size: 14px;
   }
-  .li_member h4 {
-    font-size: 14px;
-  }
+
   .card > .key-content > ul {
     font-size: 15px;
     background: url("/img/list.png") no-repeat left top;
@@ -526,6 +510,7 @@
   #memberSlider {
     margin-bottom: -60px;
     font-size: 12px;
+    padding-bottom: 81px !important;
   }
   .contact-full {
     margin-top: -60px;
@@ -582,14 +567,6 @@
     margin-top: 20px;
     height: 100px;
   }
-  /* .members {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(300px, max-content));
-    justify-content: center;
-    grid-gap: 2rem;
-  } */
-
-  /* Dealing with single orphan */
 
   .members > div {
     flex: 0 0 calc(25% - autofit);
@@ -716,16 +693,11 @@
     line-height: 30px;
     font-size: 15px;
   }
-  /* .profile-content {
-    height: 400px;
-    margin-top: -30px;
-    width: 300px;
-    font-size: 12px;
-  } */
+
   .ballot {
     padding: 10px 2px;
     border-radius: 20px;
-    /* width: 100px; */
+
     margin: 0 auto;
     color: #fff;
     margin-top: 10px;
@@ -789,23 +761,16 @@
     margin-top: -60px;
   }
   .li_member > .member-details > div {
-    /* padding: 20px 30px; */
-    height: 100px;
-    line-height: 14px;
   }
-  .li_member > .member-details .button {
-    /* padding: 20px 30px; */
-    position: absolute;
-    left: 20%;
-    top: 60%;
-    margin-top: 104px !important;
+  .li_member {
+    padding-bottom: 20px;
   }
+
   .li_member > .member-details .ballot {
-    /* padding: 20px 30px; */
-    position: absolute;
-    left: 25%;
-    top: 60%;
-    margin-top: 50px !important;
+  }
+  .li_member > .member-details h4 {
+    font-size: 14px !important;
+    line-height: 14px !important;
   }
   .profile-section > img {
     width: 77%;
@@ -950,5 +915,15 @@
   .header-profile {
     height: 505vh;
     margin-bottom: -90vh;
+  }
+}
+@media (max-width: 480px) {
+  .li_member {
+  }
+  .member-btn {
+    margin-top: auto;
+  }
+  .li_member .member-details {
+    padding-bottom: 40px;
   }
 }
