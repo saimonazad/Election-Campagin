@@ -110,12 +110,13 @@
 @media only screen and (min-width: 1025px) and (max-width: 1440px) {
   .header-profile {
     height: auto;
+    padding-bottom: 49px;
   }
   .card {
     height: auto;
   }
   .profile-card {
-    height: 690px;
+    height: 607px !important;
     width: auto !important;
   }
   .profile-section > img {
@@ -778,10 +779,10 @@
 }
 @media (max-width: 1024px) {
   .profile-card {
-    height: 470px;
+    height: 470px !important;
   }
   .card-img {
-    margin-left: 15px;
+    margin-left: 6px;
     margin-top: -15px;
   }
   .trapezoid-bio > img {
@@ -889,7 +890,7 @@
 }
 @media (max-width: 375px) {
   .header-profile {
-    height: 433vh;
+    height: 430vh;
     margin-bottom: -126vh;
   }
   .profile-card {
