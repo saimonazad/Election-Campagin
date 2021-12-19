@@ -178,9 +178,6 @@
   #industryPrevSlide {
     display: none !important;
   }
-  .agenda-left {
-    display: none;
-  }
 }
 
 @media only screen and (max-width: 450px) {
@@ -822,6 +819,9 @@
   }
 }
 @media (max-width: 768px) {
+  .agenda-left {
+    display: none;
+  }
   .header-profile {
     margin-bottom: -60vh;
     height: 175vh;
