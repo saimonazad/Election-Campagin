@@ -153,6 +153,91 @@
     margin: 0;
   }
 }
+/* @media (max-width: 767px) {
+  .card {
+    width: 636px;
+    height: 250px;
+    margin: 15px;
+    text-align: center;
+    overflow: scroll;
+  }
+  .profile-card {
+    width: 915px !important;
+    height: auto !important;
+  }
+  .card > .key-content > ul {
+    line-height: 19px;
+    font-size: 12px;
+  }
+  .card > p {
+    line-height: 30px;
+    font-size: 15px;
+  }
+  .profile-content h2 {
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .profile-content h4 {
+    font-size: 11px;
+    line-height: 13px;
+  }
+  .profile-content h3 {
+    font-size: 9px;
+    line-height: 12px;
+  }
+  .card-img {
+    width: auto;
+    margin-left: 1px;
+    margin-top: 5px;
+  }
+  .ballot {
+    width: 83px;
+    margin-top: 9px;
+    margin-bottom: 21px;
+    padding: 6px 10px;
+  }
+  .button {
+    padding: 5px 6px;
+    font-size: 14px;
+  }
+  .profile-brand {
+    margin-top: -5px !important;
+  }
+  .trapezoid-bio {
+    width: 113px;
+    margin-top: -24px;
+  }
+  .header-profile {
+    margin-bottom: -15rem;
+    height: 50rem;
+  }
+  .card-title {
+    line-height: 13px;
+    font-size: 8px;
+    top: 30%;
+  }
+  .others-member-title {
+    margin-top: 96px;
+    margin-bottom: 45px;
+    font-size: 28px;
+  }
+  .li_member .member-details h2 {
+    font-size: 11px !important;
+    line-height: 28px;
+  }
+  .li_member .member-details h4 {
+    margin-top: -13px;
+    line-height: 25px;
+    font-size: 8px;
+  }
+  .li_member .member-details h3 {
+    font-size: 12px;
+  }
+  .contact-full {
+    margin-top: -85px;
+  }
+} */
+
 @media only screen and (max-width: 540px) {
   .brand {
     height: 235px;
@@ -186,7 +271,8 @@
     overflow: scroll;
   }
   .profile-card {
-    width: auto !important;
+    width: 915px !important;
+    height: 353px !important;
   }
   .card > .key-content > ul {
     line-height: 19px;
@@ -197,19 +283,70 @@
     font-size: 15px;
   }
   .profile-content h2 {
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 18px;
+    line-height: 23px;
   }
   .profile-content h4 {
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 11px;
+    line-height: 13px;
   }
-  .profile-content h4 {
-    font-size: 16px !important;
-    line-height: 17px;
+  .profile-content h3 {
+    font-size: 9px;
+    line-height: 12px;
+  }
+  .card-img {
+    width: auto;
+    margin-left: 1px;
+    margin-top: 5px;
+  }
+  .ballot {
+    width: 83px;
+    margin-top: 9px;
+    margin-bottom: 21px;
+    padding: 6px 10px;
+  }
+  .button {
+    padding: 5px 6px;
+    font-size: 14px;
+  }
+  .profile-brand {
+    margin-top: -17px !important;
+  }
+  .trapezoid-bio {
+    width: 113px;
+    margin-top: -24px;
+    /* margin: -28px 5px; */
+  }
+  .header-profile {
+    margin-bottom: -15rem;
+    height: 43rem;
+  }
+  .card-title {
+    line-height: 13px;
+    font-size: 8px;
+    top: 30%;
+  }
+  .others-member-title {
+    margin-top: 96px;
+    margin-bottom: 45px;
+    font-size: 28px;
+  }
+  .li_member .member-details h2 {
+    font-size: 11px !important;
+    line-height: 28px;
+  }
+  .li_member .member-details h4 {
+    margin-top: -13px;
+    line-height: 25px;
+    font-size: 8px;
+  }
+  .li_member .member-details h3 {
+    font-size: 12px;
+  }
+  .contact-full {
+    margin-top: -85px;
   }
 }
-
 @media only screen and (max-width: 450px) {
   .gallery-section,
   .contact-section {
@@ -239,9 +376,9 @@
     width: 80%;
   }
   .brand {
-    height: 15vh;
+    height: 8rem;
     border-radius: 60px 60px 0px 0px;
-    margin-top: -120px;
+    margin-top: -66px;
   }
   .our-brand-img > img {
     margin-top: 30px;
@@ -811,9 +948,10 @@
     width: 77%;
   }
 }
+
 @media (max-width: 1024px) {
   .profile-card {
-    height: 470px !important;
+    height: 494px;
   }
   .card-img {
     /* margin-left: 12px; */
@@ -866,7 +1004,7 @@
     height: 49rem;
   }
   .profile-card {
-    height: 400px !important;
+    height: 400px;
   }
   .card-img {
     margin-left: 1px;
@@ -896,12 +1034,118 @@
     border-radius: 43px;
   } */
 }
+@media only screen and (max-width: 540px) {
+  .brand {
+    height: 235px;
+  }
+  .our-industry {
+    background-size: cover;
+  }
+  .industry-left h2 {
+    font-size: 25px;
+  }
+  .industry-item h2 {
+    font-size: 20px;
+  }
+  .industry-right .lSAction {
+    display: block !important;
+  }
+  .industry-right .lSAction .lSPrev {
+    left: 18px;
+  }
+  #industryNextSlide,
+  #industryPrevSlide {
+    display: none !important;
+  }
+
+  /* .card {
+    width: auto;
+    margin: 15px;
+    text-align: center;
+    overflow: scroll;
+  }
+  .profile-card {
+    width: 915px !important;
+    height: 353px !important;
+  }
+  .card > .key-content > ul {
+    line-height: 19px;
+    font-size: 12px;
+  }
+  .card > p {
+    line-height: 30px;
+    font-size: 15px;
+  }
+  .profile-content h2 {
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .profile-content h4 {
+    font-size: 11px;
+    line-height: 13px;
+  }
+  .profile-content h3 {
+    font-size: 9px;
+    line-height: 12px;
+  }
+  .card-img {
+    width: auto;
+    margin-left: 1px;
+    margin-top: 5px;
+  }
+  .ballot {
+    width: 83px;
+    margin-top: 9px;
+    margin-bottom: 21px;
+    padding: 6px 10px;
+  }
+  .button {
+    padding: 5px 6px;
+    font-size: 14px;
+  }
+  .profile-brand {
+    margin-top: -17px !important;
+  }
+  .trapezoid-bio {
+    width: 113px;
+    margin-top: -24px;
+  }
+  .header-profile {
+    margin-bottom: -15rem;
+    height: 43rem;
+  }
+  .card-title {
+    line-height: 13px;
+    font-size: 8px;
+    top: 30%;
+  }
+  .others-member-title {
+    margin-top: 96px;
+    margin-bottom: 45px;
+    font-size: 28px;
+  }
+  .li_member .member-details h2 {
+    font-size: 11px !important;
+    line-height: 28px;
+  }
+  .li_member .member-details h4 {
+    margin-top: -13px;
+    line-height: 25px;
+    font-size: 8px;
+  }
+  .li_member .member-details h3 {
+    font-size: 12px;
+  }
+  .contact-full {
+    margin-top: -85px;
+  } */
+}
 
 @media (max-width: 425px) {
-  .header-profile {
+  /* .header-profile {
     margin-bottom: -37rem;
     height: 127rem;
-  }
+  } */
   .profile-card {
     height: 550px !important;
     width: auto !important;
@@ -921,48 +1165,7 @@
     margin-top: -15px;
   }
 }
-@media (max-width: 414px) {
-  .header-profile {
-    height: 128rem;
-    margin-bottom: -37rem;
-  }
-}
-@media (max-width: 411px) {
-  .header-profile {
-    height: 128rem;
-    margin-bottom: -35rem;
-  }
-}
-@media (max-width: 375px) {
-  .header-profile {
-    height: 123rem;
-    margin-bottom: -36rem;
-  }
-  .profile-card {
-    height: 500px !important;
-    width: auto !important;
-    order: -1;
-  }
-  .card {
-    width: 314px !important;
-  }
-  .trapezoid-bio {
-    width: 163px;
-    /* margin: -28px 78px; */
-  }
-}
-@media (max-width: 360px) {
-  .header-profile {
-    height: 124rem;
-    margin-bottom: -36rem;
-  }
-}
-@media (max-width: 320px) {
-  .header-profile {
-    height: 122rem;
-    margin-bottom: -34rem;
-  }
-}
+
 @media (max-width: 480px) {
   .li_member {
   }
@@ -995,7 +1198,7 @@
     font-size: 25px;
   }
   .profile-card {
-    height: 481px !important;
+    height: 521px !important;
   }
   .card-content {
     height: 387px;
@@ -1003,5 +1206,28 @@
   .header-profile {
     margin-bottom: -41rem;
     height: 138rem;
+  }
+}
+@media (max-width: 375px) {
+  .profile-card {
+    height: 490px !important;
+  }
+  .card {
+    width: 314px !important;
+  }
+  .trapezoid-bio {
+    width: 163px;
+    /* margin: -28px 78px; */
+  }
+  .brand {
+    height: 8rem;
+    border-radius: 60px 60px 0px 0px;
+    margin-top: -146px;
+  }
+}
+@media (max-width: 320px) {
+  .header-profile {
+    height: 122rem;
+    margin-bottom: -34rem;
   }
 }
