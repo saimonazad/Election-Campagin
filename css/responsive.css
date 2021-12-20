@@ -47,7 +47,7 @@
     /* height: 600px; */
   }
   .card-img {
-    margin-left: 36px;
+    margin-left: 25px;
     margin-top: -23px;
     width: auto;
   }
@@ -76,7 +76,7 @@
     margin-top: -35px;
   }
   .card-img {
-    margin-left: 36px;
+    margin-left: 18px;
     margin-top: -15px;
   }
 
@@ -816,7 +816,9 @@
     height: 470px !important;
   }
   .card-img {
-    margin-left: 12px;
+    /* margin-left: 12px; */
+    margin-left: 6px;
+
     margin-top: -15px;
   }
   .trapezoid-bio > img {
@@ -864,10 +866,10 @@
     height: 49rem;
   }
   .profile-card {
-    height: 395px !important;
+    height: 400px !important;
   }
   .card-img {
-    margin-left: 6px;
+    margin-left: 1px;
     margin-top: -16px;
   }
   .trapezoid-bio > img {
@@ -979,7 +981,7 @@
     width: 212px;
   }
   .card-img {
-    margin-left: 21px;
+    margin-left: 12px;
     margin-top: -15px;
   }
   .card-content,
@@ -993,7 +995,7 @@
     font-size: 25px;
   }
   .profile-card {
-    height: 468px !important;
+    height: 481px !important;
   }
   .card-content {
     height: 387px;
