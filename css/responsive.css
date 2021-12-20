@@ -749,8 +749,6 @@
   .industry-item {
     box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.1);
     font-size: 15px;
-
-    overflow: scroll;
   }
   .industry-item h2 {
     border-radius: 3%;
@@ -1598,7 +1596,7 @@
   .brand {
     height: 8rem;
     border-radius: 60px 60px 0px 0px;
-    margin-top: -76px;
+    margin-top: -146px;
   }
   .profile-brand {
     margin-top: 8px !important;
