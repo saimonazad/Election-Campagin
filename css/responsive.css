@@ -1349,7 +1349,7 @@
     line-height: 35px;
   }
   .profile-content h4 {
-    font-size: 17px;
+    font-size: 14px;
   }
   .profile-content img {
     width: 100%;
@@ -1444,6 +1444,7 @@
   .trapezoid-bio {
     width: 163px;
     /* margin: -28px 100px; */
+    margin-top: -28px !important;
   }
   .card-content,
   .key-content > ul > li {
@@ -1453,6 +1454,9 @@
   .card-img {
     margin-left: 27px;
     margin-top: -15px;
+  }
+  .card-title {
+    top: 33% !important;
   }
 }
 @media only screen and (min-width: 426px) and (max-width: 539px) {
