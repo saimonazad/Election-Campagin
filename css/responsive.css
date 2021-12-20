@@ -1025,6 +1025,9 @@
   .trapezoid-bio {
     /* margin: -39px 23px; */
   }
+  .brand {
+    margin-top: -211px;
+  }
 }
 @media only screen and (max-width: 768px) {
   .agenda-left,
@@ -1070,6 +1073,9 @@
   /* .brand {
     height: 235px;
   } */
+  .brand {
+    margin-top: -214px;
+  }
   .our-industry {
     background-size: cover;
   }
@@ -1457,6 +1463,9 @@
   }
   .card-title {
     top: 33% !important;
+  }
+  .brand {
+    margin-top: -100px !important;
   }
 }
 @media only screen and (min-width: 426px) and (max-width: 539px) {
