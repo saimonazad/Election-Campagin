@@ -33,7 +33,7 @@
 }
 @media only screen and (min-width: 1920px) {
   .profile-card {
-    height: 790px !important;
+    height: 810px !important;
     width: auto !important;
   }
   .profile-brand {
@@ -48,7 +48,7 @@
   }
   .card-img {
     margin-left: 25px;
-    margin-top: -23px;
+    margin-top: 3px;
     width: auto;
   }
   .card-content {
@@ -76,7 +76,7 @@
     margin-top: -35px;
   }
   .card-img {
-    margin-left: 18px;
+    margin-left: 20px;
     margin-top: -15px;
   }
 
@@ -105,8 +105,8 @@
     line-height: 25px;
   }
   .brand {
-    height: 301px;
-    margin-top: -9.75rem;
+    height: 277px;
+    margin-top: -13.75rem;
   }
 }
 @media only screen and (min-width: 1025px) and (max-width: 1440px) {
@@ -157,7 +157,7 @@
     margin: 0;
   }
 }
-/* @media (max-width: 767px) {
+@media (max-width: 767px) {
   .card {
     width: 636px;
     height: 250px;
@@ -169,9 +169,15 @@
     width: 915px !important;
     height: auto !important;
   }
+  .card-img {
+    margin-left: 0px !important;
+    margin-top: -16px !important;
+  }
   .card > .key-content > ul {
     line-height: 19px;
     font-size: 12px;
+    background-size: 22px;
+    padding: 0px 10px 0px 27px;
   }
   .card > p {
     line-height: 30px;
@@ -226,13 +232,13 @@
     font-size: 28px;
   }
   .li_member .member-details h2 {
-    font-size: 11px !important;
+    font-size: 16px !important;
     line-height: 28px;
   }
   .li_member .member-details h4 {
     margin-top: -13px;
     line-height: 25px;
-    font-size: 8px;
+    font-size: 10px;
   }
   .li_member .member-details h3 {
     font-size: 12px;
@@ -240,11 +246,32 @@
   .contact-full {
     margin-top: -85px;
   }
-} */
+
+  /* .key-content {
+    margin-top: -58px !important;
+    margin-left: -13px !important;
+    height: 135px !important;
+  } */
+  .key-content {
+    margin-top: -58px !important;
+    margin-left: -13px !important;
+    height: 183px !important;
+  }
+  .brand {
+    border-radius: 60px 60px 0px 0px;
+    margin-top: -10.75rem;
+    height: 10rem;
+  }
+}
 
 @media only screen and (max-width: 540px) {
-  .brand {
+  /* .brand {
     height: 235px;
+  } */
+  .brand {
+    height: 8rem;
+    border-radius: 60px 60px 0px 0px;
+    margin-top: -176px !important;
   }
   .our-industry {
     background-size: cover;
@@ -281,6 +308,9 @@
   .card > .key-content > ul {
     line-height: 19px;
     font-size: 12px;
+  }
+  .key-content {
+    margin-top: -35px !important;
   }
   .card > p {
     line-height: 30px;
@@ -351,7 +381,7 @@
     margin-top: -85px;
   }
 }
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 425px) {
   .gallery-section,
   .contact-section {
     margin-top: 0px;
@@ -701,8 +731,8 @@
     width: 80%;
   }
   .brand {
-    border-radius: 100px 100px 0px 0px;
-    margin-top: -182px;
+    border-radius: 84px 84px 0px 0px;
+    margin-top: -207px;
   }
 
   .section-container {
@@ -959,9 +989,9 @@
   }
   .card-img {
     /* margin-left: 12px; */
-    margin-left: 6px;
+    margin-left: 14px;
 
-    margin-top: -15px;
+    margin-left: 3px;
   }
   .trapezoid-bio > img {
     width: 158px;
@@ -998,7 +1028,7 @@
     /* margin: -39px 23px; */
   }
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .agenda-left,
   .agenda-logo {
     display: none;
@@ -1011,7 +1041,7 @@
     height: 400px;
   }
   .card-img {
-    margin-left: 1px;
+    margin-left: 3px;
     margin-top: -16px;
   }
   .trapezoid-bio > img {
@@ -1039,9 +1069,9 @@
   } */
 }
 @media only screen and (max-width: 540px) {
-  .brand {
+  /* .brand {
     height: 235px;
-  }
+  } */
   .our-industry {
     background-size: cover;
   }
@@ -1062,19 +1092,33 @@
     display: none !important;
   }
 
-  /* .card {
-    width: auto;
+  .card {
     margin: 15px;
     text-align: center;
     overflow: scroll;
+    border-radius: 8% 8% 6px 6px;
+  }
+  .card-content {
+    margin-top: -30px;
+    height: 252px;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 2px;
+  }
+  .key-content {
+    height: 129px;
+    padding: 3px 7px 97px 5px;
   }
   .profile-card {
     width: 915px !important;
-    height: 353px !important;
+    height: 325px !important;
   }
   .card > .key-content > ul {
     line-height: 19px;
-    font-size: 12px;
+    font-size: 11px;
+    background-size: 16px;
+    padding: 0px 0px 0px 23px;
+    margin: 16px 0px -13px 2px;
   }
   .card > p {
     line-height: 30px;
@@ -1094,8 +1138,8 @@
   }
   .card-img {
     width: auto;
-    margin-left: 1px;
-    margin-top: 5px;
+    margin-left: 10px;
+    margin-top: -8px;
   }
   .ballot {
     width: 83px;
@@ -1115,8 +1159,8 @@
     margin-top: -24px;
   }
   .header-profile {
-    margin-bottom: -15rem;
-    height: 43rem;
+    margin-bottom: -14rem;
+    height: 38rem;
   }
   .card-title {
     line-height: 13px;
@@ -1142,16 +1186,260 @@
   }
   .contact-full {
     margin-top: -85px;
-  } */
+  }
 }
 
-@media (max-width: 425px) {
-  /* .header-profile {
-    margin-bottom: -37rem;
-    height: 127rem;
-  } */
+@media only screen and (max-width: 480px) {
+  .li_member {
+  }
   .profile-card {
-    height: 550px !important;
+    height: 515px !important;
+    width: auto !important;
+    order: -1;
+  }
+  .trapezoid-bio {
+    width: 163px;
+    /* margin: -28px 100px; */
+  }
+  .card-content,
+  .key-content > ul > li {
+    font-size: 20px;
+    line-height: 35px;
+  }
+  .card-img {
+    margin-left: 4px !important;
+    margin-top: -16px !important;
+  }
+  .key-content > ul > li {
+    padding-left: 15px;
+  }
+  .li_member .member-details h4 {
+    margin-top: -13px;
+    line-height: 25px;
+    font-size: 12px;
+  }
+  .card {
+    width: auto;
+    height: auto;
+    padding: 15px;
+    margin: 20px;
+    text-align: center;
+    overflow: scroll;
+  }
+  .card > button {
+    border: none;
+    position: sticky;
+    width: 129px;
+    height: 31px;
+    left: 20px;
+    margin-top: -30px;
+  }
+  .profile-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 50px;
+  }
+  /* .profile-content {
+    margin: 10px auto;
+    width: 380px;
+  } */
+  .ballot {
+    padding: 10px 2px;
+    border-radius: 20px;
+
+    margin: 0 auto;
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  .button {
+    padding: 10px 10px;
+    width: 100px;
+    margin: 0 auto;
+    color: #fff;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .contact-full {
+    margin-top: -6rem;
+  }
+  .header-profile {
+    background-size: cover;
+    height: auto;
+  }
+  .li_member {
+    height: auto;
+  }
+  .li_member .member-img {
+    height: auto;
+  }
+  .li_member .member-details {
+    margin-top: -80px;
+  }
+  .li_member > .member-details > div {
+  }
+  .li_member .member-details .button {
+  }
+  .li_member .member-details .ballot {
+  }
+  .li_member .member-details h2 {
+    font-size: 18px !important;
+    font-family: "Ubuntu", sans-serif;
+    background: linear-gradient(
+      98.69deg,
+      #0f4b91 8.62%,
+      #1772eb 59.17%,
+      #4e97f8 99.1%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .li_member .member-details h3 {
+    font-size: 14px !important;
+  }
+  .li_member h2 {
+    height: auto;
+  }
+  .li_member h3 {
+    font-size: 14px;
+  }
+
+  .card > .key-content > ul {
+    font-size: 15px;
+    background: url("/img/list.png") no-repeat left top;
+    background-size: 20px 20px 11px;
+    line-height: 20px;
+    padding-left: -25px !important;
+  }
+  .agenda-logo > img {
+    left: auto;
+  }
+  .profile-card {
+    /* height: 467px !important; */
+    /* width: 363px !important; */
+    order: -1;
+  }
+  .profile-card > img {
+    margin: 0 auto;
+  }
+  .card-img {
+    width: auto;
+  }
+  .card {
+    width: auto;
+    height: auto;
+    padding: 15px;
+    margin: 15px;
+    text-align: center;
+    overflow: scroll;
+  }
+  .profile-content {
+    text-align: center !important;
+    line-height: 2px;
+  }
+  .profile-brand {
+    margin-top: -19px;
+  }
+  .profile-content h2 {
+    font-size: 25px;
+  }
+  .card-content,
+  .key-content > ul > li {
+    font-size: 25px;
+    line-height: 35px;
+  }
+  .profile-content h4 {
+    font-size: 17px;
+  }
+  .profile-content img {
+    width: 100%;
+  }
+  .sliderBtn > #goToPrevSlide {
+    width: 50px;
+    top: 50%;
+    margin-right: 10px;
+  }
+  .sliderBtn > p {
+    padding: 8px;
+  }
+  .sliderBtn > button > img {
+    width: 50px !important;
+  }
+  .sliderBtn > #goToNextSlide {
+    margin-bottom: 50px;
+    top: -32px;
+  }
+  .profile-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 50px;
+  }
+  .member-btn {
+    margin-top: auto;
+  }
+  .li_member .member-details {
+    padding-bottom: 40px;
+  }
+  .card-title {
+    font-size: 15px;
+    top: 35%;
+  }
+  .trapezoid-bio {
+    margin-top: -33px;
+    width: 212px;
+  }
+  .card-img {
+    margin-left: 21px;
+    margin-top: -7px;
+  }
+  .card-content,
+  .key-content > ul > li {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .others-member-title {
+    margin-top: 150px;
+    margin-bottom: 27px;
+    font-size: 25px;
+  }
+  /* .profile-card {
+    height: 446px !important;
+  } */
+  .card-content {
+    height: 387px;
+  }
+  .header-profile {
+    margin-bottom: -39rem;
+    height: 128rem;
+  }
+  .brand {
+    height: 115px;
+  }
+  .brand {
+    height: 8rem;
+    border-radius: 60px 60px 0px 0px;
+    margin-top: -80px !important;
+  }
+  .our-brand-img > img {
+    margin-top: 30px;
+    width: 100px;
+    height: auto;
+    margin-right: 20px !important;
+  }
+  .profile-brand {
+    margin-top: -18px !important;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .header-profile {
+    margin-bottom: -37rem;
+    height: 128rem !important;
+  }
+  .profile-card {
+    height: 518px !important;
     width: auto !important;
     order: -1;
   }
@@ -1169,62 +1457,139 @@
     margin-top: -15px;
   }
 }
-
-@media (max-width: 480px) {
-  .li_member {
-  }
-  .member-btn {
-    margin-top: auto;
-  }
-  .li_member .member-details {
-    padding-bottom: 40px;
-  }
-  .card-title {
-    font-size: 15px;
-    top: 35%;
-  }
-  .trapezoid-bio {
-    margin-top: -33px;
-    width: 212px;
-  }
-  .card-img {
-    margin-left: 12px;
-    margin-top: -15px;
-  }
-  .card-content,
-  .key-content > ul > li {
-    font-size: 16px;
-    line-height: 22px;
-  }
-  .others-member-title {
-    margin-top: 150px;
-    margin-bottom: 27px;
-    font-size: 25px;
-  }
-  .profile-card {
-    height: 521px !important;
-  }
-  .card-content {
-    height: 387px;
-  }
-  .header-profile {
-    margin-bottom: -41rem;
-    height: 138rem;
-  }
-  .brand {
-    height: 115px;
-  }
+@media only screen and (min-width: 426px) and (max-width: 539px) {
   .brand {
     height: 8rem;
-    margin-top: -78px;
+    border-radius: 60px 60px 0px 0px;
+    margin-top: -176px !important;
   }
 }
+/* @media only screen and (min-width: 481px) and (min-width: 539px) {
+  .brand {
+    height: 235px;
+  }
+  .our-industry {
+    background-size: cover;
+  }
+  .industry-left h2 {
+    font-size: 25px;
+  }
+  .industry-item h2 {
+    font-size: 20px;
+  }
+  .industry-right .lSAction {
+    display: block !important;
+  }
+  .industry-right .lSAction .lSPrev {
+    left: 18px;
+  }
+  #industryNextSlide,
+  #industryPrevSlide {
+    display: none !important;
+  }
+
+  .card {
+    margin: 15px;
+    text-align: center;
+    overflow: scroll;
+    border-radius: 8% 8% 6px 6px;
+  }
+  .card-content {
+    margin-top: -30px;
+    height: 252px;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 2px;
+  }
+  .key-content {
+    height: 129px;
+    padding: 3px 7px 97px 5px;
+  }
+  .profile-card {
+    width: 915px !important;
+    height: 309px !important;
+  }
+  .card > .key-content > ul {
+    line-height: 19px;
+    font-size: 11px;
+    background-size: 16px;
+    padding: 0px 0px 0px 23px;
+    margin: 16px 0px -13px 2px;
+  }
+  .card > p {
+    line-height: 30px;
+    font-size: 15px;
+  }
+  .profile-content h2 {
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .profile-content h4 {
+    font-size: 11px;
+    line-height: 13px;
+  }
+  .profile-content h3 {
+    font-size: 9px;
+    line-height: 12px;
+  }
+  .card-img {
+    width: auto;
+    margin-left: 10px;
+    margin-top: -8px;
+  }
+  .ballot {
+    width: 83px;
+    margin-top: 9px;
+    margin-bottom: 21px;
+    padding: 6px 10px;
+  }
+  .button {
+    padding: 5px 6px;
+    font-size: 14px;
+  }
+  .profile-brand {
+    margin-top: -17px !important;
+  }
+  .trapezoid-bio {
+    width: 113px;
+    margin-top: -24px;
+  }
+  .header-profile {
+    margin-bottom: -14rem;
+    height: 38rem;
+  }
+  .card-title {
+    line-height: 13px;
+    font-size: 8px;
+    top: 30%;
+  }
+  .others-member-title {
+    margin-top: 96px;
+    margin-bottom: 45px;
+    font-size: 28px;
+  }
+  .li_member .member-details h2 {
+    font-size: 11px !important;
+    line-height: 28px;
+  }
+  .li_member .member-details h4 {
+    margin-top: -13px;
+    line-height: 25px;
+    font-size: 8px;
+  }
+  .li_member .member-details h3 {
+    font-size: 12px;
+  }
+  .contact-full {
+    margin-top: -85px;
+  }
+} */
 @media (max-width: 375px) {
   .profile-card {
-    height: 490px !important;
+    /* height: 490px !important; */
   }
   .card {
-    width: 314px !important;
+    /* width: 314px !important; */
   }
   .trapezoid-bio {
     width: 163px;
@@ -1234,6 +1599,9 @@
     height: 8rem;
     border-radius: 60px 60px 0px 0px;
     margin-top: -76px;
+  }
+  .profile-brand {
+    margin-top: 8px !important;
   }
 }
 @media (max-width: 320px) {
