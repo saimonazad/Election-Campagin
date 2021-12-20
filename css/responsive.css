@@ -715,8 +715,6 @@
   .industry-item {
     box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.1);
     font-size: 15px;
-
-    overflow: scroll;
   }
   .industry-item h2 {
     border-radius: 3%;

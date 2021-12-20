@@ -194,6 +194,7 @@ h2 {
   border-radius: 8px;
   margin-left: 20px;
   overflow: auto;
+  max-height: 20rem;
 }
 .industry-item::-webkit-scrollbar {
   width: 1px;
@@ -829,6 +830,7 @@ textarea {
   border: 8px solid #2f80ed;
   border-radius: 5px;
   overflow: auto;
+  max-height: 23rem;
 }
 .agendaItem h2 {
   font-family: "PT Serif", serif;
@@ -838,12 +840,23 @@ textarea {
   font-weight: bold;
 }
 
-.agendaItem p {
+.agendaItem ul {
+  margin-left: -20px;
+}
+.agendaItem li {
   font-family: "PT Sans", sans-serif;
   margin: 0;
   font-size: 18px;
-  line-height: 35px;
-  margin-top: 30px;
+  line-height: 28px;
+  margin-top: 15px;
+  list-style-position: inside;
+  text-indent: -1em;
+}
+.agendaItem li::before {
+  content: "▣"; /* Insert content that looks like bullets */
+  padding-right: 8px;
+  color: #2f80ed; /* Or a color you prefer */
+  height: 100%;
 }
 .agenda-right {
   width: 60%;
