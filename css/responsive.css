@@ -973,8 +973,11 @@
   .li_member > .member-details .ballot {
   }
   .li_member > .member-details h4 {
-    font-size: 13px !important;
+    font-size: 11px !important;
     line-height: 14px !important;
+  }
+  .li_member > .member-details h2 {
+    font-size: 17px !important;
   }
   .profile-section > img {
     width: 77%;
@@ -1034,8 +1037,8 @@
     display: none;
   }
   .header-profile {
-    margin-bottom: -15rem;
-    height: 49rem;
+    /* margin-bottom: -15rem; */
+    height: 40rem;
   }
   .profile-card {
     height: 400px;
@@ -1438,8 +1441,8 @@
 }
 @media only screen and (max-width: 425px) {
   .header-profile {
-    margin-bottom: -37rem;
-    height: 128rem !important;
+    margin-bottom: -7rem;
+    height: 99rem !important;
   }
   .profile-card {
     height: 518px !important;
