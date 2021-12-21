@@ -195,16 +195,23 @@ h2 {
   margin-left: 20px;
   overflow: auto;
   max-height: 20rem;
+  scrollbar-color: #ffffff #0f4b91;
+  scrollbar-width: thin;
 }
+
 .industry-item::-webkit-scrollbar {
-  width: 1px;
+  width: 6px;
 }
+
 .industry-item::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #e4e4e4;
+  border-radius: 100px;
 }
+
 .industry-item::-webkit-scrollbar-thumb {
-  background-color: darkgrey;
-  outline: 1px solid #1772eb;
+  border-radius: 100px;
+  background-color: #0f4b91;
+  box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
 }
 .industry-item h2 {
   font-family: "PT Sans", sans-serif;
@@ -781,8 +788,9 @@ textarea {
   font-size: 15px;
   line-height: 22px;
   text-align: center;
-
   color: rgba(73, 70, 71, 0.8103);
+  scrollbar-color: #ffffff #0f4b91;
+  scrollbar-width: thin;
 }
 .card-content::-webkit-scrollbar {
   width: 1px;
@@ -799,6 +807,8 @@ textarea {
   overflow: auto;
   height: auto;
   padding: 38px 0px 71px 12px;
+  scrollbar-color: #ffffff #0f4b91;
+  scrollbar-width: thin;
 }
 .key-content::-webkit-scrollbar {
   width: 1px;
@@ -830,17 +840,36 @@ textarea {
   border: 8px solid #2f80ed;
   border-radius: 5px;
   overflow: auto;
+  overflow-y: scroll;
   max-height: 23rem;
 }
 .agendaItem::-webkit-scrollbar {
-  width: 1px;
+  width: 6px;
 }
+
 .agendaItem::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #0f4b91;
+  border-radius: 100px;
 }
+
 .agendaItem::-webkit-scrollbar-thumb {
-  background-color: darkgrey;
-  outline: 1px solid #1772eb;
+  background-color: #e4e4e4;
+  border-radius: 100px;
+  box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+}
+.agendaItem::-moz-scrollbar {
+  width: 6px;
+}
+
+.agendaItem::-moz-scrollbar-track {
+  background-color: #0f4b91;
+  border-radius: 100px;
+}
+
+.agendaItem::-moz-scrollbar-thumb {
+  background-color: #e4e4e4;
+  border-radius: 100px;
+  box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
 }
 .agendaItem h2 {
   font-family: "PT Serif", serif;
