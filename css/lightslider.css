@@ -583,6 +583,8 @@ h1 {
   margin: 0 0 9px 0;
 }
 .lslide > img {
-  border-radius: 2%;
-  width: 100%;
+  display: block;
+  height: auto;
+  max-width: 100%;
+  border-radius: 10px;
 }

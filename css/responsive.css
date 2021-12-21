@@ -382,13 +382,16 @@
   }
 }
 @media only screen and (max-width: 425px) {
+  .videoHeader h2 {
+    font-size: 22px;
+  }
   .gallery-section,
   .contact-section {
     margin-top: 0px;
   }
   .members-body .title,
   .membersSecondPart .title {
-    font-size: 25px;
+    font-size: 22px;
   }
   .contact-body {
     padding: 0;
@@ -1598,6 +1601,9 @@
   }
 } */
 @media (max-width: 375px) {
+  .videoHeader h2 {
+    font-size: 18px;
+  }
   .profile-card {
     /* height: 490px !important; */
   }
