@@ -33,7 +33,8 @@
 }
 @media only screen and (min-width: 1920px) {
   .profile-card {
-    height: 810px !important;
+    /* height: 810px !important; */
+    height: 813px !important;
     width: auto !important;
   }
   .profile-brand {
@@ -48,7 +49,8 @@
   }
   .card-img {
     margin-left: 27px;
-    margin-top: 3px;
+    /* margin-top: 3px; */
+    margin-top: -17px;
     width: auto;
   }
   .card-content {
